@@ -5,11 +5,11 @@ class Boot
     public function Start()
     {
         $view = "";
-        if (isset($_SESSION["userlogged"])) {
 
-            $view = "app/views/home.view.php";
+        if (isset($_SESSION["userlogged"])) {
+            $userData = $_SESSION["userlogged"];
         } else {
-            $view = "app/views/auth/login.view.php";
+            $view = "app/views/layout.view.php";
         }
 
         if (isset($_GET["view"]) && $_GET["view"] == "forgotpwd") {
