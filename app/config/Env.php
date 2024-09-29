@@ -1,8 +1,8 @@
 <?php
 class Env
 {
-    private $APP_NAME;
-    private $APP_URL;
+    public $APP_NAME;
+    public $APP_URL;
 
     public function __construct()
     {
