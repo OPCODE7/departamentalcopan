@@ -131,9 +131,28 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 </div>
             </nav>
         </header>
-        <main class="px-0 mx-0 w-100" style="min-height: 80vh;">
 
+        <main class="row w-100 m-0 position-relative overflow-hidden px-0 mx-0" style="min-height: 80vh;">
+            <section class="col-12 p-0 d-flex flex-column align-items-center">
+                <?php
+                if (isset($_GET["view"])) {
+
+                    if ($_GET["view"] != "layout") {
+                        include $route->Request($_GET["view"]);
+                    }
+                    if ($_GET["view"] == "layout") {
+                        $destino = $env->Redirect("");
+                        echo "<script>location.href='$destino'</script>";
+                    }
+                } else {
+                    include $route->Request("home");
+                }
+                ?>
+
+
+            </section>
         </main>
+        <span class="fa-solid fa-arrow-up text-white text-decoration-none rounded-circle bg-purple d-flex align-items-center justify-content-center position-fixed cursor-pointer z-3" style="width: 3em;height: 3em;bottom: 15vh;right: 5vh;opacity: 0;" id="go-top"></span>
 
         <footer class="footer-bg w-100 text-secondary mt-4 px-md-5 bg-dark">
             <div class="row align-items-center  m-0 py-4">
