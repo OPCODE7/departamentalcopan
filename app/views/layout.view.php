@@ -59,7 +59,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 <a href="#" class="text-decoration-none text-secondary "><small class="color-blue-hover">Register</small></a>
             </div>
         </section>
-        <header class="w-100 bg-body sticky-top px-3 px-md-4 px-lg-5" style="z-index: 5;height: 15vh;">
+        <header class="w-100 bg-body sticky-top px-3 px-md-4 px-lg-5 header-navbar-top" style="z-index: 5;height: 15vh;">
             <nav class="navbar navbar-expand-lg py-4 navbar-nav-scroll" id="navbar-header">
                 <div class="container-fluid px-0">
                     <a class="navbar-brand" href="<?php echo $env->APP_URL ?>">

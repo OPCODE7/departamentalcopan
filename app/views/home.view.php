@@ -103,6 +103,52 @@
     </div>
 </div>
 
+<section class="contact row w-100 justify-content-center align-items-center" style="height: 90vh;background-color: var(--very-dark);">
+    <form class="col-12 col-md-8 col-lg-6 my-3 text-light" method="POST" id="change-pwd-form">
+        <h4 class="fw-semibold mb-3 col-12">Contacto</h4>
+        <div class="title-line"></div>
+        <div class="row w-100">
+            <div class="col-6">
+                <label for="name" class="form-label fw-medium">Nombre</label>
+                <div>
+                    <input type="text" class="form-control bg-transparent border border-primary fw-normal text-light" id="name" name="name" value="">
+                </div>
+                <div id="alert-error" class="mt-3"></div>
+            </div>
+            <div class="col-6">
+                <label for="email" class="form-label fw-medium">Email</label>
+                <div>
+                    <input type="text" class="form-control bg-transparent border border-primary fw-normal text-light" id="email" name="email" value="">
+                </div>
+                <div id="alert-error" class="mt-3"></div>
+            </div>
+            <div class="col-12">
+                <label for="subject" class="form-label fw-medium">Asunto</label>
+                <div>
+                    <input type="text" class="form-control bg-transparent border border-primary fw-normal text-light" id="subject" name="subject" value="">
+                </div>
+                <div id="alert-error" class="mt-3"></div>
+            </div>
+            <div class="mb-3 col-12">
+                <label for="message" class="form-label fw-medium">Mensaje</label>
+                <div>
+                    <textarea name="message" id="message" class="form-control bg-transparent border border-primary fw-normal text-light"></textarea>
+                </div>
+                <div id="alert-error" class="mt-3"></div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary text-uppercase bg-blue fw-semibold position-relative w-100">
+                    <input name="send" value="" class="bg-transparent w-100 h-100 position-absolute start-0 border-0 top-0 outline-none btn">
+                    <i class="fa-solid fa-paper-plane me-2"></i>
+                    </i>Enviar</input>
+                </button>
+            </div>
+        </div>
+
+    </form>
+</section>
+
 <script>
     const
         $target1 = document.getElementById("target1"),
