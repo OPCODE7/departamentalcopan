@@ -29,6 +29,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.text-blue {
+  color: var(--blue);
+}
 .color-blue-hover:hover {
   color: var(--blue);
 }
@@ -115,14 +118,29 @@ body {
   }
 }
 
+.social-icons-team {
+  & li a {
+    color: white;
+    font-size: 13px;
+    width: 36px;
+    height: 36px;
+    background-color: var(--medium-gray);
+    transition: all 0.5s ease-in-out 0s;
+  }
+  & li a:hover {
+    background-color: var(--blue);
+    transform: scale(1.2);
+  }
+}
+
 #navbar-header-layout {
   background-color: var(--very-dark);
 }
 
 .header-navbar-top {
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navbar-nav {
@@ -251,12 +269,12 @@ body {
   font-weight: 600;
   position: absolute;
   bottom: 55px;
-  left: 50px;
+  left: 30px;
   color: white;
   transform-style: preserve-3d;
   transition: ease all 2.3s;
   z-index: 3;
-  font-size: 2em;
+  font-size: 1.6rem;
   transform: translateZ(0px);
 }
 
@@ -269,10 +287,11 @@ body {
   transition: ease all 2.3s;
   transform: translateZ(-1px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.card .card-back a {
+.card .card-back span {
   transform-style: preserve-3d;
   transition: ease transform 2.3s, ease background 0.5s;
   transform: translateZ(-1px) rotatey(-180deg);
@@ -284,6 +303,49 @@ body {
   outline: none;
   text-decoration: none;
   text-align: center;
+}
+
+.card .card-back a {
+  transform-style: preserve-3d;
+  transition: ease transform 2.3s, ease background 0.5s;
+  transform: translateZ(-1px) rotatey(-180deg);
+}
+
+.ov-btn-slide-left {
+  background: transparent;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  padding: 5px 30px;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-slide-left:hover {
+  color: #fff;
+}
+.ov-btn-slide-left::after {
+  content: "";
+  background: var(--blue);
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-left:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 .bg-texture {

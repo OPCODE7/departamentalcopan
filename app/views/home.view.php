@@ -28,48 +28,115 @@
 
 <section class="cards-utilities w-100 px-3 px-md-4 px-lg-5">
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-lg-3">
             <div class="card">
                 <div class="cover item-a">
                     <h1> Sistema <br>UTI-Reingeniería</h1>
                     <div class="card-back">
-                        <a href="#">Sistema de Administración, Gerencia y Gestión de Datos Estadísticos</a>
+                        <span>Sistema de Administración, Gerencia y Gestión de Datos Estadísticos</span>
+                        <a href="#" class="ov-btn-slide-left text-decoration-none">Ver</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-lg-3">
             <div class="card">
                 <div class="cover item-b">
                     <h1>Unidades y <br>Subdirecciones</h1>
                     <div class="card-back">
-                        <a href="#">Operaciones de las Unidades y Subdirecciones de la Dirección Departamental de Educación.</a>
+                        <span>Operaciones de las Unidades y Subdirecciones de la Dirección Departamental de Educación.</span>
+                        <a href="#" class="ov-btn-slide-left text-decoration-none">Ver</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-lg-3">
             <div class="card">
                 <div class="cover item-c">
                     <h1>Herramientas<br>Docentes</h1>
                     <div class="card-back">
-                        <a href="#">Operaciones de las Unidades y Subdirecciones de la Dirección Departamental de Educación.</a>
+                        <span>Operaciones de las Unidades y Subdirecciones de la Dirección Departamental de Educación.</span>
+                        <a href="#" class="ov-btn-slide-left text-decoration-none">Ver</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-lg-3">
             <div class="card">
                 <div class="cover item-d">
                     <h1>Herramientas<br>Estudiantes</h1>
                     <div class="card-back">
-                        <a href="#">Herramientas Digitales para estudiantes de todos los niveles.
-                        </a>
+                        <span>Herramientas Digitales para estudiantes de todos los niveles.
+                        </span>
+                        <a href="" class="ov-btn-slide-left text-decoration-none">Ver</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
+
+<section class="row my-4 px-3 px-md-4 px-lg-5 w-100">
+    <div class="text-center col-12">
+        <h2 class="fw-bold mb-1">Nuestras metas</h2>
+        <div class="title-line mx-auto"></div>
+    </div>
+    <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <img src="<?php echo $env->APP_URL ?>public/assets/images/goals-home-page.jpg" class="w-100 h-100" alt="goals">
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fa-solid fa-chart-line me-2 text-blue"></i> Mejorar la calidad educativa y los resultados académicos
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Aumentar el rendimiento académico de los estudiantes al implementar programas de capacitación para maestros, introducir tecnologías educativas innovadoras y mejorar los recursos pedagógicos disponibles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="fa-solid fa-school-circle-check me-2 text-blue"></i> Expandir el acceso a la educación
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p> Incrementar la cobertura educativa al abrir nuevas sedes, ofrecer modalidades de educación a distancia o becas, y establecer alianzas con organizaciones locales para llegar a comunidades con menos acceso a la educación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="fa-solid fa-book-open-reader me-2 text-blue"></i> Fomentar el desarrollo profesional y personal del equipo docente
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Implementar programas de desarrollo profesional continuo para los maestros y personal administrativo, con el fin de mejorar sus competencias pedagógicas, fomentar el liderazgo y garantizar un entorno educativo más efectivo y motivador.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="fa-solid fa-laptop-code me-2 text-blue"></i> Incorporar tecnologías innovadoras para mejorar la enseñanza y el aprendizaje
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Desarrollar e implementar herramientas tecnológicas avanzadas, como plataformas de aprendizaje en línea, aplicaciones interactivas y aulas virtuales, para facilitar el acceso a una educación moderna y flexible, optimizando tanto la enseñanza de los docentes como el aprendizaje de los estudiantes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <div class="section-lg bg-texture mt-4">
@@ -116,7 +183,7 @@
                 <div id="alert-error" class="mt-3"></div>
             </div>
             <div class="col-6">
-                <label for="email" class="form-label fw-medium">Email</label>
+                <label for="email" class="form-label fw-medium">Correo</label>
                 <div>
                     <input type="text" class="form-control bg-transparent border border-primary fw-normal text-light" id="email" name="email" value="">
                 </div>
@@ -148,6 +215,72 @@
 
     </form>
 </section>
+
+<div class="row mt-3 px-3 px-md-4 px-lg-5">
+    <div class="text-center">
+        <h2 class="fw-bold mb-1">Equipo de Liderazgo</h2>
+        <div class="title-line mx-auto"></div>
+        <p>- Lorem ipsum dolor sit amet isse potenti nulla esquam ante aliquet cusempe posuere -</p>
+    </div>
+
+    <div class="col-md-3 col-sm-6 text-center m-bottom4">
+        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
+        <div class="mt-2">
+            <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
+            <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
+            <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 text-center m-bottom4">
+        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
+        <div class="mt-2">
+            <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
+            <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
+            <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 text-center m-bottom4">
+        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
+        <div class="mt-2">
+            <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
+            <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
+            <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 text-center m-bottom4">
+        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
+        <div class="mt-2">
+            <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
+            <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
+            <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</div>
+
+
 
 <script>
     const
