@@ -1,0 +1,1 @@
+<h1 class="text-primary">Hola desde la vista Staff</h1>

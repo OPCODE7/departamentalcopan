@@ -7,7 +7,7 @@ class Routes
         $control = 0;
         if (isset($_GET["view"])) {
 
-            $url = $_GET["view"];
+            $url = $view;
             $pathview = "app/views/" . $url . ".view.php";
 
             if (file_exists($pathview)) {

@@ -369,6 +369,15 @@ body {
   width: 50px;
 }
 
+/* ABOUT US SECTION */
+#banner-about {
+  background: url("../../../public/assets/images/parallax-bg.jpg") no-repeat
+    center top fixed;
+  background-size: cover;
+  width: 100%;
+  float: left;
+  padding: 100px 0;
+}
 @media (min-width: 768px) {
 }
 

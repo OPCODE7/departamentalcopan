@@ -89,7 +89,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <i class="fa-solid fa-chart-line me-2 text-blue"></i> Mejorar la calidad educativa y los resultados académicos
+                        <i class="fa-solid fa-chart-line me-2 text-blue fs-4"></i> Mejorar la calidad educativa y los resultados académicos
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -101,7 +101,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <i class="fa-solid fa-school-circle-check me-2 text-blue"></i> Expandir el acceso a la educación
+                        <i class="fa-solid fa-school-circle-check me-2 text-blue fs-4"></i> Expandir el acceso a la educación
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -113,7 +113,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <i class="fa-solid fa-book-open-reader me-2 text-blue"></i> Fomentar el desarrollo profesional y personal del equipo docente
+                        <i class="fa-solid fa-book-open-reader me-2 text-blue fs-4"></i> Fomentar el desarrollo profesional y personal del equipo docente
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -125,7 +125,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                        <i class="fa-solid fa-laptop-code me-2 text-blue"></i> Incorporar tecnologías innovadoras para mejorar la enseñanza y el aprendizaje
+                        <i class="fa-solid fa-laptop-code me-2 text-blue fs-4"></i> Incorporar tecnologías innovadoras para mejorar la enseñanza y el aprendizaje
                     </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -307,5 +307,5 @@
         $target4.textContent = count4;
 
         if (count1 == 50 && count2 == 39 && count3 == 10 && count4 == 12) clearInterval(countersInterval);
-    }, 100);
+    }, 50);
 </script>

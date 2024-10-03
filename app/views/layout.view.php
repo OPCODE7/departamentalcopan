@@ -54,7 +54,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 <span>/</span>
                 <a href="#" class="text-decoration-none text-secondary "><small class="color-blue-hover">E-mail Us</small></a>
                 <span>/</span>
-                <a href="#" class="text-decoration-none text-secondary "><small class="color-blue-hover">Login</small></a>
+                <a href="<?php echo $env->APP_URL ?>login" class="text-decoration-none text-secondary "><small class="color-blue-hover">Login</small></a>
                 <span>/</span>
                 <a href="#" class="text-decoration-none text-secondary "><small class="color-blue-hover">Register</small></a>
             </div>
@@ -63,7 +63,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
             <nav class="navbar navbar-expand-lg py-4 navbar-nav-scroll" id="navbar-header">
                 <div class="container-fluid px-0">
                     <a class="navbar-brand" href="<?php echo $env->APP_URL ?>">
-                        <img src="<?php echo $env->APP_URL . "public/assets/icons/secretaria.ico" ?>" alt="Bootstrap" width="45" height="35">
+                        <img src="<?php echo $env->APP_URL . "public/assets/images/logo-depa-copan.png" ?>" alt="Bootstrap" height="45">
                     </a>
                     <label for="check" class="d-flex d-lg-none" id="btn-navbar-collapse">
                         <input type="checkbox" id="check" class="d-none" data-bs-toggle="collapse" data-bs-target="#navbar-header-layout" aria-controls="navbar-header-layout" aria-expanded="false" aria-label="Toggle navigation" />
@@ -74,18 +74,22 @@ $titleFormat = strtoupper($replaceSlashUrl);
                     <div class="collapse navbar-collapse px-3 mt-2" id="navbar-header-layout">
                         <div class="navbar-nav mt-1 mb-lg-0">
                             <a class="nav-link" aria-current="page" href="<?php echo $env->APP_URL ?>">HOME</a>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" style="color: var(--medium-gray);" id="about-links">
+                            <li class="nav-item position-relative">
+                                <a class="nav-link d-inline-block" href="<?php echo $env->APP_URL ?>about" role="button" style="color: var(--medium-gray);" id="about-links">
                                     ACERCA DE NOSOTROS
                                 </a>
+                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" style="color: var(--medium-gray);">
+                                </button>
                                 <ul class="dropdown-menu mt-0 py-0 rounded-0 row" id="dropdown-menu-about">
-                                    <li><a class="dropdown-item" href="#">Acceso</a></li>
-                                    <li><a class="dropdown-item" href="#">Personal Departamental</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo $env->APP_URL ?>login">Acceso</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo $env->APP_URL ?>about/staff">Personal Departamental</a></li>
                                     <li><a class="dropdown-item" href="#">Directores municipales</a></li>
                                     <li class="dropdown-item nav-item dropend" id="dropdown-item-cooperants">
-                                        <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" style="color: var(--medium-gray);" id="dropdown-navbar-layout">
+                                        <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
                                             Cooperantes
                                         </a>
+                                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        </button>
                                         <ul class="dropdown-menu mt-0 py-0 rounded-0">
                                             <li><a class="dropdown-item" href="#">Aliados</a></li>
                                             <li><a class="dropdown-item" href="#">Inscripciones cooperantes</a></li>
@@ -107,9 +111,11 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" style="color: var(--medium-gray);" id="dropdown-navbar-layout">
+                                <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
                                     SACE
                                 </a>
+                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                </button>
                                 <ul class=" dropdown-menu mt-0 py-0 rounded-0">
                                     <li><a class="dropdown-item" href="#">Solicitudes Online</a></li>
                                     <li><a class="dropdown-item" href="#">Calendario 2024</a></li>
@@ -118,9 +124,11 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" style="color: var(--medium-gray);" id="dropdown-navbar-layout">
+                                <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
                                     ACTUALIZACIÓN DOCENTE
                                 </a>
+                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                </button>
                                 <ul class="dropdown-menu mt-0 py-0 rounded-0">
                                     <li><a class="dropdown-item" href="#">Consulta Docente</a></li>
                                 </ul>
@@ -136,9 +144,12 @@ $titleFormat = strtoupper($replaceSlashUrl);
             <section class="col-12 p-0 d-flex flex-column align-items-center">
                 <?php
                 if (isset($_GET["view"])) {
-
                     if ($_GET["view"] != "layout") {
-                        include $route->Request($_GET["view"]);
+                        if (isset($_GET["view"]) && $_GET["view"] == "about") {
+                            include $route->Request("about/about");
+                        } else {
+                            include $route->Request($_GET["view"]);
+                        }
                     }
                     if ($_GET["view"] == "layout") {
                         $destino = $env->Redirect("");

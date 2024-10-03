@@ -11,6 +11,9 @@ class Boot
         } else {
             $view = "app/views/layout.view.php";
         }
+        if (isset($_GET["view"]) && $_GET["view"] == "login") {
+            $view = "app/views/auth/login.view.php";
+        }
 
         if (isset($_GET["view"]) && $_GET["view"] == "forgotpwd") {
             $view = "app/views/auth/forgotpwd.view.php";
@@ -19,6 +22,9 @@ class Boot
         if (isset($_GET["view"]) && $_GET["view"] == "register") {
             $view = "app/views/auth/signup.view.php";
         }
+
+
+
         return $view;
     }
 }
