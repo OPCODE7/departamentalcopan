@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row vw-100 justify-content-center align-items-center flex-column text-light w-100 mb-4" id="banner-about">
-        <h2 class="text-uppercase text-light fw-bold w-auto">Acerca de nosotros</h2>
+        <h2 class="text-uppercase text-light fw-bold w-auto animated bounceIn">Acerca de nosotros</h2>
         <span class="d-block w-auto">Una breve historia sobre nuestra compañía</span>
     </div>
     <div class="row px-3 px-md-4 px-lg-5">

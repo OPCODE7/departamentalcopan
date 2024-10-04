@@ -2,6 +2,7 @@
 require_once("app/config/Routes.php");
 require_once("app/config/Env.php");
 
+
 $route = new Routes();
 $env = new Env();
 
@@ -31,6 +32,10 @@ $titleFormat = strtoupper($replaceSlashUrl);
     <link rel="stylesheet" href="<?php echo $env->APP_URL  . "public/css/custom_styles/styles.css" ?>">
     <link rel="stylesheet" href="<?php echo $env->APP_URL  . "public/assets/fontawesome/css/all.min.css" ?>">
     <link rel="shortcut icon" href="<?php echo $env->APP_URL . "public/assets/icons/secretaria.ico" ?>" type="image/x-icon">
+    <link
+        rel="stylesheet"
+        href="<?php echo $env->APP_URL ?>public/plugins/animatecss/animate.compat.css" />
+
     <title><?php echo $titleFormat ?></title>
     <meta name="description" content="Sitio oficial direccion departamental de educación copán." />
 
@@ -83,7 +88,6 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 <ul class="dropdown-menu mt-0 py-0 rounded-0 row" id="dropdown-menu-about">
                                     <li><a class="dropdown-item" href="<?php echo $env->APP_URL ?>login">Acceso</a></li>
                                     <li><a class="dropdown-item" href="<?php echo $env->APP_URL ?>about/staff">Personal Departamental</a></li>
-                                    <li><a class="dropdown-item" href="#">Directores municipales</a></li>
                                     <li class="dropdown-item nav-item dropend" id="dropdown-item-cooperants">
                                         <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
                                             Cooperantes
@@ -99,12 +103,10 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                             <li><a class="dropdown-item" href="#">Acnur</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Honduras</a></li>
                                     <li><a class="dropdown-item" href="#">Escuelas Normales</a></li>
                                     <li><a class="dropdown-item" href="#">Plan 365</a></li>
                                     <li><a class="dropdown-item" href="#">Correo</a></li>
                                     <li><a class="dropdown-item" href="#">Blog</a></li>
-                                    <li><a class="dropdown-item" href="#">La Prensa</a></li>
                                     <li><a class="dropdown-item" href="#">Rendición de cuentas 2024</a></li>
 
 
@@ -117,7 +119,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                 </button>
                                 <ul class=" dropdown-menu mt-0 py-0 rounded-0">
-                                    <li><a class="dropdown-item" href="#">Solicitudes Online</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo $env->APP_URL ?>sace/onlineapplications">Solicitudes Online</a></li>
                                     <li><a class="dropdown-item" href="#">Calendario 2024</a></li>
                                     <li><a class="dropdown-item" href="#">Sistema SIIE</a></li>
 
