@@ -1,9 +1,29 @@
 <?php
 require_once("app/config/Routes.php");
 require_once("app/config/Env.php");
+require_once("app/controllers/AuthController.php");
 
+$usercontroller = new AuthController();
 $route = new Routes();
 $env = new Env();
+
+$username = "";
+$password = "";
+
+$errorsvalidate = "";
+
+if (isset($_POST["login"])) {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    $data = [
+        "userName" => $username,
+        "password" => $password
+    ];
+
+    $errorsvalidate = $usercontroller->CheckLogin($data);
+}
+
 
 ?>
 
@@ -27,11 +47,11 @@ $env = new Env();
     <div class="row justify-content-center align-items-center vh-100 w-100">
         <form class="col-10 col-md-6 col-lg-4 shadow-lg rounded p-4 animated zoomIn" method="POST">
             <div class="mb-3 text-center">
-                <img src="<?php echo $env->APP_URL ?>public/assets/images/logo-depa-copan.png" alt="logo-depacopan" class="img-fluid" style="width: 220px;height: 60px;">
+                <img src="<?php echo $env->APP_URL ?>public/assets/images/logo-depa-copan.png" alt="logo-depacopan" class="img-fluid" style="width: 250px;height: 60px;">
             </div>
             <div class="mb-3">
                 <label for="user-name" class="form-label text-secondary">Usuario</label>
-                <input type="text" class="form-control" id="user-name" name="userName">
+                <input type="text" class="form-control" id="user-name" name="username">
             </div>
             <label for="pasword" class="form-label text-secondary">Contraseña</label>
             <div class="mb-3 position-relative">

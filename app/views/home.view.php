@@ -1,3 +1,7 @@
+<?php
+// var_dump($_SESSION["userlogged"]);
+?>
+
 <div class="carousel slide w-100 mb-4" data-bs-ride="carousel" id="hero-carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

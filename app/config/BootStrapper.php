@@ -8,6 +8,7 @@ class Boot
 
         if (isset($_SESSION["userlogged"])) {
             $userData = $_SESSION["userlogged"];
+            $view = "app/views/layout.view.php";
         } else {
             $view = "app/views/layout.view.php";
         }
