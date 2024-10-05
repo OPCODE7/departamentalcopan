@@ -140,7 +140,11 @@ $titleFormat = strtoupper($replaceSlashUrl);
                     </div>
                 </div>
             </nav>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
         </header>
+
 
         <main class="row w-100 m-0 position-relative overflow-hidden px-0 mx-0" style="min-height: 80vh;">
             <section class="col-12 p-0 d-flex flex-column align-items-center">
@@ -165,7 +169,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
 
             </section>
         </main>
-        <span class="fa-solid fa-arrow-up text-white text-decoration-none rounded-circle bg-purple d-flex align-items-center justify-content-center position-fixed cursor-pointer z-3" style="width: 3em;height: 3em;bottom: 15vh;right: 5vh;opacity: 0;" id="go-top"></span>
+        <span class="fa-solid fa-arrow-up text-white text-decoration-none rounded-circle bg-primary d-flex align-items-center justify-content-center position-fixed cursor-pointer z-3 visually-hidden" style="width: 3em;height: 3em;bottom: 10vh;right: 3vh;" id="go-top"></span>
 
         <footer class="footer-bg w-100 text-secondary mt-4 px-md-5 bg-dark">
             <div class="row align-items-center  m-0 py-4">
@@ -190,8 +194,8 @@ $titleFormat = strtoupper($replaceSlashUrl);
             $ = (selector) => d.querySelector(selector),
             $$ = (selector) => d.querySelectorAll(selector),
             $navbarHeader = $("#navbar-header"),
-            $dropDownNavbarLayout = $$("#dropdown-navbar-layout");
-
+            $dropDownNavbarLayout = $$("#dropdown-navbar-layout"),
+            $buttonScrollTop = $("#go-top");
         window.addEventListener("resize", e => {
 
             if (window.innerWidth >= 992) {
@@ -205,9 +209,36 @@ $titleFormat = strtoupper($replaceSlashUrl);
                     dropdown.setAttribute("data-bs-auto-close", "false");
                 });
             }
-
-
         });
+
+        window.addEventListener("scroll", e => {
+            let scrollY = window.scrollY;
+            if (scrollY >= 1000) {
+                $buttonScrollTop.classList.remove("visually-hidden");
+            } else {
+                $buttonScrollTop.classList.add("visually-hidden");
+            }
+
+            updateProgressBar();
+        });
+
+        function updateProgressBar() {
+            var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+            var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrollPercentage = (scrollPosition / scrollHeight) * 100;
+
+            document.getElementById("progressBar").style.width = scrollPercentage + "%";
+        }
+
+        $buttonScrollTop.addEventListener("click", e => window.scrollTo(0, 0));
+        // setInterval(() => {
+        //     let scrollY = window.scrollY;
+        //     if (scrollY >= 1000) {
+        //         $buttonScrollTop.style.opacity = "100%";
+        //     } else {
+        //         $buttonScrollTop.style.opacity = "0";
+        //     }
+        // }, 300);
 
         d.addEventListener("DOMContentLoaded", e => {
             if (window.innerWidth >= 992) {
