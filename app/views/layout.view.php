@@ -6,6 +6,8 @@ require_once("app/config/Env.php");
 $route = new Routes();
 $env = new Env();
 
+$APP_URL = $env->APP_URL;
+
 $userData = "";
 
 if (isset($_SESSION["userlogged"])) {
@@ -140,7 +142,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                     </div>
                 </div>
             </nav>
-            <div class="progress-container">
+            <div class="progress-container z-2">
                 <div class="progress-bar" id="progressBar"></div>
             </div>
         </header>
@@ -169,10 +171,40 @@ $titleFormat = strtoupper($replaceSlashUrl);
 
             </section>
         </main>
-        <span class="fa-solid fa-arrow-up text-white text-decoration-none rounded-circle bg-primary d-flex align-items-center justify-content-center position-fixed cursor-pointer z-3 visually-hidden" style="width: 3em;height: 3em;bottom: 10vh;right: 3vh;" id="go-top"></span>
+        <span class="fa-solid fa-arrow-up text-white text-decoration-none rounded-circle bg-blue d-flex align-items-center justify-content-center position-fixed cursor-pointer z-3 visually-hidden" style="width: 3em;height: 3em;bottom: 10vh;right: 3vh;" id="go-top"></span>
 
-        <footer class="footer-bg w-100 text-secondary mt-4 px-md-5 bg-dark">
-            <div class="row align-items-center  m-0 py-4">
+        <footer class="footer-bg w-100 text-secondary mt-4">
+            <div class="row bg-very-dark px-md-5 w-100 mx-0 py-5">
+                <div class="col-12 col-md-4 mt-5 mt-md-0">
+                    <h4 class="text-light fw-light uppercase">Enlaces Útiles</h4>
+                    <div class="title-line color"></div>
+                    <ul class="list-unstyled lh-lg">
+                        <li><a href="<?php echo $APP_URL ?>sace/onlineapplications" class="text-decoration-none text-secondary fs-6"><i class="fa fa-angle-right fs-6"></i> Solicitudes Online</a></li>
+                        <li><a href="https://sace.se.gob.hn/" target="_blank" class="text-decoration-none text-secondary fs-6"><i class="fa fa-angle-right fs-6"></i> SACE</a></li>
+                        <li><a href="<?php echo $APP_URL ?>sace/sartsace" class="text-decoration-none text-secondary fs-6"><i class="fa fa-angle-right fs-6"></i> SART-SACE</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary fs-6"><i class="fa fa-angle-right fs-6"></i> UTI</a></li>
+                        <li><a href="<?php echo $APP_URL ?>login" class="text-decoration-none text-secondary fs-6"><i class="fa fa-angle-right fs-6"></i> Acceso</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mt-5 mt-md-0">
+                    <h4 class="text-light fw-light uppercase">Acerca de nosotros</h4>
+                    <div class="title-line color"></div>
+                    <p class="m-bottom3">Somos una institución encargada de gestionar y coordinar todos los procesos educativos del departamento de Copán, ofreciendo un servicio integral al magisterio.
+                        <br>
+                        Nos dedicamos a garantizar que los docentes cuenten con las herramientas, el apoyo y los recursos necesarios para llevar a cabo su labor educativa de manera eficiente y con los más altos estándares de calidad.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 mt-5 mt-md-0">
+                    <h4 class="text-light fw-light uppercase">Contacto</h4>
+                    <div class="title-line color"></div>
+                    <ul class="list-unstyled lh-lg">
+                        <li><i class="fa fa-map-marker"></i> Q6C7+WCJ, 41101 Santa Rosa de Copan, Copán</li>
+                        <li><i class="fa fa-phone"></i> +1 (012) 345 6789</li>
+                        <li><i class="fa fa-envelope"></i> info@yourdomain.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row align-items-center m-0 py-4 bg-dark px-md-5 w-100">
                 <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0"> Copyright © 2024 OpCode. All rights reserved. </div>
                 <div class="col-12 col-md-6 text-center">
                     <ul class="social-icons-footer list-unstyled d-flex align-items-center justify-content-center justify-content-md-end m-0">

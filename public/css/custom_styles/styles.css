@@ -40,6 +40,14 @@ body {
   cursor: pointer;
 }
 
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-very-dark {
+  background-color: var(--very-dark);
+}
+
 /* SLIDER TOP HOME */
 
 .c-item {
@@ -179,7 +187,6 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 1000;
 }
 .progress-bar {
   height: 5px;
