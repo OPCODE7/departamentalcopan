@@ -1,5 +1,9 @@
 <?php
-// var_dump($_SESSION["userlogged"]);
+require_once("app/config/Env.php");
+
+$env = new Env();
+
+$APP_URL = $env->APP_URL;
 ?>
 
 <div class="carousel slide w-100 mb-4" data-bs-ride="carousel" id="hero-carousel">
@@ -32,29 +36,29 @@
 
 <section class="cards-utilities w-100 px-3 px-md-4 px-lg-5">
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-lg-3 mt-4 mt-md-0">
             <div class="card">
                 <div class="cover item-a">
                     <h1> Sistema <br>UTI-Reingeniería</h1>
                     <div class="card-back">
                         <span>Sistema de Administración, Gerencia y Gestión de Datos Estadísticos</span>
-                        <a href="#" class="ov-btn-slide-left text-decoration-none">Ver</a>
+                        <a href="<?php echo $APP_URL ?>login" class="ov-btn-slide-left text-decoration-none">Ver</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-lg-3 mt-4 mt-md-0">
             <div class="card">
                 <div class="cover item-b">
                     <h1>Unidades y <br>Subdirecciones</h1>
                     <div class="card-back">
                         <span>Operaciones de las Unidades y Subdirecciones de la Dirección Departamental de Educación.</span>
-                        <a href="#" class="ov-btn-slide-left text-decoration-none">Ver</a>
+                        <a href="<?php echo $APP_URL ?>operations" class="ov-btn-slide-left text-decoration-none">Ver</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-lg-3 mt-4 mt-md-0">
             <div class="card">
                 <div class="cover item-c">
                     <h1>Herramientas<br>Docentes</h1>
@@ -65,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-lg-3 mt-4 mt-md-0">
             <div class="card">
                 <div class="cover item-d">
                     <h1>Herramientas<br>Estudiantes</h1>
@@ -227,7 +231,7 @@
         <p>- Lorem ipsum dolor sit amet isse potenti nulla esquam ante aliquet cusempe posuere -</p>
     </div>
 
-    <div class="col-md-3 col-sm-6 text-center m-bottom4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
         <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
@@ -240,7 +244,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6 text-center m-bottom4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
         <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
@@ -253,7 +257,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6 text-center m-bottom4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
         <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
@@ -266,7 +270,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6 text-center m-bottom4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
         <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>

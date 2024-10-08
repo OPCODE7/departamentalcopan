@@ -171,7 +171,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
 
             </section>
         </main>
-        <span class="fa-solid fa-arrow-up text-white text-decoration-none rounded-circle bg-blue d-flex align-items-center justify-content-center position-fixed cursor-pointer z-3 visually-hidden" style="width: 3em;height: 3em;bottom: 10vh;right: 3vh;" id="go-top"></span>
+        <span class="fa-solid fa-arrow-up text-white text-decoration-none rounded-circle bg-blue d-flex align-items-center justify-content-center position-fixed cursor-pointer z-3 visually-hidden shadow-lg" style="width: 3em;height: 3em;bottom: 10vh;right: 3vh;" id="go-top"></span>
 
         <footer class="footer-bg w-100 text-secondary mt-4">
             <div class="row bg-very-dark px-md-5 w-100 mx-0 py-5">

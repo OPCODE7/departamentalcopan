@@ -48,6 +48,25 @@ body {
   background-color: var(--very-dark);
 }
 
+.btn-blue {
+  background-color: var(--blue);
+  color: var(--very-light-gray);
+}
+
+.btn-blue:hover {
+  opacity: 0.9;
+}
+
+.btn-outline-blue {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.btn-outline-blue:hover {
+  background-color: var(--blue);
+  color: var(--very-light-gray);
+}
+
 /* SLIDER TOP HOME */
 
 .c-item {
@@ -401,6 +420,23 @@ body {
   float: left;
   padding: 100px 0;
 }
+
+/* UTI SECTION */
+
+.aside-links-uti {
+  color: var(--blue);
+}
+
+.aside-links-uti > a {
+  color: inherit;
+}
+
+.aside-links-uti:hover {
+  background-color: var(--blue);
+  color: var(--very-light-gray);
+  transition: all 0.3s;
+}
+
 @media (min-width: 768px) {
 }
 
