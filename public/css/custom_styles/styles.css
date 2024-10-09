@@ -67,6 +67,12 @@ body {
   color: var(--very-light-gray);
 }
 
+.glass {
+  background: #2991d6;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
 /* SLIDER TOP HOME */
 
 .c-item {
@@ -305,7 +311,7 @@ body {
 }
 
 .card .cover.item-d {
-  background-image: url("https://www.departamentaleducacionocotepeque.com/images/2023/01/25/tecnologa.jpg");
+  background-image: url("../../../public/assets/images/herramientas-estudiantes.jpg");
 }
 .card .cover h1 {
   font-weight: 600;
@@ -425,6 +431,7 @@ body {
 
 .aside-links-uti {
   color: var(--blue);
+  background-color: transparent;
 }
 
 .aside-links-uti > a {
