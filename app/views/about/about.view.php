@@ -7,7 +7,7 @@
         <div class="col-12 col-md-6">
             <img src="<?php echo $env->APP_URL ?>public/assets/images/depacopan.jpg" class="img-fluid w-100 h-100" alt=" sede-departamental-copan">
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mt-4 mt-md-0">
             <p class="text-secondary">
                 Somos una empresa comprometida con el desarrollo educativo del país, brindando servicios especializados para el magisterio, con un enfoque centrado en la eficiencia y accesibilidad de los procesos administrativos y académicos. Nuestra misión es facilitar las gestiones de los docentes a través de soluciones tecnológicas innovadoras que permitan ahorrar tiempo y recursos, asegurando que puedan enfocarse en lo que realmente importa: la enseñanza y la formación de las nuevas generaciones.
                 <br>

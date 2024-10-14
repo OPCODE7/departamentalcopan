@@ -450,6 +450,23 @@ aside {
   transition: all 0.3s;
 }
 
+/* ONLINE APPLICATIONS */
+
+.card-online-app {
+  border: none;
+}
+.card-online-app:hover {
+  /* transform: translateY(-10px); */
+  border: 2px solid var(--blue);
+  transition: all 0.1s ease-in-out;
+}
+
+.title-online-app {
+  background: #2991d6;
+  background: linear-gradient(to right, #2991d6 0%, #cfa98b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @media (min-width: 768px) {
 }
 
