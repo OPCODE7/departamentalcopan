@@ -1,5 +1,11 @@
 <div class="row  px-3 px-md-4 px-lg-5 mt-4">
-    <section class="col-12">
+    <div class="col-12">
+        <h5>Link del Sistema de Alerta y Respuesta Temprana (SART)</h5>
+        <a href="https://sart.se.gob.hn/" class="animated zoomIn text-blue" target="_blank">
+            Ingresar a sistema SART-SACE
+        </a>
+    </div>
+    <section class="col-12 mt-4">
         <img src="<?php echo $APP_URL ?>public/assets/images/protocolo-insercion.jpg" alt="protocolo-insercion-sart" class="img-fluid">
     </section>
     <div class="col-12 mt-4">

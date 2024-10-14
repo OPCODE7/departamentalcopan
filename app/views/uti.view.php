@@ -1,5 +1,5 @@
-<div class="row m-0 p-0 container-fluid justify-content-end">
-    <aside class="col-4 col-md-3 p-0 aside position-fixed start-0 overflow-y-scroll" style="height: 75vh;">
+<div class="row m-0 p-0 justify-content-end">
+    <aside class="col-4 col-md-3 p-0 z-3 aside overflow-y-scroll bg-dark" style="height: 75vh;">
         <header class="w-100">
             <div class="border-bottom border-secondary-subtle w-100 d-flex ps-3 align-items-center" style="height: 10vh;">
                 <span class="text-decoration-none d-flex align-items-center" id="uti-home">
@@ -36,17 +36,15 @@
         </div>
     </aside>
     <main class="col-12 col-md-9 px-0">
-        <header class="border-bottom border-secondary-subtle w-100 d-flex justify-content-between justify-content-md-end align-items-center px-2 m-0" style="height: 10vh;">
-            <i class="fa-solid fa-bars cursor-pointer d-inline-block d-md-none"></i>
-            <a href="<?php echo $APP_URL ?>" class="btn btn-outline-blue text-decoration-none fs-7 fw-semibold"><i class="fa-solid fa-file-lines me-2"></i>Hacer un tramite en SACE</a>
+        <header class="border-bottom border-secondary-subtle w-100 d-flex justify-content-end align-items-center px-2 m-0" style="height: 10vh;">
+            <a href="https://forms.gle/WFHbwX8VUZk6W9pf8" class="btn btn-outline-blue text-decoration-none fs-7 fw-semibold" target="_blank"><i class="fa-solid fa-file-lines me-2"></i>Hacer un tramite en SACE</a>
+            <i class="fa-solid fa-bars cursor-pointer d-inline-block d-md-none ms-2 fs-1"></i>
         </header>
-        <div class="row m-0 p-0 d-flex justify-content-center" style="min-height: 90vh;">
+        <div class="row m-0 p-0 d-flex justify-content-center w-100" style="min-height: 90vh;">
             <div class="alert text-light alert-dismissible fade show col-12 col-md-10 mt-5 h-25 animated zoomIn glass" role="alert" id="alert-uti">
                 <strong class="fs-5"><i class="fa-solid fa-circle-info"></i> ¡Aviso importante para docentes!</strong>
                 <p>Hemos implementado estos servicios en línea para todos los docentes del departamento de Ocotepeque que necesiten realizar algún trámite en SACE, pero no tienen acceso activo o no pueden desplazarse hasta la oficina departamental de Ocotepeque. Les recomendamos subir los documentos de la mejor calidad posible, ya que imprimimos esta información como constancia del trámite realizado, según lo establece el reglamento de USINIEH.</p>
-
             </div>
-
             <section class="row px-3 px-md-4 px-lg-5 mt-3 d-none section-uti" id="manual-sace-section">
                 <div class="col-12 col-md-4">
                     <a href="#" class="card text-center border-0 shadow text-decoration-none p-3 animated zoomIn" style="height: 200px;">

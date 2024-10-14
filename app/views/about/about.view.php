@@ -1,14 +1,23 @@
 <div class="container-fluid">
     <div class="row vw-100 justify-content-center align-items-center flex-column text-light w-100 mb-4" id="banner-about">
         <h2 class="text-uppercase text-light fw-bold w-auto animated bounceIn">Acerca de nosotros</h2>
-        <span class="d-block w-auto">Una breve historia sobre nuestra compañía</span>
+        <span class="d-block w-auto">Un breve resumen sobre nuestra compañía</span>
     </div>
     <div class="row px-3 px-md-4 px-lg-5">
         <div class="col-12 col-md-6">
             <img src="<?php echo $env->APP_URL ?>public/assets/images/depacopan.jpg" class="img-fluid w-100 h-100" alt=" sede-departamental-copan">
         </div>
         <div class="col-12 col-md-6">
-            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil ullam libero, quas nam commodi reprehenderit molestias, natus facilis veniam ex ipsam iusto enim aut quos praesentium porro ipsum, accusamus dicta? Tempore pariatur quo vitae accusantium, nulla, maiores necessitatibus, nihil itaque alias a exercitationem maxime ullam? Saepe, aliquid! Natus amet ducimus dolore maiores architecto rem dicta quas rerum labore quo perferendis veritatis, eos repellat veniam beatae numquam voluptatem hic, ipsa doloribus, exercitationem consequatur cum sit. Reprehenderit dicta provident omnis quas, ratione impedit tenetur rem officiis optio unde ipsa quis mollitia similique quae delectus corporis sit! Recusandae vitae voluptates optio, ad a numquam rem, eos cum exercitationem voluptas odit necessitatibus voluptate culpa error eaque ut temporibus, cupiditate quos aperiam nulla et quas qui? Culpa hic eveniet eaque dicta, ea dignissimos tempore explicabo qui? Quasi ut dolore molestias placeat asperiores suscipit dignissimos, harum rem ullam ipsam repudiandae numquam vel sapiente saepe nesciunt vero molestiae itaque consectetur? Enim ipsam accusamus ad, pariatur tempora aliquam aperiam nemo culpa voluptatem! Quasi magnam impedit, animi fugit et neque obcaecati laudantium natus explicabo culpa possimus, expedita, quod tempore necessitatibus incidunt recusandae quam est asperiores hic dolorum! Voluptatum molestias voluptates mollitia quod expedita vero natus quaerat deserunt modi? Eligendi.</p>
+            <p class="text-secondary">
+                Somos una empresa comprometida con el desarrollo educativo del país, brindando servicios especializados para el magisterio, con un enfoque centrado en la eficiencia y accesibilidad de los procesos administrativos y académicos. Nuestra misión es facilitar las gestiones de los docentes a través de soluciones tecnológicas innovadoras que permitan ahorrar tiempo y recursos, asegurando que puedan enfocarse en lo que realmente importa: la enseñanza y la formación de las nuevas generaciones.
+                <br>
+                Nos especializamos en optimizar procesos que incluyen la gestión de trámites en SACE, proporcionando una solución a aquellos docentes que, por diversas razones, no pueden realizar sus gestiones de manera presencial. Además, nos aseguramos de que cada documento y solicitud sea procesado con la mayor precisión y profesionalismo, cumpliendo con los más altos estándares de calidad.
+                <br>
+
+                Nuestra visión es ser líderes en la prestación de servicios educativos y administrativos para el magisterio, siendo un aliado estratégico para todos los docentes del país. Apostamos por el uso de la tecnología como herramienta fundamental para mejorar los procesos educativos, buscando siempre la excelencia y satisfacción de nuestros usuarios.
+                <br>
+                En resumen, somos un puente entre los docentes y las instituciones, comprometidos con la mejora continua y la transformación del sistema educativo a través de soluciones innovadoras que responden a las necesidades actuales del sector.
+            </p>
         </div>
 
     </div>

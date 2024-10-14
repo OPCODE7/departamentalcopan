@@ -147,36 +147,36 @@ $APP_URL = $env->APP_URL;
 
 </section>
 
-<div class="section-lg bg-texture mt-4">
+<section class="section-lg bg-texture mt-4" id="section-statistics">
     <div class="container">
         <div class="row text-light">
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <div class="text-center"> <i class="fa-solid fa-chalkboard-user fs-2"></i>
-                    <div class="fw-bold mt-1 numbers"><span id="target1">490</span>K</div>
+                    <div class="fw-bold mt-1 numbers"><span id="target1" data-bs-counters>490</span>K</div>
                     <p class="mt-1">DOCENTES</p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <div class="text-center"><i class="fa-solid fa-graduation-cap fs-2"></i>
-                    <div class="fw-bold mt-1 numbers"><span id="target2">3249</span></div>
+                    <div class="fw-bold mt-1 numbers"><span id="target2" data-bs-counters>3249</span></div>
                     <p class="mt-1">ESTUDIANTES</p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4 text-light">
                 <div class="text-center"> <i class="fa-solid fa-school fs-2"></i>
-                    <div class="fw-bold mt-1 numbers"><span id="target3">5340</span></div>
+                    <div class="fw-bold mt-1 numbers"><span id="target3" data-bs-counters>5340</span></div>
                     <p class="mt-1">ESCUELAS</p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <div class="text-center"> <i class="fa-solid fa-people-roof fs-2"></i>
-                    <div class="fw-bold mt-1 numbers"><span id="target4">8512</span></div>
+                    <div class="fw-bold mt-1 numbers"><span id="target4" data-bs-counters>8512</span></div>
                     <p class="mt-1">FAMILIAS</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <section class="contact row w-100 justify-content-center align-items-center" style="height: 90vh;background-color: var(--very-dark);">
     <form class="col-12 col-md-8 col-lg-6 my-3 text-light" method="POST" id="change-pwd-form">
@@ -295,25 +295,44 @@ $APP_URL = $env->APP_URL;
         $target1 = document.getElementById("target1"),
         $target2 = document.getElementById("target2"),
         $target3 = document.getElementById("target3"),
-        $target4 = document.getElementById("target4");
+        $target4 = document.getElementById("target4"),
+        $section = document.querySelector("#section-statistics");
 
-    let count1 = 0,
-        count2 = 0,
-        count3 = 0,
-        count4 = 0;
+    const callBack = entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let count1 = 0,
+                    count2 = 0,
+                    count3 = 0,
+                    count4 = 0;
 
 
-    let countersInterval = setInterval(() => {
-        if (count1 < 50) count1++;
-        if (count2 < 39) count2++;
-        if (count3 < 10) count3++;
-        if (count4 < 12) count4++;
+                let countersInterval = setInterval(() => {
+                    if (count1 < 50) count1++;
+                    if (count2 < 39) count2++;
+                    if (count3 < 10) count3++;
+                    if (count4 < 12) count4++;
 
-        $target1.textContent = count1;
-        $target2.textContent = count2;
-        $target3.textContent = count3;
-        $target4.textContent = count4;
+                    $target1.textContent = count1;
+                    $target2.textContent = count2;
+                    $target3.textContent = count3;
+                    $target4.textContent = count4;
 
-        if (count1 == 50 && count2 == 39 && count3 == 10 && count4 == 12) clearInterval(countersInterval);
-    }, 50);
+                    if (count1 == 50 && count2 == 39 && count3 == 10 && count4 == 12) clearInterval(countersInterval);
+                }, 50);
+            } else {
+                count1 = 0;
+                count2 = 0;
+                count3 = 0;
+                count4 = 0;
+            }
+
+        });
+    };
+
+    const observer = new IntersectionObserver(callBack, {
+        threshold: [0.5, 0.75]
+    });
+
+    observer.observe($section);
 </script>

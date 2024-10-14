@@ -429,6 +429,12 @@ body {
 
 /* UTI SECTION */
 
+aside {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .aside-links-uti {
   color: var(--blue);
   background-color: transparent;

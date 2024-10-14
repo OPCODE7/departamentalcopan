@@ -2,7 +2,7 @@
     <h4 class="fw-bold col-12 text-center mb-3 animated bounceInDown">SERVICIOS EN LÍNEA DE LA DIRECCIÓN PARTAMENTAL DE EDUCACIÓN COPÁN
     </h4>
     <div class="col-12 col-md-4">
-        <a href="#" class="card text-center border-0 shadow text-decoration-none p-3 animated bounceInLeft" style="height: 200px;">
+        <a href="https://forms.gle/opeXZnvfBaiGY6oF6" class="card text-center border-0 shadow text-decoration-none p-3 animated bounceInLeft" style="height: 200px;" target="_blank">
             <div class="card-body d-flex flex-column justify-content-center align-items-center">
                 <h5 class="card-title">Solicitud en Línea de Certificación de Trabajo (SECRETARÍA)</h5>
                 <i class="fa-regular fa-file-lines fs-1 text-blue"></i>

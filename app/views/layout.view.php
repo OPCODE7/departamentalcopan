@@ -124,7 +124,18 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                     <li><a class="dropdown-item" href="<?php echo $env->APP_URL ?>sace/onlineapplications">Solicitudes Online</a></li>
                                     <li><a class="dropdown-item" href="#">Calendario 2024</a></li>
                                     <li><a class="dropdown-item" href="https://siie.se.gob.hn/dashboard" target="_blank">Sistema SIIE</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo $APP_URL ?>sace/sartsace">SART-SACE</a></li>
 
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
+                                    CONCURSO DOCENTE
+                                </a>
+                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                </button>
+                                <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0">
+                                    <li><a class="dropdown-item" href="https://www.se.gob.hn/constancia_concurso/" target="_blank">Constancia concurso</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -182,7 +193,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                         <li><a href="<?php echo $APP_URL ?>sace/onlineapplications" class="text-decoration-none text-secondary fs-6"><i class="fa fa-angle-right fs-6"></i> Solicitudes Online</a></li>
                         <li><a href="https://sace.se.gob.hn/" target="_blank" class="text-decoration-none text-secondary fs-6"><i class="fa fa-angle-right fs-6"></i> SACE</a></li>
                         <li><a href="<?php echo $APP_URL ?>sace/sartsace" class="text-decoration-none text-secondary fs-6"><i class="fa fa-angle-right fs-6"></i> SART-SACE</a></li>
-                        <li><a href="#" class="text-decoration-none text-secondary fs-6"><i class="fa fa-angle-right fs-6"></i> UTI</a></li>
+                        <li><a href="<?php echo $APP_URL ?>uti" class="text-decoration-none text-secondary fs-6"><i class="fa fa-angle-right fs-6"></i> UTI</a></li>
                         <li><a href="<?php echo $APP_URL ?>login" class="text-decoration-none text-secondary fs-6"><i class="fa fa-angle-right fs-6"></i> Acceso</a></li>
                     </ul>
                 </div>
