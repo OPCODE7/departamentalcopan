@@ -125,6 +125,29 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                     <li><a class="dropdown-item" href="#">Calendario 2024</a></li>
                                     <li><a class="dropdown-item" href="https://siie.se.gob.hn/dashboard" target="_blank">Sistema SIIE</a></li>
                                     <li><a class="dropdown-item" href="<?php echo $APP_URL ?>sace/sartsace">SART-SACE</a></li>
+                                    <li class="dropdown-item nav-item dropend" id="dropdown-item-cooperants">
+                                        <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
+                                            Salud Campaña
+                                        </a>
+                                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        </button>
+                                        <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0">
+                                            <li><a class="dropdown-item" href="#">Estadística Rabia</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-item nav-item dropend" id="dropdown-item-cooperants">
+                                        <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
+                                            Monitoreos
+                                        </a>
+                                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        </button>
+                                        <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0">
+                                            <li><a class="dropdown-item" href="#">Estadísticos lunes cívico</a></li>
+                                            <li><a class="dropdown-item" href="#">Llenar monitoreo lunes</a></li>
+                                            <li><a class="dropdown-item" href="#">Monitoreo 200 días clase nacional</a></li>
+                                            <li><a class="dropdown-item" href="<?php echo $APP_URL ?>sace/monitoreos/yosipuedo">Yo si puedo</a></li>
+                                        </ul>
+                                    </li>
 
                                 </ul>
                             </li>
@@ -148,7 +171,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                     <li><a class="dropdown-item" href="#">Consulta Docente</a></li>
                                 </ul>
                             </li>
-                            <a class="nav-link" href="#">PNTED</a>
+                            <a class="nav-link" href="<?php echo $APP_URL ?>pnted">PNTED</a>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
-<div class="row m-0 p-0 justify-content-end">
-    <aside class="col-4 col-md-3 p-0 z-3 aside overflow-y-scroll bg-dark" style="height: 75vh;">
+<div class="row m-0 p-0 justify-content-end position-relative">
+    <aside class="col-4 col-md-3 p-0 z-3 overflow-y-scroll aside-uti">
         <header class="w-100">
             <div class="border-bottom border-secondary-subtle w-100 d-flex ps-3 align-items-center" style="height: 10vh;">
                 <span class="text-decoration-none d-flex align-items-center" id="uti-home">
@@ -101,7 +101,7 @@
 
 <script>
     const $btnDropdown = document.getElementById("dropdown-btn"),
-        $aside = document.querySelector(".aside"),
+        $aside = document.querySelector(".aside-uti"),
         $alertUti = document.querySelector("#alert-uti"),
         $manualSaceSection = document.querySelector("#manual-sace-section");
     $aside.addEventListener("click", e => {

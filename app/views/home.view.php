@@ -4,7 +4,61 @@ require_once("app/config/Env.php");
 $env = new Env();
 
 $APP_URL = $env->APP_URL;
+
+$email = "";
+$errorsvalidate = "";
+$message = "";
+$email = "";
+$to = "";
+$subject = "";
+$message = "";
+$headers = "";
+$sent = "";
+$msgError = "";
+$name = "";
+
+$regExp = [
+    "email" => "/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/",
+    "name" => "/^[a-zA-ZÀ-ȳ\s]{1,50}$/",
+    "subject" => "/^[a-zA-ZÀ-ȳ\s]{1,30}$/"
+
+];
+
+if (isset($_POST["sendMail"])) {
+    $sent = false;
+    $email = $_POST["email"];
+    $name = $_POST["name"];
+    $message = $_POST["message"];
+    $subject = $_POST["subject"];
+
+    if (preg_match($regExp["name"], $name) == 0) {
+        $errorsvalidate = "Ingresar nombre válido.";
+    } else if (preg_match($regExp["email"], $email) == 0) {
+        $errorsvalidate = "Ingresar email válido.";
+    } else if (preg_match($regExp["subject"], $subject) == 0) {
+        $errorsvalidate = "Ingresar asunto válido.";
+    } else if (empty($message)) {
+        $errorsvalidate = "Ingresar mensaje válido.";
+    } else {
+
+        $to = "opcode777@gmail.com";
+        $message = <<<HTML
+        <img src="<?php echo $APP_URL?>/public/images/logo-depa-copan.png" alt="logo-depa-copan" width="100" height="100" class="img-fluid">
+        <h2>De {$email}:</h2>
+        <h4>$message</h4>
+        HTML;
+
+        $headers = "Content-type: text/html; charset=utf-8 \r\n";
+        $headers .= "MIME-Version: 1.0 \r\n";
+        $headers .= "From: Formulario de Contacto<departamentalcopan>";
+
+        if (mail($to, $subject, $message, $headers)) {
+            $sent = true;
+        }
+    }
+}
 ?>
+
 
 <div class="carousel slide w-100 mb-4" data-bs-ride="carousel" id="hero-carousel">
     <div class="carousel-indicators">
@@ -150,27 +204,31 @@ $APP_URL = $env->APP_URL;
 <section class="section-lg bg-texture mt-4" id="section-statistics">
     <div class="container">
         <div class="row text-light">
+            <div class="col-12 mb-4">
+                <h2 class="fw-semibold mb-1">Resultados alcanzados</h2>
+                <div class="title-line bg-light" style="width: 50px;"></div>
+            </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <div class="text-center"> <i class="fa-solid fa-chalkboard-user fs-2"></i>
-                    <div class="fw-bold mt-1 numbers"><span id="target1" data-bs-counters>490</span>K</div>
+                    <div class="fw-bold mt-1 numbers"><span id="target1" data-bs-counters>3178</span></div>
                     <p class="mt-1">DOCENTES</p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <div class="text-center"><i class="fa-solid fa-graduation-cap fs-2"></i>
-                    <div class="fw-bold mt-1 numbers"><span id="target2" data-bs-counters>3249</span></div>
+                    <div class="fw-bold mt-1 numbers"><span id="target2" data-bs-counters>74869</span></div>
                     <p class="mt-1">ESTUDIANTES</p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4 text-light">
                 <div class="text-center"> <i class="fa-solid fa-school fs-2"></i>
-                    <div class="fw-bold mt-1 numbers"><span id="target3" data-bs-counters>5340</span></div>
+                    <div class="fw-bold mt-1 numbers"><span id="target3" data-bs-counters>1278</span></div>
                     <p class="mt-1">ESCUELAS</p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <div class="text-center"> <i class="fa-solid fa-people-roof fs-2"></i>
-                    <div class="fw-bold mt-1 numbers"><span id="target4" data-bs-counters>8512</span></div>
+                    <div class="fw-bold mt-1 numbers"><span id="target4" data-bs-counters>65</span>K</div>
                     <p class="mt-1">FAMILIAS</p>
                 </div>
             </div>
@@ -211,10 +269,25 @@ $APP_URL = $env->APP_URL;
                 </div>
                 <div id="alert-error" class="mt-3"></div>
             </div>
+            <?php
+            if ($errorsvalidate != "") {
+
+            ?>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-danger alert-dismissible fade show mb-0 py-2" role="alert">
+                            <strong class="fs-8"><?php echo $errorsvalidate ?></strong>
+                            <button type="button" class="btn-close top-50 translate-middle" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            <?php
+            }
+            ?>
 
             <div class="col-12">
                 <button class="btn btn-primary text-uppercase bg-blue fw-semibold position-relative w-100">
-                    <input name="send" value="" class="bg-transparent w-100 h-100 position-absolute start-0 border-0 top-0 outline-none btn">
+                    <input name="sendMail" value="" class="bg-transparent w-100 h-100 position-absolute start-0 border-0 top-0 outline-none btn">
                     <i class="fa-solid fa-paper-plane me-2"></i>
                     </i>Enviar</input>
                 </button>
@@ -288,8 +361,6 @@ $APP_URL = $env->APP_URL;
 
 </div>
 
-
-
 <script>
     const
         $target1 = document.getElementById("target1"),
@@ -304,14 +375,16 @@ $APP_URL = $env->APP_URL;
                 let count1 = 0,
                     count2 = 0,
                     count3 = 0,
-                    count4 = 0;
+                    count4 = 0,
+                    increment2 = Math.floor(74869 / 200);
+
 
 
                 let countersInterval = setInterval(() => {
-                    if (count1 < 50) count1++;
-                    if (count2 < 39) count2++;
-                    if (count3 < 10) count3++;
-                    if (count4 < 12) count4++;
+                    if (count1 < 3178) count1 += 100;
+                    if (count2 < 74869) count2 += increment2;
+                    if (count3 < 1278) count3++;
+                    if (count4 < 65) count4++;
 
                     $target1.textContent = count1;
                     $target2.textContent = count2;
@@ -319,7 +392,7 @@ $APP_URL = $env->APP_URL;
                     $target4.textContent = count4;
 
                     if (count1 == 50 && count2 == 39 && count3 == 10 && count4 == 12) clearInterval(countersInterval);
-                }, 50);
+                }, 5);
             } else {
                 count1 = 0;
                 count2 = 0;
