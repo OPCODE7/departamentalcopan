@@ -125,8 +125,8 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                     <li><a class="dropdown-item" href="#">Calendario 2024</a></li>
                                     <li><a class="dropdown-item" href="https://siie.se.gob.hn/dashboard" target="_blank">Sistema SIIE</a></li>
                                     <li><a class="dropdown-item" href="<?php echo $APP_URL ?>sace/sartsace">SART-SACE</a></li>
-                                    <li class="dropdown-item nav-item dropend" id="dropdown-item-cooperants">
-                                        <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
+                                    <li class="dropdown-item nav-item dropend" id="">
+                                        <a class="nav-link d-inline-block px-0" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
                                             Salud Campaña
                                         </a>
                                         <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
@@ -135,8 +135,8 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                             <li><a class="dropdown-item" href="#">Estadística Rabia</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown-item nav-item dropend" id="dropdown-item-cooperants">
-                                        <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
+                                    <li class="dropdown-item nav-item dropend" id="">
+                                        <a class="nav-link d-inline-block px-0" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
                                             Monitoreos
                                         </a>
                                         <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">

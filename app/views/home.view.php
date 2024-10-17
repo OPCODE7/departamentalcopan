@@ -375,15 +375,14 @@ if (isset($_POST["sendMail"])) {
                 let count1 = 0,
                     count2 = 0,
                     count3 = 0,
-                    count4 = 0,
-                    increment2 = Math.floor(74869 / 200);
+                    count4 = 0;
 
 
 
                 let countersInterval = setInterval(() => {
-                    if (count1 < 3178) count1 += 100;
-                    if (count2 < 74869) count2 += increment2;
-                    if (count3 < 1278) count3++;
+                    if (count1 < 3178) count1 += 454;
+                    if (count2 < 74869) count2 += 37434.5;
+                    if (count3 < 1278) count3 += 71;
                     if (count4 < 65) count4++;
 
                     $target1.textContent = count1;
@@ -391,8 +390,8 @@ if (isset($_POST["sendMail"])) {
                     $target3.textContent = count3;
                     $target4.textContent = count4;
 
-                    if (count1 == 50 && count2 == 39 && count3 == 10 && count4 == 12) clearInterval(countersInterval);
-                }, 5);
+                    if (count1 == 3178 && count2 == 74869 && count3 == 1278 && count4 == 65) clearInterval(countersInterval);
+                }, 10);
             } else {
                 count1 = 0;
                 count2 = 0;
