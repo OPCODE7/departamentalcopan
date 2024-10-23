@@ -107,8 +107,6 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                     </li>
                                     <li><a class="dropdown-item" href="#">Escuelas Normales</a></li>
                                     <li><a class="dropdown-item" href="#">Plan 365</a></li>
-                                    <li><a class="dropdown-item" href="#">Correo</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog</a></li>
                                     <li><a class="dropdown-item" href="#">Rendición de cuentas 2024</a></li>
 
 
@@ -180,8 +178,6 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 <div class="progress-bar" id="progressBar"></div>
             </div>
         </header>
-
-
         <main class="row w-100 m-0 position-relative overflow-hidden px-0 mx-0" style="min-height: 80vh;">
             <section class="col-12 p-0 d-flex flex-column align-items-center">
                 <?php
@@ -207,7 +203,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
         </main>
         <span class="fa-solid fa-arrow-up text-white text-decoration-none rounded-circle bg-blue d-flex align-items-center justify-content-center position-fixed cursor-pointer z-3 visually-hidden shadow-lg" style="width: 3em;height: 3em;bottom: 10vh;right: 3vh;" id="go-top"></span>
 
-        <footer class="footer-bg w-100 text-secondary mt-4">
+        <footer class="footer-bg w-100 text-secondary">
             <div class="row bg-very-dark px-md-5 w-100 mx-0 py-5">
                 <div class="col-12 col-md-4 mt-5 mt-md-0">
                     <h4 class="text-light fw-light uppercase">Enlaces Útiles</h4>
@@ -250,8 +246,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                     </ul>
                 </div>
             </div>
-    </div>
-    </footer>
+        </footer>
     </div>
     <script src="<?php echo $env->APP_URL  . "public/js/bootstrap.bundle.min.js" ?>"></script>
 
