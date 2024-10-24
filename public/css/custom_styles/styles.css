@@ -472,12 +472,66 @@ body {
 
 /* PNTED */
 
+#container-image-pnted {
+  & img {
+    left: 0;
+  }
+
+  & .opacity-div {
+    opacity: 75%;
+  }
+
+  & i,
+  h5,
+  p {
+    color: var(--very-light-gray);
+  }
+}
+
 @media (min-width: 768px) {
   .aside-uti {
     position: fixed;
     top: auto;
     left: 0;
     background-color: transparent;
+  }
+
+  #container-image-pnted {
+    & img {
+      left: 100%;
+    }
+
+    & .opacity-div {
+      opacity: 0;
+    }
+
+    & i {
+      color: var(--blue);
+    }
+
+    & h5 {
+      color: var(--dark-gray);
+    }
+
+    p {
+      color: var(--medium-gray);
+    }
+  }
+
+  #container-image-pnted:hover {
+    & img {
+      left: 0;
+    }
+
+    & .opacity-div {
+      opacity: 75%;
+    }
+
+    & i,
+    h5,
+    p {
+      color: var(--very-light-gray);
+    }
   }
 }
 
