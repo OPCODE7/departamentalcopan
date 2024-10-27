@@ -3,7 +3,7 @@
         <h2 class="text-uppercase text-light fw-bold w-auto animated bounceIn">Acerca de nosotros</h2>
         <span class="d-block w-auto">Un breve resumen sobre nuestra compañía</span>
     </div>
-    <div class="row px-3 px-md-4 px-lg-5">
+    <div class="row px-3 px-md-4 px-lg-5 my-5">
         <div class="col-12 col-md-6">
             <img src="<?php echo $env->APP_URL ?>public/assets/images/depacopan.jpg" class="img-fluid w-100 h-100" alt=" sede-departamental-copan">
         </div>
