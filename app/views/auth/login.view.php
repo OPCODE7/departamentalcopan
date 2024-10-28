@@ -58,7 +58,21 @@ if (isset($_POST["login"])) {
                 <input type="password" class="p-2 form-control w-100" name="password" value="" autocomplete="off">
                 <i class="fa-solid fa-eye-slash position-absolute end-0 top-50 translate-middle cursor-pointer text-secondary" id="see-pwd"></i>
             </div>
+            <?php
+            if ($errorsvalidate != "") {
 
+            ?>
+                <div class="row mb-2">
+                    <div class="col-12">
+                        <div class="alert  alert-dismissible fade show m-0 alert-danger" role="alert">
+                            <strong class="fs-7"><?php echo $errorsvalidate ?></strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            <?php
+            }
+            ?>
             <button type="submit" class="btn btn-primary w-50 mx-auto d-block mb-2" name="login">Log In</button>
             <div class="w-100 m-auto d-flex flex-column d-flex align-items-center py-2">
                 <small><a href="<?php echo $env->APP_URL . "forgotpwd" ?>" class="text-decoration-none d-block mb-2">¿Olvidaste tu contraseña?</a></small>
@@ -67,7 +81,7 @@ if (isset($_POST["login"])) {
         </form>
     </div>
 
-    <script src="<?php echo $APP_URL . "public/js/bootstrap.min.js" ?>"></script>
+    <script src="<?php echo $env->APP_URL  . "public/js/bootstrap.bundle.min.js" ?>"></script>
 
     <script>
         const d = document,

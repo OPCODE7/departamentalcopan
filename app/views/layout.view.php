@@ -56,12 +56,31 @@ $titleFormat = strtoupper($replaceSlashUrl);
                     <li class="me-4"><a href="#" class="text-decoration-none color-blue-hover"><i class="fa-brands fa-whatsapp"></i></a></li>
                 </ul>
             </div>
-            <div class="col-12 col-md-7 text-center text-md-end fs-6 pe-md-0">
+            <div class="col-12 col-md-7 d-flex justify-content-center justify-content-md-end align-items-center fs-6 pe-md-0">
                 <small>24/7 Support (123) 456 7890</small>
                 <span>/</span>
                 <a href="#" class="text-decoration-none text-secondary "><small class="color-blue-hover">E-mail Us</small></a>
                 <span>/</span>
-                <a href="<?php echo $env->APP_URL ?>login" class="text-decoration-none text-secondary "><small class="color-blue-hover">Login</small></a>
+                <?php
+                if (!empty($userData)) {
+                ?>
+                    <small class="d-flex justify-content-center align-items-center border border-primary d-inline cursor-pointer fw-bold rounded mx-1 text-blue dropdown" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Logout" style="width: 30px;height: 30px;">
+                        DA
+                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--text-blue);" data-bs-toggle="dropdown" aria-expanded="false">
+                        </button>
+                        <ul class="dropdown-menu mt-0 py-0 rounded-0" id="logout-btn">
+                            <li style="font-size: 12px;"><a class="dropdown-item" href="<?php echo $APP_URL ?>auth/logout"><i class="fa-solid fa-right-from-bracket me-2"></i>Cerrar Sesión</a></li>
+                        </ul>
+                    </small>
+
+
+                <?php
+                } else {
+                ?>
+                    <a href="<?php echo $env->APP_URL ?>login" class="text-decoration-none text-secondary "><small class="color-blue-hover">Login</small></a>
+                <?php
+                }
+                ?>
                 <span>/</span>
                 <a href="#" class="text-decoration-none text-secondary "><small class="color-blue-hover">Register</small></a>
             </div>
