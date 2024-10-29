@@ -206,6 +206,13 @@ body {
   }
 }
 
+.nav-link-header-layout {
+  color: var(--medium-gray);
+}
+.nav-link-header-layout:hover {
+  color: var(--blue);
+}
+
 #logout-btn {
   background-color: var(--very-dark);
   .dropdown-item {

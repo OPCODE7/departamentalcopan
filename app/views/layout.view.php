@@ -99,9 +99,9 @@ $titleFormat = strtoupper($replaceSlashUrl);
                     </label>
                     <div class="collapse navbar-collapse px-3 mt-2" id="navbar-header-layout">
                         <div class="navbar-nav mt-1 mb-lg-0">
-                            <a class="nav-link" aria-current="page" href="<?php echo $env->APP_URL ?>">HOME</a>
+                            <a class="nav-link nav-link-header-layout" aria-current="page" href="<?php echo $env->APP_URL ?>">HOME</a>
                             <li class="nav-item position-relative">
-                                <a class="nav-link d-inline-block" href="<?php echo $env->APP_URL ?>about" role="button" style="color: var(--medium-gray);" id="about-links">
+                                <a class="nav-link d-inline-block nav-link-header-layout" href="<?php echo $env->APP_URL ?>about" role="button" id="about-links">
                                     ACERCA DE NOSOTROS
                                 </a>
                                 <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" style="color: var(--medium-gray);">
@@ -132,7 +132,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link d-inline-block" href="https://sace.se.gob.hn/" target="_blank" role="button" style="color: var(--medium-gray);" id="about-links">
+                                <a class="nav-link d-inline-block nav-link-header-layout" href="https://sace.se.gob.hn/" target="_blank" role="button" id="about-links">
                                     SACE
                                 </a>
                                 <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
@@ -169,7 +169,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
+                                <a class="nav-link d-inline-block nav-link-header-layout" href="#" role="button" id="about-links">
                                     CONCURSO DOCENTE
                                 </a>
                                 <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
@@ -179,7 +179,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
+                                <a class="nav-link d-inline-block nav-link-header-layout" href="#" role="button" id="about-links">
                                     ACTUALIZACIÓN DOCENTE
                                 </a>
                                 <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
@@ -188,7 +188,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                     <li><a class="dropdown-item" href="#">Consulta Docente</a></li>
                                 </ul>
                             </li>
-                            <a class="nav-link" href="<?php echo $APP_URL ?>pnted">PNTED</a>
+                            <a class="nav-link nav-link-header-layout" href="<?php echo $APP_URL ?>pnted">PNTED</a>
                         </div>
                     </div>
                 </div>
