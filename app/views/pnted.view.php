@@ -1,6 +1,6 @@
 <div class="row px-3 px-md-4 px-lg-5 my-4">
     <h4 class="fw-bold fs-1 col-12 text-center title-online-app">
-        Programa Nacional de Transformación Educativa Digital
+        Programa Nacional de Transformación Educativa Digital (PNTED)
     </h4>
     <a href="https://latam.aleks.com/" class="col-12 col-md-6 col-lg-4 text-decoration-none mt-3 py-3 position-relative d-flex flex-column justify-content-center overflow-hidden" style="height: 40vh;" id="container-image-pnted" target="_blank">
         <img src="<?php echo $APP_URL ?>public/assets/images/aleks.png" alt="Aleks-AI" class="w-100 h-100 position-absolute image-pnted-tools top-0 " style="z-index:-2;transition: all 0.2s ease;">
@@ -53,6 +53,26 @@
         </p>
     </a>
     <iframe src="https://drive.google.com/file/d/1Nsq84kBOK7VrJmv4I63h3Oh2LOKa2_5j/preview" class="col-12" height="480" allow="autoplay"></iframe>
+    <div class="col-12 mt-4">
+        <a href="https://www.tsc.gob.hn/web/leyes/PCM-132-2020.pdf">Decreto oficial creación de PNTED</a>
+    </div>
+    <div class="col-10 col-md-3 mt-4">
+        <a href="https://forms.gle/LHaRCGSmyBarvKKf6" class="card text-center shadow text-decoration-none p-3 card-online-app" style="height: 200px;" target="_blank">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title">Formulario de Registro PNTED</h5>
+                <i class="fa-regular fa-file-lines fs-1 text-blue"></i>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-12 my-4">
+        <h2 class="fw-bold">Video Lanzamiento de PNTED</h2>
+        <div class="title-line"></div>
+    </div>
+
+    <div class="col-12">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Feducacionhnd%2Fvideos%2F5422701784482208%2F&show_text=false&width=560&t=0" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    </div>
 
     <div class="col-12 my-4">
         <h2 class="fw-bold">Material de Apoyo</h2>
@@ -129,5 +149,8 @@
     <div class="col-4 mt-4">
         <h6>Lanzamiento del PNTED</h6>
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/gNlgFyZnfTE?si=3YwCXE5m5ND_t1NU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="col-12 mt-4">
+        <a href="https://www.youtube.com/@soportepnted" class="">Puedes encontrar mas vídeos en el canal oficial de soporte PNTED</a>
     </div>
 </div>

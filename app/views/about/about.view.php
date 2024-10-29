@@ -9,14 +9,11 @@
         </div>
         <div class="col-12 col-md-6 mt-4 mt-md-0">
             <p class="text-secondary">
-                Somos una empresa comprometida con el desarrollo educativo del país, brindando servicios especializados para el magisterio, con un enfoque centrado en la eficiencia y accesibilidad de los procesos administrativos y académicos. Nuestra misión es facilitar las gestiones de los docentes a través de soluciones tecnológicas innovadoras que permitan ahorrar tiempo y recursos, asegurando que puedan enfocarse en lo que realmente importa: la enseñanza y la formación de las nuevas generaciones.
+                Somos una empresa comprometida con el desarrollo educativo del país, brindando servicios especializados en la gestión integral de los procesos administrativos y académicos del sector educativo en el departamento de Copán. Nuestro objetivo es optimizar cada uno de estos procesos para facilitar el trabajo de los docentes y asegurar que las instituciones educativas puedan operar de manera eficiente y efectiva.
                 <br>
-                Nos especializamos en optimizar procesos que incluyen la gestión de trámites en SACE, proporcionando una solución a aquellos docentes que, por diversas razones, no pueden realizar sus gestiones de manera presencial. Además, nos aseguramos de que cada documento y solicitud sea procesado con la mayor precisión y profesionalismo, cumpliendo con los más altos estándares de calidad.
+                Nos especializamos en gestionar trámites y procedimientos que son fundamentales para el correcto funcionamiento del sistema educativo, atendiendo las necesidades de aquellos docentes que requieren apoyo en la gestión de sus procesos. Nos aseguramos de que cada solicitud sea atendida con la mayor precisión y profesionalismo, cumpliendo con altos estándares de calidad.
                 <br>
-
-                Nuestra visión es ser líderes en la prestación de servicios educativos y administrativos para el magisterio, siendo un aliado estratégico para todos los docentes del país. Apostamos por el uso de la tecnología como herramienta fundamental para mejorar los procesos educativos, buscando siempre la excelencia y satisfacción de nuestros usuarios.
-                <br>
-                En resumen, somos un puente entre los docentes y las instituciones, comprometidos con la mejora continua y la transformación del sistema educativo a través de soluciones innovadoras que responden a las necesidades actuales del sector.
+                Nuestra visión es ser referentes en la prestación de servicios educativos y administrativos, apoyando a las instituciones y al magisterio en la mejora continua de los procesos que impactan el sistema educativo en Copán. Buscamos siempre la excelencia y satisfacción de nuestros usuarios, ofreciendo soluciones que se adapten a las necesidades cambiantes del sector educativo. En resumen, somos un vínculo esencial entre los docentes y las instituciones, comprometidos con la mejora constante y el fortalecimiento del sistema educativo en nuestra región.
             </p>
         </div>
 
