@@ -104,16 +104,16 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 <a class="nav-link d-inline-block nav-link-header-layout" href="<?php echo $env->APP_URL ?>about" role="button" id="about-links">
                                     ACERCA DE NOSOTROS
                                 </a>
-                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" style="color: var(--medium-gray);">
+                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0 nav-link-header-layout" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                 </button>
                                 <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0 row z-3" id="dropdown-menu-about">
                                     <li><a class="dropdown-item" href="<?php echo $env->APP_URL ?>login">Acceso</a></li>
                                     <li><a class="dropdown-item" href="<?php echo $env->APP_URL ?>about/staff">Personal Departamental</a></li>
                                     <li class="dropdown-item nav-item dropend" id="dropdown-item-cooperants">
-                                        <a class="nav-link d-inline-block" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
+                                        <a class="nav-link d-inline-block nav-link-header-layout" href="#" role="button" id="about-links">
                                             Cooperantes
                                         </a>
-                                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                         </button>
                                         <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0">
                                             <li><a class="dropdown-item" href="#">Aliados</a></li>
@@ -135,7 +135,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 <a class="nav-link d-inline-block nav-link-header-layout" href="https://sace.se.gob.hn/" target="_blank" role="button" id="about-links">
                                     SACE
                                 </a>
-                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0 nav-link-header-layout" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                 </button>
                                 <ul class=" dropdown-menu z-3 mt-0 py-0 rounded-0">
                                     <li><a class="dropdown-item" href="<?php echo $env->APP_URL ?>sace/onlineapplications">Solicitudes Online</a></li>
@@ -143,20 +143,20 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                     <li><a class="dropdown-item" href="https://siie.se.gob.hn/dashboard" target="_blank">Sistema SIIE</a></li>
                                     <li><a class="dropdown-item" href="<?php echo $APP_URL ?>sace/sartsace">SART-SACE</a></li>
                                     <li class="dropdown-item nav-item dropend" id="">
-                                        <a class="nav-link d-inline-block px-0" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
+                                        <a class="nav-link d-inline-block p-0 nav-link-header-layout me-2" href="#" role="button" id="about-links">
                                             Salud Campaña
                                         </a>
-                                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0 nav-link-header-layout" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                         </button>
                                         <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0">
                                             <li><a class="dropdown-item" href="#">Estadística Rabia</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-item nav-item dropend" id="">
-                                        <a class="nav-link d-inline-block px-0" href="#" role="button" style="color: var(--medium-gray);" id="about-links">
+                                        <a class="nav-link d-inline-block p-0 nav-link-header-layout me-2" href="#" role="button" id="about-links">
                                             Monitoreos
                                         </a>
-                                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0 nav-link-header-layout" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                         </button>
                                         <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0">
                                             <li><a class="dropdown-item" href="#">Estadísticos lunes cívico</a></li>
@@ -172,7 +172,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 <a class="nav-link d-inline-block nav-link-header-layout" href="#" role="button" id="about-links">
                                     CONCURSO DOCENTE
                                 </a>
-                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0 nav-link-header-layout" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                 </button>
                                 <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0">
                                     <li><a class="dropdown-item" href="https://www.se.gob.hn/constancia_concurso/" target="_blank">Constancia concurso</a></li>
@@ -182,7 +182,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 <a class="nav-link d-inline-block nav-link-header-layout" href="#" role="button" id="about-links">
                                     ACTUALIZACIÓN DOCENTE
                                 </a>
-                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--medium-gray);" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0 nav-link-header-layout" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                 </button>
                                 <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0">
                                     <li><a class="dropdown-item" href="#">Consulta Docente</a></li>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
   --dark-gray: #3b3b3b;
@@ -427,6 +428,14 @@ body {
   float: left;
   padding: 80px 0 40px 0;
 }
+.bg-texture-dark {
+  background: url("../../../public/assets/images/bg-texture-1.jpg") no-repeat
+    center top fixed;
+  background-size: cover;
+  width: 100%;
+  float: left;
+  padding: 100px 0 100px 0;
+}
 
 .numbers {
   font-size: 60px;
@@ -448,6 +457,78 @@ body {
   width: 100%;
   float: left;
   padding: 100px 0;
+}
+
+.card-dark-about {
+  color: var(--very-light-gray);
+  border: 1px solid var(--dark-gray);
+  border-left: 5px solid var(--dark-gray);
+  height: 250px;
+}
+
+.card-dark-about:hover {
+  border-left-color: var(--medium-gray);
+  transition: all 0.3s ease;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.container-auto-slide {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.container-auto-slide:before,
+.container-auto-slide:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.container-auto-slide:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.container-auto-slide:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.container-auto-slide:hover .auto-slide {
+  animation-play-state: paused;
+}
+
+.auto-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.item-slide {
+  display: inline;
+}
+
+.item-slide img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.item-slide img {
+  width: 250px;
+  height: 250px;
 }
 
 /* UTI SECTION */

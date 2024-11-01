@@ -69,13 +69,13 @@ if (isset($_POST["sendMail"])) {
 
     <div class="carousel-inner">
         <div class="carousel-item active c-item">
-            <img src="https://departamentaleducacionocotepeque.com/images/2023/01/24/1.jpg" class="d-block w-100 c-img" alt="Slide 1">
+            <img src="<?php echo $APP_URL ?>public/assets/images/banner-1.jpg" class="d-block w-100 c-img" alt="Slide 1">
         </div>
         <div class="carousel-item c-item">
-            <img src="https://departamentaleducacionocotepeque.com/images/2023/01/24/depa2023.jpg" class="d-block w-100 c-img" alt="Slide 2">
+            <img src="<?php echo $APP_URL ?>public/assets/images/banner-2.png" class="d-block w-100 c-img" alt="Slide 2">
         </div>
         <div class="carousel-item c-item">
-            <img src="https://departamentaleducacionocotepeque.com/images/2023/01/25/oli.jpg" class="d-block w-100 c-img" alt="Slide 3">
+            <img src="<?php echo $APP_URL ?>public/assets/images/banner-3.jpg" class="d-block w-100 c-img" alt="Slide 3">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
@@ -118,7 +118,7 @@ if (isset($_POST["sendMail"])) {
                     <h1>Herramientas<br>Docentes</h1>
                     <div class="card-back">
                         <span>Operaciones de las Unidades y Subdirecciones de la Dirección Departamental de Educación.</span>
-                        <a href="#" class="ov-btn-slide-left text-decoration-none">Ver</a>
+                        <a href="<?php echo $APP_URL ?>tools/teachers" class="ov-btn-slide-left text-decoration-none">Ver</a>
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@ if (isset($_POST["sendMail"])) {
                     <div class="card-back">
                         <span>Herramientas Digitales para estudiantes de todos los niveles.
                         </span>
-                        <a href="" class="ov-btn-slide-left text-decoration-none">Ver</a>
+                        <a href="<?php echo $APP_URL ?>tools/students" class="ov-btn-slide-left text-decoration-none">Ver</a>
                     </div>
                 </div>
             </div>
@@ -305,7 +305,7 @@ if (isset($_POST["sendMail"])) {
     </div>
 
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
-        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
+        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg"></a></div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
             <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -318,7 +318,7 @@ if (isset($_POST["sendMail"])) {
         </div>
     </div>
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
-        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
+        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg"></a></div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
             <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -331,7 +331,7 @@ if (isset($_POST["sendMail"])) {
         </div>
     </div>
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
-        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
+        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg"></a></div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
             <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -344,7 +344,7 @@ if (isset($_POST["sendMail"])) {
         </div>
     </div>
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
-        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
+        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg"></a></div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
             <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>

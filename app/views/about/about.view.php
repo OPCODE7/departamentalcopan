@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid p-0 m-0">
     <div class="row vw-100 justify-content-center align-items-center flex-column text-light w-100 mb-4" id="banner-about">
         <h2 class="text-uppercase text-light fw-bold w-auto animated bounceIn">Acerca de nosotros</h2>
         <span class="d-block w-auto">Un breve resumen sobre nuestra compañía</span>
@@ -19,7 +19,18 @@
 
     </div>
 
-    <div class="row mt-4 px-3 px-md-4 px-lg-5">
+    <div class="row my-4 px-3 px-md-4 px-lg-5 gap-3 justify-content-center align-items-center bg-texture-dark w-100 mx-0">
+        <div class="col-12 col-md-5 col-lg-4 p-5 card-dark-about">
+            <h3>Misión</h3>
+            <p>Facilitar los procesos educativos en Copán, ofreciendo soluciones eficientes y accesibles para que los docentes se concentren en la enseñanza.</p>
+        </div>
+        <div class="col-12 col-md-5 col-lg-4 p-5 card-dark-about">
+            <h3>Visión</h3>
+            <p>Ser líderes en gestión educativa en Copán, mejorando la eficiencia y apoyando el desarrollo del sector educativo.</p>
+        </div>
+    </div>
+
+    <div class="row px-3 px-md-4 px-lg-5">
         <div class="text-center col-12">
             <h2 class="fw-bold mb-1">Nuestros valores</h2>
             <div class="title-line mx-auto"></div>
@@ -67,170 +78,31 @@
     </div>
     <div class="row mt-4 px-3 px-md-4 px-lg-5">
         <div class="text-center">
-            <h2 class="fw-bold mb-1">Equipo de Liderazgo</h2>
+            <h2 class="fw-bold mb-1">Nuestro Equipo</h2>
             <div class="title-line mx-auto"></div>
-            <p>- Lorem ipsum dolor sit amet isse potenti nulla esquam ante aliquet cusempe posuere -</p>
+            <p>
+                Nuestro equipo está conformado por profesionales comprometidos con la excelencia en la gestión educativa, enfocados en brindar soluciones eficientes y de calidad para el magisterio en Copán. Trabajamos con dedicación y profesionalismo para apoyar a los docentes y optimizar cada proceso administrativo y académico que gestionamos.
+            </p>
         </div>
+        <div class="container-auto-slide">
+            <div class="auto-slide mx-2">
+                <div class="mb-4 item-slide mx-3">
+                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person1.jpg">
+                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person2.jpg">
+                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg">
+                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person4.jpg">
+                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person5.jpg">
+                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person6.jpg">
+                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person7.jpg">
+                </div>
 
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center m-bottom4">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://placehold.co/200"></a></div>
-            <div class="mt-2">
-                <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
-                <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
-                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-
-
 
     </div>
-
 </div>
+
+<script>
+    let copy = document.querySelector(".auto-slide").cloneNode(true);
+    document.querySelector(".container-auto-slide").appendChild(copy);
+</script>
