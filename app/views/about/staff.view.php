@@ -1,4 +1,12 @@
 <div class="row mt-4 px-3 px-md-4 px-lg-5">
+    <div class="col-12">
+        <select class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Filtrar por área</option>
+            <option value="1">Unidad de Talento Humano</option>
+            <option value="2">Unidad de Tecnología Informática</option>
+            <option value="3">Unidad de Transparencia</option>
+        </select>
+    </div>
     <div class="text-center">
         <h2 class="fw-bold mb-1">Directores municipales</h2>
         <div class="title-line mx-auto"></div>

@@ -64,7 +64,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 <?php
                 if (!empty($userData)) {
                 ?>
-                    <small class="d-flex justify-content-center align-items-center border border-primary d-inline cursor-pointer fw-bold rounded mx-1 text-blue dropdown" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Logout" style="width: 30px;height: 30px;">
+                    <small class="d-flex justify-content-center align-items-center d-inline cursor-pointer fw-bold rounded mx-1 text-blue dropdown" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Logout" style="width: 30px;height: 30px;">
                         DA
                         <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--text-blue);" data-bs-toggle="dropdown" aria-expanded="false">
                         </button>
@@ -106,14 +106,14 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 </a>
                                 <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0 nav-link-header-layout" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                 </button>
-                                <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0 row z-3" id="dropdown-menu-about">
+                                <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0" id="dropdown-menu-about">
                                     <li><a class="dropdown-item" href="<?php echo $env->APP_URL ?>login">Acceso</a></li>
                                     <li><a class="dropdown-item" href="<?php echo $env->APP_URL ?>about/staff">Personal Departamental</a></li>
                                     <li class="dropdown-item nav-item dropend" id="dropdown-item-cooperants">
-                                        <a class="nav-link d-inline-block nav-link-header-layout" href="#" role="button" id="about-links">
+                                        <a class="nav-link d-inline-block nav-link-header-layout p-0" href="#" role="button">
                                             Cooperantes
                                         </a>
-                                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0 nav-link-header-layout" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                         </button>
                                         <ul class="dropdown-menu z-3 mt-0 py-0 rounded-0">
                                             <li><a class="dropdown-item" href="#">Aliados</a></li>

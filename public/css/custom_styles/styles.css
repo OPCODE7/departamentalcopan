@@ -197,11 +197,6 @@ body {
     background-color: var(--very-dark-gray);
   }
 
-  & #dropdown-item-cooperants:hover {
-    color: var(--blue);
-    background-color: var(--very-dark);
-  }
-
   & .dropdown-menu {
     background-color: transparent;
   }
@@ -482,17 +477,17 @@ body {
 
 .container-auto-slide {
   overflow: hidden;
-  padding: 60px 0;
   background: white;
   white-space: nowrap;
   position: relative;
+  display: flex;
 }
 
 .container-auto-slide:before,
 .container-auto-slide:after {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 100px;
   height: 100%;
   content: "";
   z-index: 2;
@@ -513,22 +508,45 @@ body {
 }
 
 .auto-slide {
-  display: inline-block;
+  display: flex;
   animation: 35s slide infinite linear;
 }
 
 .item-slide {
-  display: inline;
+  display: flex;
+  width: 150px;
+  height: 150px;
+
+  & div,
+  h6,
+  span {
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  & h6 {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+  }
+
+  & span {
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+  }
 }
 
-.item-slide img:hover {
+.item-slide:hover {
   transform: scale(1.1);
   transition: all 0.5s ease;
-}
 
-.item-slide img {
-  width: 250px;
-  height: 250px;
+  & div,
+  h6,
+  span {
+    display: block;
+    opacity: 100%;
+  }
+
+  & div {
+    opacity: 75%;
+  }
 }
 
 /* UTI SECTION */
@@ -575,7 +593,6 @@ body {
 }
 
 /* PNTED */
-
 #container-image-pnted {
   & img {
     left: 0;
@@ -636,6 +653,11 @@ body {
     p {
       color: var(--very-light-gray);
     }
+  }
+
+  .item-slide {
+    width: 250px;
+    height: 250px;
   }
 }
 

@@ -76,7 +76,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.0121004860957!2d-88.7890522266806!3d14.772337572852528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f640955762b55d1%3A0x9214fe06113b0f1b!2sDireccion%20Departamental%20de%20Educacion%20Copan!5e1!3m2!1ses-419!2shn!4v1727927487840!5m2!1ses-419!2shn" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    <div class="row mt-4 px-3 px-md-4 px-lg-5">
+    <div class="row px-3 px-md-4 px-lg-5 mt-4">
         <div class="text-center">
             <h2 class="fw-bold mb-1">Nuestro Equipo</h2>
             <div class="title-line mx-auto"></div>
@@ -84,19 +84,55 @@
                 Nuestro equipo está conformado por profesionales comprometidos con la excelencia en la gestión educativa, enfocados en brindar soluciones eficientes y de calidad para el magisterio en Copán. Trabajamos con dedicación y profesionalismo para apoyar a los docentes y optimizar cada proceso administrativo y académico que gestionamos.
             </p>
         </div>
-        <div class="container-auto-slide">
-            <div class="auto-slide mx-2">
-                <div class="mb-4 item-slide mx-3">
-                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person1.jpg">
-                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person2.jpg">
-                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg">
-                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person4.jpg">
-                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person5.jpg">
-                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person6.jpg">
-                    <img class="img-fluid" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person7.jpg">
+        <div class="container-auto-slide mt-5">
+            <div class="auto-slide me-2">
+                <div class="mb-4 item-slide mx-3 position-relative d-flex justify-content-center align-items-center flex-column">
+                    <img class="position-absolute start-0 top-0 w-100 h-100 z-0" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person1.jpg">
+                    <div class="w-100 h-100 position-absolute z-1 bg-dark"></div>
+                    <h6 class="text-light z-2 text-center fw-bold">Lic. Claudia Melgar</h6>
+                    <span class="text-light z-2 text-center">Unidad de Transparencia</span>
                 </div>
-
+                <div class="mb-4 item-slide mx-3 position-relative d-flex justify-content-center align-items-center flex-column">
+                    <img class="position-absolute start-0 top-0 w-100 h-100 z-0" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person2.jpg">
+                    <div class="w-100 h-100 position-absolute z-1 bg-dark"></div>
+                    <h6 class="text-light z-2 text-center fw-bold">Ing. Ivis Flores</h6>
+                    <span class="text-light z-2 text-center">Unidad de Tecnología Informática</span>
+                </div>
+                <div class="mb-4 item-slide mx-3 position-relative d-flex justify-content-center align-items-center flex-column">
+                    <img class="position-absolute start-0 top-0 w-100 h-100 z-0" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg">
+                    <div class="w-100 h-100 position-absolute z-1 bg-dark"></div>
+                    <h6 class="text-light z-2 text-center fw-bold">Ing. Ivis Flores</h6>
+                    <span class="text-light z-2 text-center">Unidad de Tecnología Informática</span>
+                </div>
+                <div class="mb-4 item-slide mx-3 position-relative d-flex justify-content-center align-items-center flex-column">
+                    <img class="position-absolute start-0 top-0 w-100 h-100 z-0" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person4.jpg">
+                    <div class="w-100 h-100 position-absolute z-1 bg-dark"></div>
+                    <h6 class="text-light z-2 text-center fw-bold">Ing. Ivis Flores</h6>
+                    <span class="text-light z-2 text-center">Unidad de Tecnología Informática</span>
+                </div>
+                <div class="mb-4 item-slide mx-3 position-relative d-flex justify-content-center align-items-center flex-column">
+                    <img class="position-absolute start-0 top-0 w-100 h-100 z-0" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person5.jpg">
+                    <div class="w-100 h-100 position-absolute z-1 bg-dark"></div>
+                    <h6 class="text-light z-2 text-center fw-bold">Ing. Ivis Flores</h6>
+                    <span class="text-light z-2 text-center">Unidad de Tecnología Informática</span>
+                </div>
+                <div class="mb-4 item-slide mx-3 position-relative d-flex justify-content-center align-items-center flex-column">
+                    <img class="position-absolute start-0 top-0 w-100 h-100 z-0" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person6.jpg">
+                    <div class="w-100 h-100 position-absolute z-1 bg-dark"></div>
+                    <h6 class="text-light z-2 text-center fw-bold">Ing. Ivis Flores</h6>
+                    <span class="text-light z-2 text-center">Unidad de Talento Humano</span>
+                </div>
+                <div class="mb-4 item-slide mx-3 position-relative d-flex justify-content-center align-items-center flex-column">
+                    <img class="position-absolute start-0 top-0 w-100 h-100 z-0" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person7.jpg">
+                    <div class="w-100 h-100 position-absolute z-1 bg-dark"></div>
+                    <h6 class="text-light z-2 text-center fw-bold">Ing. Ivis Flores</h6>
+                    <span class="text-light z-2 text-center">Dirección</span>
+                </div>
             </div>
+        </div>
+
+        <div class="col-12 mt-2 mb-4">
+            <a href="<?php echo $APP_URL ?>about/staff" class="btn btn-outline-blue">Explorar más</a>
         </div>
 
     </div>
