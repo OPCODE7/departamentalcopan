@@ -51,9 +51,9 @@ if (isset($_POST["login"])) {
             </div>
             <div class="mb-3">
                 <label for="user-name" class="form-label text-secondary">Usuario</label>
-                <input type="text" class="form-control" id="user-name" name="username">
+                <input type="text" class="form-control" id="user-name" name="username" value="<?php echo $username ?>">
             </div>
-            <label for="pasword" class="form-label text-secondary">Contraseña</label>
+            <label for="pasword" class="form-label text-secondary" value="<?php echo $password ?>">Contraseña</label>
             <div class="mb-3 position-relative">
                 <input type="password" class="p-2 form-control w-100" name="password" value="" autocomplete="off">
                 <i class="fa-solid fa-eye-slash position-absolute end-0 top-50 translate-middle cursor-pointer text-secondary" id="see-pwd"></i>

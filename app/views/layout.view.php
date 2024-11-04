@@ -12,6 +12,7 @@ $userData = "";
 
 if (isset($_SESSION["userlogged"])) {
     $userData =  $_SESSION["userlogged"];
+    $username = $userData["username"];
 }
 
 $url = $_SERVER['REQUEST_URI'];
@@ -65,7 +66,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 if (!empty($userData)) {
                 ?>
                     <small class="d-flex justify-content-center align-items-center d-inline cursor-pointer fw-bold rounded mx-1 text-blue dropdown" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Logout" style="width: 30px;height: 30px;">
-                        DA
+                        <span class="text-uppercase me-1"><?php echo $username[0] . $username[1] ?></span>
                         <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--text-blue);" data-bs-toggle="dropdown" aria-expanded="false">
                         </button>
                         <ul class="dropdown-menu mt-0 py-0 rounded-0" id="logout-btn">
@@ -82,7 +83,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 }
                 ?>
                 <span>/</span>
-                <a href="#" class="text-decoration-none text-secondary "><small class="color-blue-hover">Register</small></a>
+                <a href="<?php echo $APP_URL ?>auth/signup" class="text-decoration-none text-secondary "><small class="color-blue-hover">Register</small></a>
             </div>
         </section>
         <header class="w-100 bg-body sticky-top px-3 px-md-4 px-lg-5 header-navbar-top" style="z-index: 5;height: 15vh;">
