@@ -133,7 +133,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                     </li>
                                     <li><a class="dropdown-item" href="#">Escuelas Normales</a></li>
                                     <li><a class="dropdown-item" href="#">Plan 365</a></li>
-                                    <li><a class="dropdown-item" href="#">Rendición de cuentas 2024</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo $APP_URL ?>about/rendiciondecuentas">Rendición de cuentas 2024</a></li>
 
 
                                 </ul>
