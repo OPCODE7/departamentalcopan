@@ -34,7 +34,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
     <link rel="stylesheet" href="<?php echo $env->APP_URL . "public/css/bootstrap.min.css" ?>">
     <link rel="stylesheet" href="<?php echo $env->APP_URL  . "public/css/custom_styles/styles.css" ?>">
     <link rel="stylesheet" href="<?php echo $env->APP_URL  . "public/assets/fontawesome/css/all.min.css" ?>">
-    <link rel="shortcut icon" href="<?php echo $env->APP_URL . "public/assets/icons/secretaria.ico" ?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo $env->APP_URL . "public/assets/icons/logo-depa-copan.ico" ?>" type="image/x-icon">
     <link
         rel="stylesheet"
         href="<?php echo $env->APP_URL ?>public/plugins/animatecss/animate.compat.css" />
@@ -61,45 +61,51 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 <small>24/7 Support (123) 456 7890</small>
                 <span>/</span>
                 <a href="#" class="text-decoration-none text-secondary "><small class="color-blue-hover">E-mail Us</small></a>
-                <span>/</span>
                 <?php
-                if (!empty($userData)) {
+                if (empty($userData)) {
                 ?>
-                    <small class="d-flex justify-content-center align-items-center d-inline cursor-pointer fw-bold rounded mx-1 text-blue dropdown" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Logout" style="width: 30px;height: 30px;">
-                        <span class="text-uppercase me-1"><?php echo $username[0] . $username[1] ?></span>
-                        <button type="button" class="p-0 m-0 dropdown-toggle dropdown-toggle-split bg-transparent border-0" style="color: var(--text-blue);" data-bs-toggle="dropdown" aria-expanded="false">
-                        </button>
-                        <ul class="dropdown-menu mt-0 py-0 rounded-0" id="logout-btn">
-                            <li style="font-size: 12px;"><a class="dropdown-item" href="<?php echo $APP_URL ?>auth/logout"><i class="fa-solid fa-right-from-bracket me-2"></i>Cerrar Sesión</a></li>
-                        </ul>
-                    </small>
-
-
-                <?php
-                } else {
-                ?>
+                    <span>/</span>
                     <a href="<?php echo $env->APP_URL ?>login" class="text-decoration-none text-secondary "><small class="color-blue-hover">Login</small></a>
+                    <span>/</span>
+                    <a href="<?php echo $APP_URL ?>auth/signup" class="text-decoration-none text-secondary "><small class="color-blue-hover">Register</small></a>
                 <?php
                 }
                 ?>
-                <span>/</span>
-                <a href="<?php echo $APP_URL ?>auth/signup" class="text-decoration-none text-secondary "><small class="color-blue-hover">Register</small></a>
             </div>
         </section>
         <header class="w-100 bg-body sticky-top px-3 px-md-4 px-lg-5 header-navbar-top" style="z-index: 5;height: 15vh;">
-            <nav class="navbar navbar-expand-lg py-4 navbar-nav-scroll" id="navbar-header">
+            <nav class="navbar navbar-expand-lg navbar-nav-scroll" id="navbar-header">
                 <div class="container-fluid px-0">
-                    <a class="navbar-brand" href="<?php echo $env->APP_URL ?>">
-                        <img src="<?php echo $env->APP_URL . "public/assets/images/logo-depa-copan.png" ?>" alt="Bootstrap" height="45">
+                    <a class="navbar-brand p-0" href="<?php echo $env->APP_URL ?>">
+                        <img src="<?php echo $env->APP_URL . "public/assets/images/logo-depa.jpg" ?>" alt="Bootstrap" style="width: auto;height: 70px;">
                     </a>
-                    <label for="check" class="d-flex d-lg-none" id="btn-navbar-collapse">
-                        <input type="checkbox" id="check" class="d-none" data-bs-toggle="collapse" data-bs-target="#navbar-header-layout" aria-controls="navbar-header-layout" aria-expanded="false" aria-label="Toggle navigation" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                    <div class="collapse navbar-collapse px-3 mt-2" id="navbar-header-layout">
-                        <div class="navbar-nav mt-1 mb-lg-0">
+                    <div class="d-flex order-lg-5">
+                        <?php
+                        if (!empty($userData)) {
+                        ?>
+                            <small class="text-center d-flex align-items-center justify-content-center text-decoration-none m-0 rounded-circle border border-3 bg-transparent dropstart fw-bold cursor-pointer" data-bs-container="body" data-bs-placement="bottom" data-bs-content="Logout" data-bs-toggle="dropdown" style="width: 45px;height: 45px;">
+                                <span class="text-uppercase text-blue"><?php echo $username[0] . $username[1] ?></span>
+                                <ul class="dropdown-menu mt-0 py-0 rounded-0" id="logout-btn">
+                                    <li style="font-size: 12px;">
+                                        <a class="dropdown-item" href="<?php echo $APP_URL ?>auth/logout"><i class="fa-solid fa-right-from-bracket me-2"></i>Cerrar Sesión
+                                        </a>
+                                    </li>
+                                </ul>
+                            </small>
+
+                        <?php
+                        }
+                        ?>
+                        <label for="check" class="d-flex d-lg-none ms-2" id="btn-navbar-collapse">
+                            <input type="checkbox" id="check" class="d-none" data-bs-toggle="collapse" data-bs-target="#navbar-header-layout" aria-controls="navbar-header-layout" aria-expanded="false" aria-label="Toggle navigation" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+
+                    <div class="collapse navbar-collapse px-3 mt-md-0 mt-2 order-lg-4" id="navbar-header-layout">
+                        <div class="navbar-nav mt-1 mb-lg-0 mx-auto">
                             <a class="nav-link nav-link-header-layout" aria-current="page" href="<?php echo $env->APP_URL ?>">HOME</a>
                             <li class="nav-item position-relative">
                                 <a class="nav-link d-inline-block nav-link-header-layout" href="<?php echo $env->APP_URL ?>about" role="button" id="about-links">

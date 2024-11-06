@@ -132,7 +132,7 @@
         </div>
 
         <div class="col-12 mt-2 mb-4">
-            <a href="<?php echo $APP_URL ?>about/staff" class="btn btn-outline-blue">Explorar más</a>
+            <a href="<?php echo $APP_URL ?>about/staff" class="btn btn-outline-blue">Ver más</a>
         </div>
 
     </div>

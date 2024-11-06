@@ -56,12 +56,15 @@
     <div class="col-12 mt-4">
         <a href="https://www.tsc.gob.hn/web/leyes/PCM-132-2020.pdf">Decreto oficial creación de PNTED</a>
     </div>
+
     <div class="col-10 col-md-3 mt-4">
-        <a href="https://forms.gle/LHaRCGSmyBarvKKf6" class="card text-center shadow text-decoration-none p-3 card-online-app" style="height: 200px;" target="_blank">
-            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                <h5 class="card-title">Formulario de Registro PNTED</h5>
+        <a href="https://forms.gle/LHaRCGSmyBarvKKf6" class="glass-card mt-2 text-light text-decoration-none p-0 animated bounceInRight">
+            <div class="z-3 px-2 text-center text-dark">
+                <h5>Formulario de Registro PNTED</h5>
                 <i class="fa-regular fa-file-lines fs-1 text-blue"></i>
             </div>
+            <div class="glass-card-bg z-2"></div>
+            <div class="glass-card-blob z-1"></div>
         </a>
     </div>
 

@@ -46,8 +46,11 @@ if (isset($_POST["login"])) {
 <body>
     <div class="row justify-content-center align-items-center vh-100 w-100">
         <form class="col-10 col-md-6 col-lg-4 shadow-lg rounded p-4 animated zoomIn" method="POST">
-            <div class="mb-3 text-center">
-                <img src="<?php echo $env->APP_URL ?>public/assets/images/logo-depa-copan.png" alt="logo-depacopan" class="img-fluid" style="width: 250px;height: 60px;">
+            <div class="mb-3 text-start d-flex align-items-center">
+                <div class="d-inline">
+                    <h1 class="fs-2 fw-bold">Bienvenido,</h1>
+                    <p class="text-dark">Ingresar para continuar</p>
+                </div>
             </div>
             <div class="mb-3">
                 <label for="user-name" class="form-label text-secondary">Usuario</label>

@@ -68,10 +68,21 @@ body {
   color: var(--very-light-gray);
 }
 
+.border-blue {
+  border: 2px solid var(--blue);
+}
+
 .glass {
   background: #2991d6;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+}
+
+.scale-img-hover {
+  & img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
 }
 
 /* SLIDER TOP HOME */
@@ -320,17 +331,18 @@ body {
   background: rgba(0, 0, 0, 0.4);
 }
 .card .cover.item-a {
-  background-image: url("https://www.departamentaleducacionocotepeque.com/images/2023/01/25/portadas-de-sistema-uti-ri-2022.png");
+  background-image: url("../../../public/assets/images/uti-banner.png");
+  background-position: center left;
 }
 .card .cover.item-b {
   background-image: url("../../../public/assets/images/depacopan.jpg");
 }
 .card .cover.item-c {
-  background-image: url("https://www.departamentaleducacionocotepeque.com/images/2023/01/25/sace.png");
+  background-image: url("../../../public/assets/images/teacher-tools.jpg");
 }
 
 .card .cover.item-d {
-  background-image: url("../../../public/assets/images/herramientas-estudiantes.jpg");
+  background-image: url("../../../public/assets/images/students-tools.jpg");
 }
 .card .cover h1 {
   font-weight: 600;
@@ -602,7 +614,6 @@ body {
 }
 
 /* TOOLS SECTION */
-/* From Uiverse.io by dylanharriscameron */
 .glass-card {
   position: relative;
   /* width: 200px; */

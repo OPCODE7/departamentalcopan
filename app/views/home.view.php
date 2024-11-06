@@ -301,11 +301,15 @@ if (isset($_POST["sendMail"])) {
     <div class="text-center">
         <h2 class="fw-bold mb-1">Equipo de Liderazgo</h2>
         <div class="title-line mx-auto"></div>
-        <p>- Lorem ipsum dolor sit amet isse potenti nulla esquam ante aliquet cusempe posuere -</p>
+        <p>- Nuestro equipo de liderazgo está compuesto por expertos en el sector educativo y administrativo, comprometidos en impulsar el desarrollo y la eficiencia en los procesos educativos de Copán. -</p>
     </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
-        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg"></a></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center scale-img-hover">
+        <div class="w-100 overflow-hidden">
+            <a href="#">
+                <img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg">
+            </a>
+        </div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
             <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -317,8 +321,8 @@ if (isset($_POST["sendMail"])) {
             </ul>
         </div>
     </div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
-        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg"></a></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center scale-img-hover">
+        <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg"></a></div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
             <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -330,8 +334,8 @@ if (isset($_POST["sendMail"])) {
             </ul>
         </div>
     </div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
-        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg"></a></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center scale-img-hover">
+        <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg"></a></div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
             <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -343,8 +347,8 @@ if (isset($_POST["sendMail"])) {
             </ul>
         </div>
     </div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center m-bottom4">
-        <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg"></a></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center scale-img-hover">
+        <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="https://uxliner.com/pageline/demo/images/site-img18.jpg"></a></div>
         <div class="mt-2">
             <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
             <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>

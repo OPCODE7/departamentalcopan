@@ -5,7 +5,7 @@
         </h4>
     </div>
     <div class="col-12 col-md-4 my-4">
-        <select class="form-select" id="select-department">
+        <select class="form-select text-secondary" id="select-department">
             <option selected value="">Filtrar por departamento</option>
             <option value="uth">Unidad de Talento Humano</option>
             <option value="uti">Unidad de Tecnología Informática</option>
@@ -23,8 +23,8 @@
             <div class="title-line mx-auto"></div>
         </div>
 
-        <div class="col-md-3 col-sm-6 text-center card-employee">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person1.jpg"></a></div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person1.jpg"></a></div>
             <div class="mt-2">
                 <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
                 <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -36,8 +36,8 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 text-center card-employee">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person2.jpg"></a></div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person2.jpg"></a></div>
             <div class="mt-2">
                 <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
                 <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -49,8 +49,8 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 text-center card-employee">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
             <div class="mt-2">
                 <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
                 <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -62,8 +62,8 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 text-center card-employee">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person4.jpg"></a></div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person4.jpg"></a></div>
             <div class="mt-2">
                 <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
                 <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -81,8 +81,8 @@
             <h2 class="fw-bold mb-1">Unidad de Transparencia</h2>
             <div class="title-line mx-auto"></div>
         </div>
-        <div class="col-md-3 col-sm-6 text-center card-employee">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
             <div class="mt-2">
                 <h4 class="mb-1 fs-5 fw-normal text-secondary">Claudia Melgar / <i class="text-blue fs-6">C0-Founder</i></h4>
                 <p class="mt-1 text-secondary">Jefe de la Unidad de Transparencia</p>
@@ -103,8 +103,8 @@
             <div class="title-line mx-auto"></div>
         </div>
 
-        <div class="col-md-3 col-sm-6 text-center card-employee">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person1.jpg"></a></div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person1.jpg"></a></div>
             <div class="mt-2">
                 <h4 class="mb-1 fs-5 fw-normal text-secondary">Ivis Flores / <i class="text-blue fs-6">C0-Founder</i></h4>
                 <p class="mt-1 text-secondary">Jefe de la Unidad de Tecnología Informática</p>
@@ -124,8 +124,8 @@
             <div class="title-line mx-auto"></div>
         </div>
 
-        <div class="col-md-3 col-sm-6 text-center card-employee">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person1.jpg"></a></div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person1.jpg"></a></div>
             <div class="mt-2">
                 <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
                 <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -137,8 +137,8 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 text-center card-employee">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person2.jpg"></a></div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person2.jpg"></a></div>
             <div class="mt-2">
                 <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
                 <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -150,8 +150,8 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 text-center card-employee">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
             <div class="mt-2">
                 <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
                 <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -163,8 +163,8 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 text-center card-employee">
-            <div class="w-100"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person4.jpg"></a></div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person4.jpg"></a></div>
             <div class="mt-2">
                 <h4 class="mb-1 fs-5 fw-normal text-secondary">John Doe / <i class="text-blue fs-6">C0-Founder</i></h4>
                 <p class="mt-1 text-secondary">Lorem ipsum dolor sit ametis potenti not yet ready nulla esquam ante.</p>
@@ -181,16 +181,18 @@
 
 <script>
     const $departments = document.querySelectorAll(".department-container");
-    const $employeeCards = document.querySelectorAll(".card-employee");
+    const $employeeCards = document.querySelectorAll(".scale-img-hover");
+
     document.getElementById("select-department").addEventListener("change", e => {
         let selectedValue = e.target.value;
         $departments.forEach(department => {
-
             if (selectedValue === "all" || selectedValue === "") {
                 department.classList.remove("d-none");
             } else if (department.id === selectedValue) {
                 department.classList.remove("d-none");
+                department.classList.add("animated", "bounceIn");
             } else {
+                department.classList.remove("animated", "bounceIn");
                 department.classList.add("d-none");
             }
         });
@@ -205,7 +207,15 @@
             } else {
                 card.classList.add("d-none");
             }
+        });
 
+        $departments.forEach(department => {
+            department.querySelectorAll(".scale-img-hover").length;
+            if (department.querySelectorAll(".d-none").length == 0) {
+                department.classList.remove("d-none");
+            } else {
+                department.classList.add("d-none");
+            }
         });
 
     });
