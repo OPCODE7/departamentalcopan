@@ -35,7 +35,7 @@
     <section class="cards-utilities w-100 px-3 px-md-4 px-lg-5">
         <div class="row">
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/direccion" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Dirección departamental</h5>
 
@@ -139,7 +139,7 @@
             <div class="col-12 col-md-4">
                 <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
-                        <h5 class="fw-bold z-3">Subdirecición de Servicios Educativos</h5>
+                        <h5 class="fw-bold z-3">Subdirección de Servicios Educativos</h5>
                     </div>
                     <div class="glass-card-bg z-2"></div>
                     <div class="glass-card-blob z-1"></div>

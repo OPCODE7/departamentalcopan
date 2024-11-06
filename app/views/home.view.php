@@ -236,7 +236,7 @@ if (isset($_POST["sendMail"])) {
     </div>
 </section>
 
-<section class="contact row w-100 justify-content-center align-items-center" style="height: 90vh;background-color: var(--very-dark);">
+<section class="contact row w-100 justify-content-center align-items-center" style="height: 90vh;background-color: var(--very-dark);" id="contact-form">
     <form class="col-12 col-md-8 col-lg-6 my-3 text-light" method="POST" id="change-pwd-form">
         <h4 class="fw-semibold mb-3 col-12">Contacto</h4>
         <div class="title-line"></div>

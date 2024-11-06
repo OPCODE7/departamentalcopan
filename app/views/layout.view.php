@@ -60,7 +60,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
             <div class="col-12 col-md-7 d-flex justify-content-center justify-content-md-end align-items-center fs-6 pe-md-0">
                 <small>24/7 Support (123) 456 7890</small>
                 <span>/</span>
-                <a href="#" class="text-decoration-none text-secondary "><small class="color-blue-hover">E-mail Us</small></a>
+                <a href="<?php $APP_URL ?>" class="text-decoration-none text-secondary "><small class="color-blue-hover">E-mail Us</small></a>
                 <?php
                 if (empty($userData)) {
                 ?>
@@ -74,7 +74,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
             </div>
         </section>
         <header class="w-100 bg-body sticky-top px-3 px-md-4 px-lg-5 header-navbar-top" style="z-index: 5;height: 15vh;">
-            <nav class="navbar navbar-expand-lg navbar-nav-scroll" id="navbar-header">
+            <nav class="navbar navbar-expand-lg navbar-nav-scroll overflow-visible" id="navbar-header">
                 <div class="container-fluid px-0">
                     <a class="navbar-brand p-0" href="<?php echo $env->APP_URL ?>">
                         <img src="<?php echo $env->APP_URL . "public/assets/images/logo-depa.jpg" ?>" alt="Bootstrap" style="width: auto;height: 70px;">
@@ -83,15 +83,30 @@ $titleFormat = strtoupper($replaceSlashUrl);
                         <?php
                         if (!empty($userData)) {
                         ?>
-                            <small class="text-center d-flex align-items-center justify-content-center text-decoration-none m-0 rounded-circle border border-3 bg-transparent dropstart fw-bold cursor-pointer" data-bs-container="body" data-bs-placement="bottom" data-bs-content="Logout" data-bs-toggle="dropdown" style="width: 45px;height: 45px;">
-                                <span class="text-uppercase text-blue"><?php echo $username[0] . $username[1] ?></span>
-                                <ul class="dropdown-menu mt-0 py-0 rounded-0" id="logout-btn">
-                                    <li style="font-size: 12px;">
-                                        <a class="dropdown-item" href="<?php echo $APP_URL ?>auth/logout"><i class="fa-solid fa-right-from-bracket me-2"></i>Cerrar Sesión
+                            <div class="position-relative">
+                                <small class="text-center d-flex align-items-center justify-content-center text-decoration-none m-0 rounded-circle border border-3 bg-transparent dropstart fw-bold cursor-pointer avatar-user" style="width: 45px;height: 45px;">
+                                    <span class="text-uppercase text-blue"><?php echo $username[0] . $username[1] ?></span>
+                                </small>
+                                <div class="card position-absolute end-50 top-100 user-info h-auto shadow-lg bg-body rounded d-none user-info z-3">
+                                    <div class="card-header">
+                                        <h5 class="text-dark">Área Personal</h5>
+                                    </div>
+                                    <div class="card-body d-flex align-items-center">
+
+                                        <div class="mx-3">
+                                            <h5 class="text-dark text-capitalize mb-3"><b><?php echo $userData["username"] ?></b></h5>
+                                            <a href="<?php echo $APP_URL ?>users/edit" class="btn-blue text-white py-2 rounded p-3 text-decoration-none"><i class="fas fa-pencil me-2"></i>Editar perfil</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                        <a href="<?php echo $APP_URL ?>auth/logout" class="text-decoration-none text-dark">
+                                            <i class="fa-sharp fa-solid fa-right-from-bracket"></i>
+                                            <span>Logout</span>
                                         </a>
-                                    </li>
-                                </ul>
-                            </small>
+                                    </div>
+                                </div>
+                            </div>
+
 
                         <?php
                         }
@@ -283,6 +298,11 @@ $titleFormat = strtoupper($replaceSlashUrl);
             $navbarHeader = $("#navbar-header"),
             $dropDownNavbarLayout = $$("#dropdown-navbar-layout"),
             $buttonScrollTop = $("#go-top");
+
+
+        d.querySelector(".avatar-user").addEventListener("click", e => {
+            d.querySelector(".user-info").classList.toggle("d-none");
+        });
         window.addEventListener("resize", e => {
 
             if (window.innerWidth >= 992) {

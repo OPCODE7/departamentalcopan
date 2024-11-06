@@ -45,6 +45,15 @@ body {
   background-color: var(--blue);
 }
 
+.btn-blue {
+  background-color: var(--blue);
+  color: var(--very-light-gray);
+}
+
+.btn-blue:hover {
+  opacity: 0.9;
+}
+
 .bg-very-dark {
   background-color: var(--very-dark);
 }
@@ -454,6 +463,10 @@ body {
   margin: 10px auto 25px 0;
   padding: 0;
   width: 50px;
+}
+
+.user-info {
+  width: 40vh;
 }
 
 /* ABOUT US SECTION */

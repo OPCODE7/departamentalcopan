@@ -19,7 +19,7 @@
                 <li class="mb-2 aside-links-uti rounded dropdow-item"><a href="<?php echo $APP_URL ?>sace/onlineapplications" class="text-decoration-none p-2 w-100 h-100 d-inline-block rounded" target="_blank"><i class="fa-solid fa-toolbox me-2"></i>Herramientas Docentes</a></li>
                 <li class="mb-2 aside-links-uti rounded dropdow-item"><a href="" class="text-decoration-none p-2 w-100 h-100 d-inline-block rounded"><i class="fa-solid fa-calendar me-2"></i></i>Actualización Docente</a></li>
                 <li class="mb-2 aside-links-uti rounded dropdow-item"><a href="<?php echo $APP_URL ?>operations" class="text-decoration-none p-2 w-100 h-100 d-inline-block rounded" target="_blank"><i class="fa-solid fa-users-gear me-2"></i>Unidades y Subdirecciones</a></li>
-                <li class="mb-2 aside-links-uti rounded dropdown-item"><a href="" class="text-decoration-none p-2 w-100 h-100 d-inline-block rounded"><i class="fa-solid fa-users me-2"></i>Municipales</a></li>
+                <li class="mb-2 aside-links-uti rounded dropdown-item"><a href="<?php echo $APP_URL ?>about/municipales" class="text-decoration-none p-2 w-100 h-100 d-inline-block rounded"><i class="fa-solid fa-users me-2"></i>Municipales</a></li>
             </ul>
 
             <ul class="list-unstyled p-0">
