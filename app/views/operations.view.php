@@ -45,7 +45,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/secretaria" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Secretaría departamental</h5>
 
@@ -55,7 +55,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Unidad departamental de tecnología informática</h5>
 
@@ -65,7 +65,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/curriculo" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Subdirección de Currículo y Evaluación</h5>
                     </div>
@@ -74,7 +74,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/supervision" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Unidad departamental de Supervisión</h5>
                     </div>
@@ -83,7 +83,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/adquicisiones" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Subdirección de Adquicisiones</h5>
                     </div>
@@ -92,7 +92,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/adminyfinanzas" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Subdirección de Administración y Finanzas</h5>
                     </div>
@@ -101,7 +101,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/programasyproyectos" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Subdirección de Programas y Proyectos</h5>
                     </div>
@@ -110,7 +110,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/modalidades" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Subdirección de Modalidades Educativas</h5>
                     </div>
@@ -119,7 +119,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/talentohumano" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Subdirección de Talento Humano</h5>
                     </div>
@@ -128,7 +128,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/planificacionyevaluacion" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Unidad Departamental de Planificación y Evaluación</h5>
                     </div>
@@ -137,7 +137,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="<?php echo $APP_URL ?>sace/uti" class="glass-card mt-3 text-light text-decoration-none p-0">
+                <a href="<?php echo $APP_URL ?>about/departments/servicioseducativos" class="glass-card mt-3 text-light text-decoration-none p-0">
                     <div class="z-3 px-3 text-center text-dark">
                         <h5 class="fw-bold z-3">Subdirección de Servicios Educativos</h5>
                     </div>

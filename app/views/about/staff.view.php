@@ -9,7 +9,9 @@
             <option selected value="">Filtrar por departamento</option>
             <option value="dir">Dirección</option>
             <option value="uti">Unidad de tecnología informática</option>
-            <option value="utrc">Unidad de Transparencia</option>
+            <option value="utrc">Unidad de transparencia</option>
+            <option value="uds">Unidad de Supervisión</option>
+            <option value="udpe">Unidad de planificación y evaluación</option>
             <option value="secr">Secretaría</option>
             <option value="sdth">Subdirección de talento humano</option>
             <option value="sdce">Subdirección de currículo y evaluación</option>
@@ -109,6 +111,124 @@
         <div class="text-center">
             <h2 class="fw-bold mb-1">Unidad de Transparencia</h2>
             <div class="title-line mx-auto"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
+            <div class="mt-2">
+                <h4 class="mb-1 fs-5 fw-normal text-secondary">Claudia Melgar / <i class="text-blue fs-6">C0-Founder</i></h4>
+                <p class="mt-1 text-secondary">Jefe de la Unidad de Transparencia</p>
+                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="row justify-content-center my-4 department-container" id="utrc">
+        <div class="text-center">
+            <h2 class="fw-bold mb-1">Unidad de Supervisión</h2>
+            <div class="title-line mx-auto"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
+            <div class="mt-2">
+                <h4 class="mb-1 fs-5 fw-normal text-secondary">Claudia Melgar / <i class="text-blue fs-6">C0-Founder</i></h4>
+                <p class="mt-1 text-secondary">Jefe de la Unidad de Transparencia</p>
+                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
+            <div class="mt-2">
+                <h4 class="mb-1 fs-5 fw-normal text-secondary">Claudia Melgar / <i class="text-blue fs-6">C0-Founder</i></h4>
+                <p class="mt-1 text-secondary">Jefe de la Unidad de Transparencia</p>
+                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
+            <div class="mt-2">
+                <h4 class="mb-1 fs-5 fw-normal text-secondary">Claudia Melgar / <i class="text-blue fs-6">C0-Founder</i></h4>
+                <p class="mt-1 text-secondary">Jefe de la Unidad de Transparencia</p>
+                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
+            <div class="mt-2">
+                <h4 class="mb-1 fs-5 fw-normal text-secondary">Claudia Melgar / <i class="text-blue fs-6">C0-Founder</i></h4>
+                <p class="mt-1 text-secondary">Jefe de la Unidad de Transparencia</p>
+                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="row justify-content-center my-4 department-container" id="udpe">
+        <div class="text-center">
+            <h2 class="fw-bold mb-1">Unidad de Planificación y Evaluación</h2>
+            <div class="title-line mx-auto"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
+            <div class="mt-2">
+                <h4 class="mb-1 fs-5 fw-normal text-secondary">Claudia Melgar / <i class="text-blue fs-6">C0-Founder</i></h4>
+                <p class="mt-1 text-secondary">Jefe de la Unidad de Transparencia</p>
+                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
+            <div class="mt-2">
+                <h4 class="mb-1 fs-5 fw-normal text-secondary">Claudia Melgar / <i class="text-blue fs-6">C0-Founder</i></h4>
+                <p class="mt-1 text-secondary">Jefe de la Unidad de Transparencia</p>
+                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center scale-img-hover">
+            <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
+            <div class="mt-2">
+                <h4 class="mb-1 fs-5 fw-normal text-secondary">Claudia Melgar / <i class="text-blue fs-6">C0-Founder</i></h4>
+                <p class="mt-1 text-secondary">Jefe de la Unidad de Transparencia</p>
+                <ul class="social-icons-team list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-decoration-none d-flex justify-content-center align-items-center fw-bold"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
         <div class="col-md-3 col-sm-6 text-center scale-img-hover">
             <div class="w-100 overflow-hidden"><a href="#"><img class="img-fluid w-100" alt="test" src="<?php echo $APP_URL ?>public/assets/images/staff/person3.jpg"></a></div>
