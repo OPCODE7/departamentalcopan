@@ -30,7 +30,7 @@ class AuthModel
         try {
             $ra = 0;
             $encryptPwd = sha1($data["pwd"]);
-            $query = "CALL SP_INSERT_USER('{$data["realName"]}','{$data["userName"]}','{$data["email"]}','{$encryptPwd}')";
+            $query = "CALL SP_INSERT_USER('{$data["firstName"]}','{$data["userName"]}','{$data["email"]}','{$encryptPwd}','{$data["lastName"]}')";
 
             $stmt = $this->ConMySql->prepare($query);
 

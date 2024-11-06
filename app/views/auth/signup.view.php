@@ -13,7 +13,8 @@ $username = "";
 $email = "";
 $password = "";
 $passwordConfirm = "";
-$realname = "";
+$firstName = "";
+$lastName = "";
 $realLastname = "";
 $errorsvalidate = "";
 
@@ -22,10 +23,12 @@ if (isset($_POST["register"])) {
     $password = $_POST["password"];
     $passwordConfirm = $_POST["password-confirm"];
     $email = $_POST["email"];
-    $realname = $_POST["realname"];
+    $firstName = $_POST["realname"];
+    $lastName = $_POST["lastname"];
 
     $data = [
-        "realName" => $realname,
+        "firstName" => $firstName,
+        "lastName" => $lastName,
         "userName" => $username,
         "email" => $email,
         "pwd" => $password,
@@ -35,6 +38,8 @@ if (isset($_POST["register"])) {
 
     $errorsvalidate = $authController->saveUser($data);
 }
+
+
 
 
 
@@ -69,7 +74,13 @@ if (isset($_POST["register"])) {
                         <div class="row">
                             <div class="col-12">
                                 <div>
-                                    <input type="text" class="form-control p-2" name="realname" placeholder="Nombre" value="<?php echo $realname ?>" maxlength="50">
+                                    <input type="text" class="form-control p-2" name="realname" placeholder="Nombre" value="<?php echo $firstName ?>" maxlength="50">
+                                </div>
+                                <div id="alert-error" class="mt-3"></div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <input type="text" class="form-control p-2" name="lastname" placeholder="Apellidos" value="<?php echo $lastName ?>" maxlength="50">
                                 </div>
                                 <div id="alert-error" class="mt-3"></div>
                             </div>
@@ -212,6 +223,9 @@ if (isset($_POST["register"])) {
 
             if (e.target.matches("input[name='realname']")) {
                 validateInput([e.target], regExp.nameAndLastName.test(e.target.value), "El nombre debe de contener entre 1 a 50 caracteres, puede incluir espacios y acentos");
+            }
+            if (e.target.matches("input[name='lastname']")) {
+                validateInput([e.target], regExp.nameAndLastName.test(e.target.value), "El apellido debe de contener entre 1 a 50 caracteres, puede incluir espacios y acentos");
             }
 
 

@@ -1,10 +1,11 @@
 <?php
 require_once("app/config/Routes.php");
 require_once("app/config/Env.php");
-
+require_once("app/controllers/UserController.php");
 
 $route = new Routes();
 $env = new Env();
+$userController = new UserController();
 
 $APP_URL = $env->APP_URL;
 
@@ -12,7 +13,8 @@ $userData = "";
 
 if (isset($_SESSION["userlogged"])) {
     $userData =  $_SESSION["userlogged"];
-    $username = $userData["username"];
+    $role = $userData["role"];
+    $user = $userController->getUser($userData["id"]);
 }
 
 $url = $_SERVER['REQUEST_URI'];
@@ -60,7 +62,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
             <div class="col-12 col-md-7 d-flex justify-content-center justify-content-md-end align-items-center fs-6 pe-md-0">
                 <small>24/7 Support (123) 456 7890</small>
                 <span>/</span>
-                <a href="<?php $APP_URL ?>" class="text-decoration-none text-secondary "><small class="color-blue-hover">E-mail Us</small></a>
+                <a href="<?php $APP_URL ?>#contact-form" class="text-decoration-none text-secondary "><small class="color-blue-hover">E-mail Us</small></a>
                 <?php
                 if (empty($userData)) {
                 ?>
@@ -82,10 +84,11 @@ $titleFormat = strtoupper($replaceSlashUrl);
                     <div class="d-flex order-lg-5">
                         <?php
                         if (!empty($userData)) {
+                            $userName = explode(' ', $user["FIRSTNAME"])[0] . " " . explode(' ', $user["LASTNAME"])[0];
                         ?>
                             <div class="position-relative">
                                 <small class="text-center d-flex align-items-center justify-content-center text-decoration-none m-0 rounded-circle border border-3 bg-transparent dropstart fw-bold cursor-pointer avatar-user" style="width: 45px;height: 45px;">
-                                    <span class="text-uppercase text-blue"><?php echo $username[0] . $username[1] ?></span>
+                                    <span class="text-uppercase text-blue"><?php echo $user["FIRSTNAME"][0] . $user["LASTNAME"][0]  ?></span>
                                 </small>
                                 <div class="card position-absolute end-50 top-100 user-info h-auto shadow-lg bg-body rounded d-none user-info z-3">
                                     <div class="card-header">
@@ -94,7 +97,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                     <div class="card-body d-flex align-items-center">
 
                                         <div class="mx-3">
-                                            <h5 class="text-dark text-capitalize mb-3"><b><?php echo $userData["username"] ?></b></h5>
+                                            <h5 class="text-dark text-capitalize mb-3"><b><?php echo $userName ?></b></h5>
                                             <a href="<?php echo $APP_URL ?>users/edit" class="btn-blue text-white py-2 rounded p-3 text-decoration-none"><i class="fas fa-pencil me-2"></i>Editar perfil</a>
                                         </div>
                                     </div>
@@ -147,7 +150,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                         </ul>
                                     </li>
                                     <li><a class="dropdown-item" href="#">Escuelas Normales</a></li>
-                                    <li><a class="dropdown-item" href="#">Plan 365</a></li>
+                                    <li><a class="dropdown-item" href="https://educatrachos.hn/galeria-de-noticias/plan-365/" target="_blank">Plan 365</a></li>
                                     <li><a class="dropdown-item" href="<?php echo $APP_URL ?>about/rendiciondecuentas">Rendición de cuentas 2024</a></li>
 
 

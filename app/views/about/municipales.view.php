@@ -1,7 +1,7 @@
 <div class="row px-3 px-md-4 px-lg-5 my-4 w-100 justify-content-center">
     <div class="col-11">
         <h4 class="fw-bold fs-1 title-online-app text-uppercase text-center">
-            Direcciones Municipales de la Dirección Departamental de Educación Copán
+            Direcciones Municipales de la Departamental de Educación Copán
         </h4>
     </div>
 

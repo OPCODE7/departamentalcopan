@@ -52,9 +52,10 @@
         <p class="fw-normal mt-2 z-1">Es una empresa de Silicon Valley, que se dedica a proporcionar a los estudiantes del idioma inglés contenido de aprendizaje efectivo, que cuando se combina con Al avanzado en tiempo real es efectiva.
         </p>
     </a>
-    <iframe src="https://drive.google.com/file/d/1Nsq84kBOK7VrJmv4I63h3Oh2LOKa2_5j/preview" class="col-12" height="480" allow="autoplay"></iframe>
+
+    <iframe src="https://drive.google.com/file/d/1pyQAlWXna8vdivO3ZLdJOSc7dg610SYz/preview" class="col-12" width="100%" height="480" allow="autoplay"></iframe>
     <div class="col-12 mt-4">
-        <a href="https://www.tsc.gob.hn/web/leyes/PCM-132-2020.pdf">Decreto oficial creación de PNTED</a>
+        <a href="https://drive.google.com/file/d/1cr-jqwLpKqmRepdFY1fUeiMMomZZt-pZ/view?usp=sharing" target="_blank">Decreto oficial creación de PNTED</a>
     </div>
 
     <div class="col-10 col-md-3 mt-4">

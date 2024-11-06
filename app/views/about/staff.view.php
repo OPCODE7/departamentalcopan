@@ -273,7 +273,7 @@
 
     <div class="row justify-content-center my-4 department-container" id="sdce">
         <div class="text-center">
-            <h2 class="fw-bold mb-1">Directores municipales</h2>
+            <h2 class="fw-bold mb-1">Subdirección de currículo y evaluación</h2>
             <div class="title-line mx-auto"></div>
         </div>
 

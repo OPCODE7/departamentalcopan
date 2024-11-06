@@ -297,7 +297,7 @@ if (isset($_POST["sendMail"])) {
     </form>
 </section>
 
-<div class="row mt-3 px-3 px-md-4 px-lg-5">
+<div class="row my-3 px-3 px-md-4 px-lg-5">
     <div class="text-center">
         <h2 class="fw-bold mb-1">Equipo de Liderazgo</h2>
         <div class="title-line mx-auto"></div>

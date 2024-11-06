@@ -40,7 +40,6 @@ class AuthController
             if ($user == $recordset["USER_NAME"] && $pwd == $recordset["USER_PWD"]) {
                 $_SESSION["userlogged"] = [
                     "id" => $recordset["USER_ID"],
-                    "username" => $recordset["USER_NAME"],
                     "role" => $recordset["ROLE_ID"]
                 ];
                 $redirect = "http://localhost/departamentalcopan/";
@@ -82,14 +81,17 @@ class AuthController
             return $error;
         }
 
-
         if ($data["pwdConfirm"] != $data["pwd"]) {
             $error = "Las contraseñas no coinciden.";
             return $error;
         }
 
-        if (preg_match($this->regExp["nameAndLastName"], $data["realName"]) == 0) {
+        if (preg_match($this->regExp["nameAndLastName"], $data["firstName"]) == 0) {
             $error = "El campo nombres no es válido.,";
+            return $error;
+        }
+        if (preg_match($this->regExp["nameAndLastName"], $data["lastName"]) == 0) {
+            $error = "El campo apellidos no es válido.,";
             return $error;
         }
 
