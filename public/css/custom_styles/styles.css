@@ -105,6 +105,14 @@ body {
   object-fit: cover;
 }
 
+.caption-slide {
+  left: 15%;
+  bottom: 15%;
+  & h2 {
+    font-size: clamp(16px, 4vw, 32px);
+  }
+}
+
 /* HEADER NAV TOP */
 
 #btn-navbar-collapse {

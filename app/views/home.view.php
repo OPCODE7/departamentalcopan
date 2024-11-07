@@ -70,12 +70,37 @@ if (isset($_POST["sendMail"])) {
     <div class="carousel-inner">
         <div class="carousel-item active c-item">
             <img src="<?php echo $APP_URL ?>public/assets/images/banner-1.jpg" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="position-absolute caption-slide">
+                <h2 class="fw-light text-uppercase text-light bg-blue m-0 d-inline-block p-2 animated rotateInUpRight">
+                    Concurso un vídeo
+                </h2>
+                <h2 class="fw-light text-uppercase bg-light p-2 text-secondary m-0 w-auto animated rotateInDownRight">
+                    Por la transparencia 2024
+                </h2>
+            </div>
+
         </div>
         <div class="carousel-item c-item">
             <img src="<?php echo $APP_URL ?>public/assets/images/banner-2.png" class="d-block w-100 c-img" alt="Slide 2">
+            <div class="position-absolute caption-slide">
+                <h2 class="fw-light text-uppercase text-light bg-blue m-0 d-inline-block p-2 animated rotateInUpRight">
+                    Inaguración
+                </h2>
+                <h2 class="fw-light text-uppercase bg-light p-2 text-secondary m-0 w-auto animated rotateInDownRight">
+                    de 8 Escuelas en Copán Ruinas
+                </h2>
+            </div>
         </div>
         <div class="carousel-item c-item">
-            <img src="<?php echo $APP_URL ?>public/assets/images/banner-3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+            <img src="<?php echo $APP_URL ?>public/assets/images/banner-3.jpg" class="d-block w-100 c-img" alt="reconocimiento-a-puerta-mejor-decorada">
+            <div class="position-absolute caption-slide">
+                <h2 class="fw-light text-uppercase text-light bg-blue m-0 d-inline-block p-2 animated rotateInUpRight">
+                    Reconocimiento
+                </h2>
+                <h2 class="fw-light text-uppercase bg-light p-2 text-secondary m-0 w-auto animated rotateInDownRight">
+                    Puerta mejor decorada Gral Fco. Morazán
+                </h2>
+            </div>
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
