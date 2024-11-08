@@ -95,21 +95,21 @@ body {
 }
 
 /* SLIDER TOP HOME */
-
 .c-item {
-  height: 480px;
+  height: 250px;
 }
 
 .c-img {
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .caption-slide {
   left: 15%;
   bottom: 15%;
   & h2 {
-    font-size: clamp(16px, 4vw, 32px);
+    font-size: clamp(12px, 4vw, 32px);
   }
 }
 
@@ -746,6 +746,10 @@ body {
   .item-slide {
     width: 250px;
     height: 250px;
+  }
+
+  .c-item {
+    height: 480px;
   }
 }
 

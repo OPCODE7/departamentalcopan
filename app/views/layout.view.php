@@ -365,11 +365,9 @@ $titleFormat = strtoupper($replaceSlashUrl);
 
         d.addEventListener("click", e => {
             if (!e.target.matches(".dropdown-menu") && !e.target.matches(".dropdown-menu > *") && !e.target.matches(".dropdown-toggle")) {
-                console.log(e.target)
                 d.querySelectorAll(".dropdown-menu").forEach(dropdown => {
 
                     if (dropdown.classList.contains("show")) dropdown.classList.remove("show");
-                    console.log(dropdown)
                 });
             }
 
