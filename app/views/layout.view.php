@@ -92,7 +92,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                 </small>
                                 <div class="card position-absolute end-50 top-100 user-info h-auto shadow-lg bg-body rounded d-none user-info z-3">
                                     <div class="card-header">
-                                        <h5 class="text-dark">Área Personal</h5>
+                                        <h5 class="text-dark m-0">Área Personal</h5>
                                     </div>
                                     <div class="card-body d-flex align-items-center">
 
@@ -373,7 +373,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 });
             }
 
-            if (e.target.matches(".avatar-user")) d.querySelector(".user-info").classList.toggle("d-none");
+            if (e.target.matches(".avatar-user") || e.target.matches(".avatar-user > *")) d.querySelector(".user-info").classList.toggle("d-none");
         });
     </script>
 
