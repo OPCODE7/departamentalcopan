@@ -98,7 +98,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
 
                                         <div class="mx-3">
                                             <h5 class="text-dark text-capitalize mb-3"><b><?php echo $userName ?></b></h5>
-                                            <a href="<?php echo $APP_URL ?>users/edit" class="btn-blue text-white py-2 rounded p-3 text-decoration-none"><i class="fas fa-pencil me-2"></i>Editar perfil</a>
+                                            <a href="<?php echo $APP_URL ?>user/admin" class="btn-blue text-white py-2 rounded p-3 text-decoration-none" style="font-size:12px;"><i class="fas fa-gears me-2"></i>Administrar perfil</a>
                                         </div>
                                     </div>
                                     <div class="card-footer text-muted">
@@ -233,7 +233,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                             include $route->Request($_GET["view"]);
                         }
                     }
-                    if ($_GET["view"] == "layout") {
+                    if ($_GET["view"] == "layout" || ($_GET["view"] == "login" && count($userData) > 0)) {
                         $destino = $env->Redirect("");
                         echo "<script>location.href='$destino'</script>";
                     }

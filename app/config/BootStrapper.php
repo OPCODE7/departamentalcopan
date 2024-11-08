@@ -5,6 +5,8 @@ class Boot
     public function Start()
     {
         $view = "";
+        $userData = "";
+
 
         if (isset($_SESSION["userlogged"])) {
             $userData = $_SESSION["userlogged"];
@@ -12,8 +14,10 @@ class Boot
         } else {
             $view = "app/views/layout.view.php";
         }
-        if (isset($_GET["view"]) && ($_GET["view"] == "login" || $_GET["view"] == "auth/login")) {
+        if (isset($_GET["view"]) && ($_GET["view"] == "login" || $_GET["view"] == "auth/login") && count($userData) == 0) {
             $view = "app/views/auth/login.view.php";
+        } else {
+            $view = "app/views/layout.view.php";
         }
 
         if (isset($_GET["view"]) && $_GET["view"] == "forgotpwd") {
