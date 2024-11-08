@@ -303,9 +303,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
             $buttonScrollTop = $("#go-top");
 
 
-        d.querySelector(".avatar-user").addEventListener("click", e => {
-            d.querySelector(".user-info").classList.toggle("d-none");
-        });
+
         window.addEventListener("resize", e => {
 
             if (window.innerWidth >= 992) {
@@ -363,6 +361,19 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 });
             }
 
+        });
+
+        d.addEventListener("click", e => {
+            if (!e.target.matches(".dropdown-menu") && !e.target.matches(".dropdown-menu > *") && !e.target.matches(".dropdown-toggle")) {
+                console.log(e.target)
+                d.querySelectorAll(".dropdown-menu").forEach(dropdown => {
+
+                    if (dropdown.classList.contains("show")) dropdown.classList.remove("show");
+                    console.log(dropdown)
+                });
+            }
+
+            if (e.target.matches(".avatar-user")) d.querySelector(".user-info").classList.toggle("d-none");
         });
     </script>
 
