@@ -6,7 +6,7 @@
     <h5 class="text-blue fw-bold col-12 mt-5 px-0">Herramientas desarolladas por la dirección departamental Copán</h5>
     <div class="row p-5">
         <div class="col-12 col-md-4">
-            <a href="" class="glass-card mt-3 text-light text-decoration-none p-0">
+            <a href="<?php echo $APP_URL ?>sace/onlineapplications" class="glass-card mt-3 text-light text-decoration-none p-0">
                 <div class="z-3 px-3 text-center text-dark">
                     <h5 class="fw-bold z-3">Solicitudes en Línea</h5>
                     <p class="z-3">Solicitar y administrar la información de estudiantes, docentes y personal administrativo.</p>

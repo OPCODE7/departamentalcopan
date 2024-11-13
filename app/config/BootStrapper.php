@@ -5,7 +5,7 @@ class Boot
     public function Start()
     {
         $view = "";
-        $userData = "";
+        $userData = [];
 
 
         if (isset($_SESSION["userlogged"])) {
