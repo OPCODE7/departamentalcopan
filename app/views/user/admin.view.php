@@ -56,12 +56,12 @@ if (isset($_POST["updateUser"])) {
 
     $results = $userController->updateUser($data);
 
-
     if ($results["statusCode"] == 200) {
         $alertStyle = "alert-success";
         $currentPwd = "";
         $newPwd = "";
         $pwdConfirm = "";
+        $response = $userController->getUser($dataSession["id"]);
     } else {
         $alertStyle = "alert-danger";
     }

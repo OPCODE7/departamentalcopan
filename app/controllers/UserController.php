@@ -28,6 +28,13 @@ class UserController
         return $recordset;
     }
 
+    public function getUsers($del)
+    {
+        $recordset = $this->userModel->getUsers($del);
+        return $recordset;
+    }
+
+
     public function updateUser($dataView)
     {
         $statusCode = 500;

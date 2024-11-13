@@ -9,6 +9,20 @@ class UserModel
         $this->ConMySql = Connect::ConnectMysql();
     }
 
+    public function getUsers($del)
+    {
+        try {
+            $query = "CALL SP_GET_USERS({$del})";
+            $stmt = $this->ConMySql->prepare($query);
+            $stmt->execute();
+            $recordset = $stmt->fetchAll();
+            return $recordset;
+        } catch (PDOException $error) {
+            echo $error->getMessage();
+        }
+    }
+
+
 
     public function getUser($userId)
     {

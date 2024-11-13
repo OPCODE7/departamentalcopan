@@ -37,10 +37,9 @@ $titleFormat = strtoupper($replaceSlashUrl);
     <link rel="stylesheet" href="<?php echo $env->APP_URL  . "public/css/custom_styles/styles.css" ?>">
     <link rel="stylesheet" href="<?php echo $env->APP_URL  . "public/assets/fontawesome/css/all.min.css" ?>">
     <link rel="shortcut icon" href="<?php echo $env->APP_URL . "public/assets/icons/logo-depa-copan.ico" ?>" type="image/x-icon">
-    <link
-        rel="stylesheet"
-        href="<?php echo $env->APP_URL ?>public/plugins/animatecss/animate.compat.css" />
-
+    <link rel="stylesheet" href="<?php echo $env->APP_URL ?>public/plugins/animatecss/animate.compat.css" />
+    <!-- Datatable -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
     <title><?php echo $titleFormat ?></title>
     <meta name="description" content="Sitio oficial direccion departamental de educación copán." />
 
@@ -293,8 +292,13 @@ $titleFormat = strtoupper($replaceSlashUrl);
         </footer>
     </div>
     <script src="<?php echo $env->APP_URL  . "public/js/bootstrap.bundle.min.js" ?>"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src=" https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
 
-    <script>
+
+
+    <script type="module">
         const d = document,
             $ = (selector) => d.querySelector(selector),
             $$ = (selector) => d.querySelectorAll(selector),
@@ -339,14 +343,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
         }
 
         $buttonScrollTop.addEventListener("click", e => window.scrollTo(0, 0));
-        // setInterval(() => {
-        //     let scrollY = window.scrollY;
-        //     if (scrollY >= 1000) {
-        //         $buttonScrollTop.style.opacity = "100%";
-        //     } else {
-        //         $buttonScrollTop.style.opacity = "0";
-        //     }
-        // }, 300);
+
 
         d.addEventListener("DOMContentLoaded", e => {
             if (window.innerWidth >= 992) {
@@ -374,6 +371,31 @@ $titleFormat = strtoupper($replaceSlashUrl);
             if (e.target.matches(".avatar-user") || e.target.matches(".avatar-user > *")) d.querySelector(".user-info").classList.toggle("d-none");
         });
     </script>
+
+    <script>
+        new DataTable('#users', {
+            responsive: true,
+            autoWidth: false,
+
+            "language": {
+                "lengthMenu": "Mostrar _MENU_ registros por página",
+                "zeroRecords": "No se encontraron registros que coincidan con lo que buscas",
+                "info": "Mostrando la pagina _PAGE_ de _PAGES_",
+                "infoEmpty": "No records available",
+                "infoFiltered": "(filtrado de _MAX_ registros totales)",
+                "search": 'Buscar:',
+                'paginate': {
+                    'next': 'Siguiente',
+                    'previous': 'Anterior'
+                }
+
+            }
+        });
+    </script>
+
+
+
+
 
 </body>
 
