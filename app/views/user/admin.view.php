@@ -43,6 +43,7 @@ if (isset($_POST["updateUser"])) {
 
     $data = [
         "userId" => $userId,
+        "userName" => '',
         "firstName" => $firstName,
         "lastName" => $lastName,
         "email" => $email,
@@ -70,12 +71,22 @@ if (isset($_POST["updateUser"])) {
 ?>
 
 <div class="row mt-1 w-100 mx-0 px-3 px-md-4 px-lg-5">
-    <div class="col-12 my-3 text-end px-0">
-        <a href="<?php echo $APP_URL ?>user/all" class="btn-blue rounded fw-bold text-decoration-none p-2">
-            <i class="fa-solid fa-users-gear me-1"></i>
-            Administrar Usuarios
-        </a>
-    </div>
+    <?php
+    if ($dataSession["role"] == "1" || $dataSession["role"] == "2") {
+    ?>
+        <div class="col-12 my-3 text-end px-0">
+            <a href="<?php echo $APP_URL ?>user/all" class="btn-blue rounded fw-bold text-decoration-none p-2">
+                <i class="fa-solid fa-users-gear me-1"></i>
+                Administrar Usuarios
+            </a>
+            <a href="<?php echo $APP_URL ?>user/role/all" class="btn-blue rounded fw-bold text-decoration-none p-2 ms-2">
+                <i class="fa-solid fa-gear"></i>
+                Administrar Roles
+            </a>
+        </div>
+    <?php
+    }
+    ?>
     <div class="col-12 d-flex justify-content-center">
         <form class="col-12 col-md-8 col-lg-7 my-3 row" method="POST" id="general-data-form" enctype="multipart/form-data">
             <h4 class="fw-semibold mb-3">Datos personales</h4>

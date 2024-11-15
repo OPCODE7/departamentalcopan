@@ -37,7 +37,7 @@ class AuthController
         if ($recordset) {
             $user = $data["userName"];
             $pwd = sha1($data["password"]);
-            if ($user == $recordset["USER_NAME"] && $pwd == $recordset["USER_PWD"]) {
+            if ($user == $recordset["USER_NAME"] && $pwd == $recordset["USER_PWD"] && $recordset["USER_STATE"] == "1" && $recordset["DEL"] == "0") {
                 $_SESSION["userlogged"] = [
                     "id" => $recordset["USER_ID"],
                     "role" => $recordset["ROLE_ID"]

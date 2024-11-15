@@ -34,6 +34,11 @@ class UserController
         return $recordset;
     }
 
+    public function getRoles()
+    {
+        $recordset = $this->userModel->getRoles();
+        return $recordset;
+    }
 
     public function updateUser($dataView)
     {
@@ -110,8 +115,6 @@ class UserController
                 ];
             }
         }
-
-
 
         if ($data["state"] != '' && !preg_match($this->regExp["state"], $data["state"])) {
             $error = "El campo estado no es válido.";

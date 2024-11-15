@@ -41,7 +41,7 @@ class UserModel
     public function updateUser($data)
     {
         try {
-            $query = "CALL SP_EDIT_USER('{$data['userId']}', '{$data['firstName']}', '{$data['lastName']}','{$data['email']}','{$data['newPwd']}','{$data['roleId']}','{$data['state']}')";
+            $query = "CALL SP_EDIT_USER('{$data['userId']}', '{$data['userName']}','{$data['firstName']}', '{$data['lastName']}','{$data['email']}','{$data['newPwd']}','{$data['roleId']}','{$data['state']}')";
 
             $stmt = $this->ConMySql->prepare($query);
 
@@ -49,6 +49,19 @@ class UserModel
             return $ra;
         } catch (PDOException $error) {
             echo $error->getMessage();
+        }
+    }
+
+    public function getRoles()
+    {
+        try {
+            $query = "CALL SP_GET_ROLES()";
+            $stmt = $this->ConMySql->prepare($query);
+            $stmt->execute();
+            $recordset = $stmt->fetchAll();
+            return $recordset;
+        } catch (PDOException $error) {
+            echo $error->getmessage();
         }
     }
 }

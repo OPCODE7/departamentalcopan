@@ -48,6 +48,11 @@ body {
 .btn-blue {
   background-color: var(--blue);
   color: var(--very-light-gray);
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  outline: none;
 }
 
 .btn-blue:hover {
