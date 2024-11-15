@@ -1,12 +1,14 @@
 <?php
 require_once("app/controllers/UserController.php");
+require_once("app/controllers/RoleController.php");
 $userController = new UserController();
+$roleController = new RoleController();
 $users = $userController->getUsers(0);
 
 if (isset($_SESSION["userlogged"])) $dataSession = $_SESSION["userlogged"];
 
 $user = $userController->getUser($dataSession["id"]);
-$roles = $userController->getRoles();
+$roles = $roleController->getRoles("0");
 
 if (!$user) {
     $destine = $Env->Redirect("404");
@@ -22,7 +24,7 @@ if (!$user) {
     ?>
         <div class="row ">
             <div class="col-12 text-end mt-3">
-                <a href="<?php echo $APP_URL ?>administration/user/paperbin" class="btn-blue p-2 text-decoration-none rounded fs-7">
+                <a href="<?php echo $APP_URL ?>user/paperbin/all" class="btn-blue p-2 text-decoration-none rounded fs-7">
                     <span class="fa-solid fa-trash text-white"></span>
                     <span class="d-none d-md-inline text-white fw-semibold">Papelera</span>
                 </a>
@@ -37,7 +39,7 @@ if (!$user) {
             <div class="card bg-light h-auto">
                 <h5 class="card-header border-bottom border-light"><strong>Usuarios Registrados</strong></h5>
                 <div class="card-body">
-                    <table class="table table-striped table-sm table-bordered" id="users">
+                    <table class="table table-striped table-sm table-bordered" id="datatable">
                         <thead>
                             <tr>
                                 <th scope="col">COD USUARIO</th>
@@ -96,3 +98,25 @@ if (!$user) {
     </div>
 
 </div>
+
+
+<script>
+    new DataTable('#users', {
+        responsive: true,
+        autoWidth: false,
+
+        "language": {
+            "lengthMenu": "Mostrar _MENU_ registros por página",
+            "zeroRecords": "No se encontraron registros que coincidan con lo que buscas",
+            "info": "Mostrando la pagina _PAGE_ de _PAGES_",
+            "infoEmpty": "No records available",
+            "infoFiltered": "(filtrado de _MAX_ registros totales)",
+            "search": 'Buscar:',
+            'paginate': {
+                'next': 'Siguiente',
+                'previous': 'Anterior'
+            }
+
+        }
+    });
+</script>

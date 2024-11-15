@@ -34,11 +34,6 @@ class UserController
         return $recordset;
     }
 
-    public function getRoles()
-    {
-        $recordset = $this->userModel->getRoles();
-        return $recordset;
-    }
 
     public function updateUser($dataView)
     {

@@ -21,24 +21,24 @@ if (!$role) {
 if (isset($_POST["delete"])) {
     $data = [
         "roleId" => $role["ROLE_ID"],
-        "del" => 1
+        "del" => 0
     ];
 
-    $errorsvalidate = $roleController->deleterole($data);
+    $errorsvalidate = $roleController->deleteRole($data);
 }
 ?>
 
 <div class="col-10 col-md-8 col-lg-5 mt-5 text-center">
     <div class="card shadow bg-body rounded h-auto">
         <div class="card-header text-center">
-            <h5 class="text-purple mb-0">Eliminar Rol</h5>
+            <h5 class="text-purple mb-0">Recuperar Rol</h5>
         </div>
         <div class="card-body">
             <form method="POST">
                 <div class="row">
                     <div class="col-12">
                         <div class="mb-3">
-                            <span class="fw-medium">¿Estas seguro que deseas eliminar el rol <b><?php echo $role["ROLE_DESCRIPTION"] ?></b>?</span>
+                            <span class="fw-medium">¿Estas seguro que deseas recuperar el rol <b><?php echo $role["ROLE_DESCRIPTION"] ?></b>?</span>
                         </div>
                     </div>
                 </div>

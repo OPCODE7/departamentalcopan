@@ -18,15 +18,12 @@ if (!$role) {
     header("Location: $destine");
 }
 
-if (isset($_POST["delete"])) {
-    $data = [
-        "roleId" => $role["ROLE_ID"],
-        "del" => 1
-    ];
-
-    $errorsvalidate = $roleController->deleterole($data);
+if (isset($_POST["destroy"])) {
+    $errorsvalidate = $roleController->destroyRole($role["ROLE_ID"]);
 }
 ?>
+
+
 
 <div class="col-10 col-md-8 col-lg-5 mt-5 text-center">
     <div class="card shadow bg-body rounded h-auto">
@@ -38,7 +35,7 @@ if (isset($_POST["delete"])) {
                 <div class="row">
                     <div class="col-12">
                         <div class="mb-3">
-                            <span class="fw-medium">¿Estas seguro que deseas eliminar el rol <b><?php echo $role["ROLE_DESCRIPTION"] ?></b>?</span>
+                            <span class="fw-medium">¿Estas seguro que deseas eliminar definitivamente de la base de datos el rol <b><?php echo $role["ROLE_DESCRIPTION"] ?></b>?</span>
                         </div>
                     </div>
                 </div>
@@ -58,8 +55,11 @@ if (isset($_POST["delete"])) {
                 }
                 ?>
                 <div>
-                    <a href="<?php echo $APP_URL . "user/role/all" ?>" class="btn btn-warning text-white m-auto w-40 my-3 py-2 fw-semibold"><i class="fa-solid fa-ban me-2"></i>Cancelar</a>
-                    <button type="submit" name="delete" class="btn-blue text-white m-auto w-40 my-3 py-2 fw-semibold"><i class="fa-solid fa-floppy-disk me-2"></i>Aceptar</button>
+                    <a href="<?php echo $APP_URL . "user/role/paperbin/all" ?>" class="btn btn-warning text-white m-auto w-40 my-3 py-2 fw-semibold"><i class="fa-solid fa-ban me-2"></i>Cancelar</a>
+                    <button type="submit" name="destroy" class="btn btn-danger text-white m-auto w-40 my-3 py-2 fw-semibold">
+                        <i class="fa-solid fa-trash-can"></i>
+                        Aceptar
+                    </button>
                 </div>
             </form>
 

@@ -373,7 +373,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
     </script>
 
     <script>
-        new DataTable('#users', {
+        new DataTable('#datatable', {
             responsive: true,
             autoWidth: false,
 

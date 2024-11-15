@@ -1,11 +1,13 @@
 <?php
 require_once("app/config/env.php");
 require_once("app/controllers/UserController.php");
+require_once("app/controllers/RoleController.php");
 
 if (isset($_SESSION["userlogged"])) $dataSession = $_SESSION["userlogged"];
 if ($dataSession["role"] != "1") header("Location:" . $APP_URL . "administration/user/all");
 
 $userController = new UserController();
+$roleController = new RoleController();
 $Env = new Env();
 
 $userName = "";
@@ -23,7 +25,7 @@ $components = parse_url($url);
 parse_str($components['query'], $results);
 
 $user = $userController->getUser($results["id"]);
-$roles = $userController->getRoles();
+$roles = $roleController->getRoles("0");
 
 if (!$user) {
     $destine = $Env->Redirect("404");

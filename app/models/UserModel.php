@@ -51,17 +51,4 @@ class UserModel
             echo $error->getMessage();
         }
     }
-
-    public function getRoles()
-    {
-        try {
-            $query = "CALL SP_GET_ROLES()";
-            $stmt = $this->ConMySql->prepare($query);
-            $stmt->execute();
-            $recordset = $stmt->fetchAll();
-            return $recordset;
-        } catch (PDOException $error) {
-            echo $error->getmessage();
-        }
-    }
 }

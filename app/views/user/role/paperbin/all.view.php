@@ -8,7 +8,7 @@ $users = $userController->getUsers(0);
 if (isset($_SESSION["userlogged"])) $dataSession = $_SESSION["userlogged"];
 
 $user = $userController->getUser($dataSession["id"]);
-$roles = $roleController->getRoles("0");
+$roles = $roleController->getRoles("1");
 
 if (!$user) {
     $destine = $Env->Redirect("404");
@@ -19,29 +19,18 @@ if (!$user) {
 ?>
 
 <div class="container">
-    <?php
-    if ($dataSession["role"] == "1") {
-    ?>
-        <div class="row ">
-            <div class="col-12 text-end mt-3">
-                <a href="<?php echo $APP_URL ?>user/role/paperbin/all" class="btn-blue p-2 text-decoration-none rounded fs-7">
-                    <span class="fa-solid fa-trash text-white"></span>
-                    <span class="d-none d-md-inline text-white fw-semibold">Papelera</span>
-                </a>
-                <a href="<?php echo $APP_URL ?>user/role/new" class="btn-blue p-2 text-decoration-none rounded fs-7 ms-2">
-                    <span class="fa-solid fa-plus-circle text-white"></span>
-                    <span class="d-none d-md-inline text-white fw-semibold">Nuevo</span>
-                </a>
-            </div>
+    <div class="row ">
+        <div class="col-12 text-end mt-3">
+            <a href="<?php echo $APP_URL ?>user/role/all" class="btn-blue p-2 text-decoration-none rounded fs-7">
+                <i class="fa-solid fa-left-long"></i>
+                <span class="d-none d-md-inline text-white fw-semibold">Volver</span>
+            </a>
         </div>
-    <?php
-    }
-    ?>
-
+    </div>
     <div class="row my-3">
         <div class="col-12">
             <div class="card bg-light h-auto">
-                <h5 class="card-header border-bottom border-light"><strong>Roles Registrados</strong></h5>
+                <h5 class="card-header border-bottom border-light"><strong>Roles en Papelera</strong></h5>
                 <div class="card-body">
                     <table class="table table-striped table-sm table-bordered" id="datatable">
                         <thead>
@@ -72,11 +61,11 @@ if (!$user) {
                                     if ($dataSession["role"] == 1) {
                                     ?>
                                         <td>
-                                            <a href="<?php echo $APP_URL; ?>user/role/edit?id=<?php echo $role["ROLE_ID"] ?>" class="btn btn-sm btn-outline-success mr-1 fw-semibold mb-1 d-block">
-                                                <i class="fas fa-pencil-alt"></i>
-                                                Editar
+                                            <a href="<?php echo $APP_URL; ?>user/role/paperbin/recovery?id=<?php echo $role["ROLE_ID"] ?>" class="btn btn-sm btn-outline-success mr-1 fw-semibold mb-1 d-block">
+                                                <i class="fa-solid fa-reply-all"></i>
+                                                Recuperar
                                             </a>
-                                            <a href="<?php echo $APP_URL; ?>user/role/delete?id=<?php echo $role["ROLE_ID"] ?>" class="btn btn-sm btn-outline-danger fw-semibold d-block">
+                                            <a href="<?php echo $APP_URL; ?>user/role/paperbin/destroy?id=<?php echo $role["ROLE_ID"] ?>" class="btn btn-sm btn-outline-danger fw-semibold d-block">
                                                 <i class="fas fa-trash"></i>
                                                 Eliminar
                                             </a>
