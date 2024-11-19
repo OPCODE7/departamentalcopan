@@ -21,7 +21,11 @@ class Boot
         }
 
         if (isset($_GET["view"]) && $_GET["view"] == "forgotpwd") {
-            $view = "app/views/auth/forgotpwd.view.php";
+            $view = "app/views/auth/forgotpassword/forgotpwd.view.php";
+        }
+
+        if (isset($_GET["view"]) && $_GET["view"] == "resetpwd") {
+            $view = "app/views/auth/forgotpassword/resetpwd.view.php";
         }
 
         if (isset($_GET["view"]) && ($_GET["view"] == "signup" || $_GET["view"] == "auth/signup")) {

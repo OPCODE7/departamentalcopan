@@ -63,7 +63,7 @@ class AuthModel
     {
         try {
             $ra = 0;
-            $query = "CALL SP_SET_PASS_RECOVERYCODE('{$data["newCode"]}','{$data["currentAttemps"]}','{$data["idUser"]}')";
+            $query = "CALL SP_SET_PASS_RECOVERYCODE('{$data["newCode"]}','{$data["currentAttemps"]}','{$data["userId"]}')";
 
             $stmt = $this->ConMySql->prepare($query);
 

@@ -119,19 +119,6 @@ class AuthController
         }
     }
 
-    public function checkExistAccount($data)
-    {
-        $response = "";
-
-        $recordset = $this->userModel->checkExistAccount($data);
-        if ($recordset) {
-            return $recordset;
-        } else {
-            $response = "Tu cuenta no existe.";
-            return $response;
-        }
-    }
-
     public function updateUserPwd($data)
     {
         $error = "";
@@ -153,5 +140,18 @@ class AuthController
         $rowsaffected = $this->userModel->updateUserPwd($data);
 
         return $rowsaffected;
+    }
+
+    public function checkExistAccount($data)
+    {
+        $response = "";
+
+        $recordset = $this->userModel->checkExistAccount($data);
+        if ($recordset) {
+            return $recordset;
+        } else {
+            $response = "Tu cuenta no existe.";
+            return $response;
+        }
     }
 }

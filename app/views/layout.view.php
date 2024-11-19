@@ -121,7 +121,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                         </label>
                     </div>
 
-                    <div class="collapse navbar-collapse px-3 mt-md-0 mt-2 order-lg-4" id="navbar-header-layout">
+                    <div class="collapse navbar-collapse px-3 mt-md-0 mt-2 order-lg-4 z-3" id="navbar-header-layout">
                         <div class="navbar-nav mt-1 mb-lg-0 mx-auto">
                             <a class="nav-link nav-link-header-layout" aria-current="page" href="<?php echo $env->APP_URL ?>">HOME</a>
                             <li class="nav-item position-relative">
