@@ -18,12 +18,15 @@ if (!$user) {
     header("Location: $destine");
 }
 
-if (isset($_POST["destroy"])) {
-    $errorsvalidate = $userController->destroyUser($user["USER_ID"]);
+if (isset($_POST["delete"])) {
+    $data = [
+        "userId" => $user["USER_ID"],
+        "del" => 1
+    ];
+
+    $errorsvalidate = $userController->deleteUser($data);
 }
 ?>
-
-
 
 <div class="col-10 col-md-8 col-lg-5 mt-5 text-center">
     <div class="card shadow bg-body rounded h-auto">
@@ -35,7 +38,7 @@ if (isset($_POST["destroy"])) {
                 <div class="row">
                     <div class="col-12">
                         <div class="mb-3">
-                            <span class="fw-medium">¿Estas seguro que deseas eliminar definitivamente de la base de datos el rol <b><?php echo $user["FIRSTNAME"] . " " . $user["LASTNAME"] ?></b>?</span>
+                            <span class="fw-medium">¿Estas seguro que deseas eliminar al usuario <b><?php echo $user["FIRSTNAME"] . " " . $user["LASTNAME"] ?></b>?</span>
                         </div>
                     </div>
                 </div>
@@ -45,7 +48,7 @@ if (isset($_POST["destroy"])) {
                 ?>
                     <div class="row">
                         <div class="col-12">
-                            <div class="alert alert-danger alert-dismissible fade show mb-0 py-2" user="alert">
+                            <div class="alert alert-danger alert-dismissible fade show mb-0 py-2" role="alert">
                                 <strong class="fs-8"><?php echo $errorsvalidate ?></strong>
                                 <button type="button" class="btn-close top-50 translate-middle" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
@@ -55,11 +58,8 @@ if (isset($_POST["destroy"])) {
                 }
                 ?>
                 <div>
-                    <a href="<?php echo $APP_URL . "user/paperbin/all" ?>" class="btn btn-warning text-white m-auto w-40 my-3 py-2 fw-semibold"><i class="fa-solid fa-ban me-2"></i>Cancelar</a>
-                    <button type="submit" name="destroy" class="btn btn-danger text-white m-auto w-40 my-3 py-2 fw-semibold">
-                        <i class="fa-solid fa-trash-can"></i>
-                        Aceptar
-                    </button>
+                    <a href="<?php echo $APP_URL . "user/all" ?>" class="btn btn-warning text-white m-auto w-40 my-3 py-2 fw-semibold"><i class="fa-solid fa-ban me-2"></i>Cancelar</a>
+                    <button type="submit" name="delete" class="btn-blue text-white m-auto w-40 my-3 py-2 fw-semibold"><i class="fa-solid fa-floppy-disk me-2"></i>Aceptar</button>
                 </div>
             </form>
 

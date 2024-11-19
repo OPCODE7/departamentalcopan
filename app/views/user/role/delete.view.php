@@ -24,7 +24,7 @@ if (isset($_POST["delete"])) {
         "del" => 1
     ];
 
-    $errorsvalidate = $roleController->deleterole($data);
+    $errorsvalidate = $roleController->deleteRole($data);
 }
 ?>
 

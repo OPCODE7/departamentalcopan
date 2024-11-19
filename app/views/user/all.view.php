@@ -76,7 +76,7 @@ if (!$user) {
                                                 <i class="fas fa-pencil-alt"></i>
                                                 Editar
                                             </a>
-                                            <a href="<?php echo $APP_URL; ?>user/trash/?id=<?php echo $user["USER_ID"] ?>" class="btn btn-sm btn-outline-danger fw-semibold d-block">
+                                            <a href="<?php echo $APP_URL; ?>user/delete/?id=<?php echo $user["USER_ID"] ?>" class="btn btn-sm btn-outline-danger fw-semibold d-block">
                                                 <i class="fas fa-trash"></i>
                                                 Eliminar
                                             </a>

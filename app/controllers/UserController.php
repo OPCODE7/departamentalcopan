@@ -119,7 +119,7 @@ class UserController
             ];
         }
 
-        if ($data["roleId"] != '' && preg_match($this->regExp["userRole"], $data["roleId"] == 0)) {
+        if ($data["userId"] != '' && preg_match($this->regExp["userRole"], $data["userId"] == 0)) {
             $error = "El campo rol no es válido.";
             return [
                 "statusCode" => $statusCode,
@@ -142,5 +142,22 @@ class UserController
             "statusCode" => $statusCode,
             "message" => $error
         ];
+    }
+    public function deleteUser($data)
+    {
+        $rowsAffected = $this->userModel->deleteUser($data);
+        if ($rowsAffected > 0) {
+            $destino = $this->Env->Redirect("user/all");
+            echo "<script>location.href='$destino';</script>";
+        }
+    }
+
+    public function destroyUser($userId)
+    {
+        $rowsAffected = $this->userModel->destroyUser($userId);
+        if ($rowsAffected > 0) {
+            $destino = $this->Env->Redirect("user/paperbin/all");
+            echo "<script>location.href='$destino';</script>";
+        }
     }
 }

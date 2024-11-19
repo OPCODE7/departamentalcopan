@@ -36,6 +36,7 @@ class RoleController
             $error = "El nombre del rol debe contener de 1 a 50 caracteres no numéricos.";
             return $error;
         }
+        $data["roleName"] = strTrim($data["roleName"]);
 
         $rowsaffected = $this->roleModel->saveRole($data);
 
@@ -50,12 +51,16 @@ class RoleController
 
     public function editRole($data)
     {
+
+        $sanitizedRoleName = strTrim($data["roleName"]);
         if (preg_match($this->regExp["roleName"], $data["roleName"]) == 0) {
             $error = "El nombre del rol debe contener de 1 a 50 caracteres no numéricos.";
             return $error;
         }
 
-        $rowsaffected = $this->roleModel->saveRole($data);
+        $data["roleName"] = $sanitizedRoleName;
+
+        $rowsaffected = $this->roleModel->updateRole($data);
 
         if ($rowsaffected > 0) {
             $destino = $this->Env->Redirect("user/role/all");
@@ -83,7 +88,6 @@ class RoleController
             echo "<script>location.href='$destino';</script>";
         }
     }
-
 
     public function getNextRoleId()
     {
