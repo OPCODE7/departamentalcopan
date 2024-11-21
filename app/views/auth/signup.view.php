@@ -35,14 +35,8 @@ if (isset($_POST["register"])) {
         "pwdConfirm" => $passwordConfirm,
     ];
 
-
     $errorsvalidate = $authController->saveUser($data);
 }
-
-
-
-
-
 ?>
 
 <!DOCTYPE html>

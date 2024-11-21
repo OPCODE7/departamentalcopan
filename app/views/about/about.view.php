@@ -20,13 +20,13 @@
     </div>
 
     <div class="row my-4 px-3 px-md-4 px-lg-5 gap-3 justify-content-center align-items-center bg-texture-dark w-100 mx-0">
-        <div class="col-12 col-md-5 col-lg-4 p-5 card-dark-about">
+        <div class="col-12 col-md-10 col-lg-5 p-4 d-flex flex-column justify-content-center card-dark-about ">
             <h3>Misión</h3>
-            <p>Facilitar los procesos educativos en Copán, ofreciendo soluciones eficientes y accesibles para que los docentes se concentren en la enseñanza.</p>
+            <p>Somos la institución del estado, que ejecuta la polìtica educativa nacional y autoriza, organiza, dirige y supervisa la educación en los niveles de educación pre-básica, básica y media del sistema educativo formal, garantizando el acceso a los servicios educativos con calidad, equidad, transparencia y participación a las niñas, niños, jóvenes y adultos para el bienestar humano integral, que contribuyan al desarrollo económico, científico, tecnológico, social y cultural del país .</p>
         </div>
-        <div class="col-12 col-md-5 col-lg-4 p-5 card-dark-about">
+        <div class="col-12 col-md-10 col-lg-5 p-4 d-flex flex-column justify-content-center card-dark-about ">
             <h3>Visión</h3>
-            <p>Ser líderes en gestión educativa en Copán, mejorando la eficiencia y apoyando el desarrollo del sector educativo.</p>
+            <p>Al año 2030, Honduras contará con su sistema nacional de educación inclusivo, eficaz, eficiente y pertinente a las necesidades del país y sus regiones, que ofrezca al hondureño oportunidades de formación integral permanente para la vida, que le permita construir su propio bienestar y contribuir al desarrollo sostenible del país.</p>
         </div>
     </div>
 
@@ -35,35 +35,41 @@
             <h2 class="fw-bold mb-1">Nuestros valores</h2>
             <div class="title-line mx-auto"></div>
         </div>
+
         <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center mt-3">
-            <i class="fa-solid fa-award fs-1 text-blue"></i>
-            <h5 class="fw-semibold my-3 text-uppercase">Excelencia</h5>
-            <p class="text-secondary fw-normal fs-6">Compromiso con la mejora continua en todos los aspectos del aprendizaje, buscando siempre el más alto nivel de calidad en la educación.</p>
+            <i class="fas fa-check-circle fs-1 text-blue"></i>
+            <h5 class="fw-semibold my-3 text-uppercase">Eficiencia</h5>
+            <p class="text-secondary fw-normal fs-6">La empresa se enfoca en maximizar los recursos disponibles para ofrecer soluciones rápidas y efectivas a las necesidades del magisterio, asegurando que cada proceso administrativo y educativo se complete en el menor tiempo posible sin comprometer la calidad del servicio.</p>
         </div>
         <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center mt-3">
-            <i class="fa-solid fa-universal-access fs-1 text-blue"></i>
-            <h5 class="fw-semibold my-3 text-uppercase">Inclusión</h5>
-            <p class="text-secondary fw-normal fs-6">Garantizar que todos los estudiantes, independientemente de su origen o capacidades, tengan igualdad de oportunidades para aprender y desarrollarse.</p>
-        </div>
-        <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center mt-3">
-            <i class="fa-solid fa-lightbulb fs-1 text-blue"></i>
-            <h5 class="fw-semibold my-3 text-uppercase">Innovación</h5>
-            <p class="text-secondary fw-normal fs-6"> Fomentar el uso de nuevas ideas, métodos y tecnologías que mejoren el proceso educativo y preparen a los estudiantes para el futuro.</p>
-        </div>
-        <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center mt-3">
-            <i class="fa-solid fa-handshake-angle fs-1 text-blue"></i>
-            <h5 class="fw-semibold my-3 text-uppercase">Respeto</h5>
-            <p class="text-secondary fw-normal fs-6">Crear un entorno de respeto mutuo entre estudiantes, maestros y personal, valorando la diversidad de opiniones, culturas y experiencias.</p>
+            <i class="fas fa-tachometer-alt fs-1 text-blue"></i>
+            <h5 class="fw-semibold my-3 text-uppercase">Eficacia</h5>
+            <p class="text-secondary fw-normal fs-6">El compromiso de la organización radica en cumplir los objetivos planteados con precisión, asegurando que cada trámite, proyecto o iniciativa responda a las expectativas del magisterio y contribuya al desarrollo educativo del departamento de Copán.</p>
         </div>
         <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center mt-3">
             <i class="fa-solid fa-person-circle-check fs-1 text-blue"></i>
             <h5 class="fw-semibold my-3 text-uppercase">Responsabilidad</h5>
-            <p class="text-secondary fw-normal fs-6"> Promover una cultura de responsabilidad, tanto en los estudiantes como en el personal docente, para lograr un entorno educativo ético y comprometido con el desarrollo de la sociedad.</p>
+            <p class="text-secondary fw-normal fs-6">La empresa asume con seriedad el impacto de sus decisiones y acciones, trabajando con dedicación y compromiso para garantizar que los servicios ofrecidos sean confiables, profesionales y estén alineados con las necesidades de los docentes y las instituciones educativas.</p>
         </div>
         <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center mt-3">
-            <i class="fa-solid fa-users-between-lines fs-1 text-blue"></i>
-            <h5 class="fw-semibold my-3 text-uppercase">Colaboración</h5>
-            <p class="text-secondary fw-normal fs-6">Fomentar el trabajo en equipo y la cooperación entre la comunidad educativa, incluidas familias, docentes y estudiantes, para alcanzar metas comunes y fortalecer la educación.</p>
+            <i class="fa-solid fa-scale-unbalanced-flip fs-1 text-blue"></i>
+            <h5 class="fw-semibold my-3 text-uppercase">Legalidad</h5>
+            <p class="text-secondary fw-normal fs-6">Todas las actividades de la organización se desarrollan dentro del marco normativo vigente, respetando las leyes y regulaciones aplicables, con el objetivo de garantizar la legitimidad y credibilidad en cada proceso que se realiza.</p>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center mt-3">
+            <i class="fa-solid fa-magnifying-glass fs-1 text-blue"></i>
+            <h5 class="fw-semibold my-3 text-uppercase">Transparencia</h5>
+            <p class="text-secondary fw-normal fs-6">La institución promueve un entorno de confianza a través de la apertura en la comunicación y la rendición de cuentas, asegurando que cada docente y usuario tenga acceso claro y comprensible a la información sobre los servicios y procedimientos.</p>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center mt-3">
+            <i class="fas fa-smile fs-1 text-blue"></i>
+            <h5 class="fw-semibold my-3 text-uppercase">Amabilidad</h5>
+            <p class="text-secondary fw-normal fs-6">La atención al magisterio se realiza con cortesía y disposición, priorizando un trato humano y empático que facilite la interacción y fomente relaciones de confianza entre la empresa y sus usuarios.</p>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center mt-3">
+            <i class="fa-solid fa-handshake-angle fs-1 text-blue"></i>
+            <h5 class="fw-semibold my-3 text-uppercase">Respeto</h5>
+            <p class="text-secondary fw-normal fs-6">Se valora y se reconoce la dignidad de cada docente y usuario, garantizando un ambiente inclusivo, libre de discriminación y basado en el reconocimiento mutuo de derechos y deberes en el contexto educativo y administrativo.</p>
         </div>
     </div>
 
@@ -131,8 +137,8 @@
             </div>
         </div>
 
-        <div class="col-12 mt-2 mb-4">
-            <a href="<?php echo $APP_URL ?>about/staff" class="btn btn-outline-blue">Ver más</a>
+        <div class="col-12 mt-2 mb-4 text-center">
+            <a href="<?php echo $APP_URL ?>about/staff" class="btn btn-outline-blue px-5">Ver más</a>
         </div>
 
     </div>

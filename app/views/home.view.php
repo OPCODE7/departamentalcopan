@@ -24,6 +24,8 @@ $regExp = [
 
 ];
 
+$to = "opcode777@gmail.com";
+
 if (isset($_POST["sendMail"])) {
     $sent = false;
     $email = $_POST["email"];
@@ -41,24 +43,16 @@ if (isset($_POST["sendMail"])) {
         $errorsvalidate = "Ingresar mensaje válido.";
     } else {
 
-        $to = "opcode777@gmail.com";
-        $message = <<<HTML
-        <img src="<?php echo $APP_URL?>/public/images/logo-depa-copan.png" alt="logo-depa-copan" width="100" height="100" class="img-fluid">
-        <h2>De {$email}:</h2>
-        <h4>$message</h4>
-        HTML;
-
         $headers = "Content-type: text/html; charset=utf-8 \r\n";
         $headers .= "MIME-Version: 1.0 \r\n";
         $headers .= "From: Formulario de Contacto<departamentalcopan>";
 
-        if (mail($to, $subject, $message, $headers)) {
+        if (mail($to, $subject, $htmlMessage, $headers)) {
             $sent = true;
         }
     }
 }
 ?>
-
 
 <div class="carousel slide w-100 mb-4" data-bs-ride="carousel" id="hero-carousel">
     <div class="carousel-indicators">
@@ -261,11 +255,12 @@ if (isset($_POST["sendMail"])) {
     </div>
 </section>
 
-<section class="contact row w-100 justify-content-center align-items-center" style="height: 90vh;background-color: var(--very-dark);" id="contact-form">
-    <form class="col-12 col-md-8 col-lg-6 my-3 text-light" method="POST" id="change-pwd-form">
+<section class="contact row w-100 justify-content-center align-items-center" style="min-height: 90vh;background-color: var(--very-dark);" id="section-contact-form">
+    <form class="col-12 col-md-8 col-lg-6 my-3 text-light" method="POST" id="contact-form">
         <h4 class="fw-semibold mb-3 col-12">Contacto</h4>
         <div class="title-line"></div>
         <div class="row w-100">
+            <input type="hidden" value="opcode777@gmail.com" name="to">
             <div class="col-6">
                 <label for="name" class="form-label fw-medium">Nombre</label>
                 <div>
@@ -290,32 +285,34 @@ if (isset($_POST["sendMail"])) {
             <div class="mb-3 col-12">
                 <label for="message" class="form-label fw-medium">Mensaje</label>
                 <div>
-                    <textarea name="message" id="message" class="form-control bg-transparent border border-primary fw-normal text-light"></textarea>
+                    <textarea name="message" id="message" class="form-control bg-transparent border border-primary fw-normal text-light" value=""></textarea>
                 </div>
                 <div id="alert-error" class="mt-3"></div>
             </div>
-            <?php
-            if ($errorsvalidate != "") {
+            <div class="alert-request-container col-8 mx-auto">
 
-            ?>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="alert alert-danger alert-dismissible fade show mb-0 py-2" role="alert">
-                            <strong class="fs-8"><?php echo $errorsvalidate ?></strong>
-                            <button type="button" class="btn-close top-50 translate-middle" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center">
+                <button class="btn-send-mail" type="button" id="sendMail">
+                    <input type="hidden" name="sendMail" value="">
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                    fill="currentColor"
+                                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                            </svg>
                         </div>
                     </div>
-                </div>
-            <?php
-            }
-            ?>
-
-            <div class="col-12">
-                <button class="btn btn-primary text-uppercase bg-blue fw-semibold position-relative w-100">
-                    <input name="sendMail" value="" class="bg-transparent w-100 h-100 position-absolute start-0 border-0 top-0 outline-none btn">
-                    <i class="fa-solid fa-paper-plane me-2"></i>
-                    </i>Enviar</input>
+                    <span>Enviar</span>
                 </button>
+
             </div>
         </div>
 
@@ -396,7 +393,20 @@ if (isset($_POST["sendMail"])) {
         $target2 = document.getElementById("target2"),
         $target3 = document.getElementById("target3"),
         $target4 = document.getElementById("target4"),
-        $section = document.querySelector("#section-statistics");
+        $section = document.querySelector("#section-statistics"),
+        $btnSendMail = document.querySelector("#sendMail"),
+        $containerAlertEmail = document.querySelector(".alert-request-container"),
+        $inputEmail = document.querySelector("input[name='email']"),
+        $inputName = document.querySelector("input[name='name']"),
+        $inputSubject = document.querySelector("input[name='subject']"),
+        $inputMessage = document.querySelector("textarea[name='message']"),
+        $alertEmail = `
+        <div class="alert alert-dismissible fade show" role="alert" id="alert-response-email">
+                <span id="messageMail"></span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        `
+
 
     const callBack = entries => {
         entries.forEach(entry => {
@@ -436,4 +446,68 @@ if (isset($_POST["sendMail"])) {
     });
 
     observer.observe($section);
+
+    const regExp = {
+        user: /^[a-zA-Z0-9\_\-]{4,16}$/,
+        email: /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/,
+        onlyLetters: /^[a-zA-ZÀ-ȳ\s]{1,50}$/
+    }
+
+    function validateInput(inputs, condition, errMessage) {
+        const $alertError = `<div class="row my-2">
+                                <div class="col-12 text-start">
+                                    <span class="form-text text-danger">${errMessage}</span>
+                                </div>
+                             </div>
+                            `;
+        if (!(condition)) {
+            inputs.forEach(input => {
+                input.classList.add("no-valid-input");
+                input.parentElement.nextElementSibling.innerHTML = $alertError;
+            });
+            return false;
+        } else {
+            inputs.forEach(input => {
+                input.classList.remove("no-valid-input");
+                input.parentElement.nextElementSibling.innerHTML = "";
+            });
+            return true;
+        }
+    }
+
+    $btnSendMail.addEventListener("click", () => {
+        $containerAlertEmail.innerHTML = "";
+
+        async function sendMail() {
+            try {
+                $btnSendMail.classList.add("btn-send-mail-animation");
+                const data = new FormData(document.querySelector('#contact-form'));
+                let response = await fetch("<?php echo $APP_URL . "app/helpers/email/sendMail.php" ?>", {
+                        method: 'POST',
+                        body: data
+                    }),
+                    json = await response.json();
+
+                if (json == 200) {
+                    $containerAlertEmail.insertAdjacentHTML("beforeend", $alertEmail);
+                    document.getElementById("alert-response-email").firstElementChild.textContent = "Correo envíado con éxito.";
+                    document.getElementById("alert-response-email").classList.add("alert-success");
+                } else {
+                    $containerAlertEmail.insertAdjacentHTML("beforeend", $alertEmail);
+                    document.getElementById("alert-response-email").firstElementChild.textContent = "Error al envíar correo.";
+                    document.getElementById("alert-response-email").classList.add("alert-danger");
+                }
+                $btnSendMail.classList.remove("btn-send-mail-animation");
+            } catch (err) {
+                $containerAlertEmail.insertAdjacentHTML("beforeend", $alertEmail);
+                document.getElementById("alert-response-email").firstElementChild.textContent = err;
+                document.getElementById("alert-response-email").classList.add("alert-danger");
+            }
+        }
+
+        if (validateInput([$inputName], (regExp.onlyLetters.test($inputName.value)), "Ingresar nombre válido") && validateInput([$inputEmail], (regExp.email.test($inputEmail.value)), "Ingresar email válido") && validateInput([$inputSubject], ($inputSubject.value != ""), "Ingresar asunto válido") && validateInput([$inputMessage], ($inputMessage.value != ""), "Ingresar mensaje válido")) {
+            sendMail();
+        }
+
+    });
 </script>
