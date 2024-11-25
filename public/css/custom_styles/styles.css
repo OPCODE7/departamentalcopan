@@ -48,8 +48,8 @@ body {
 .btn-blue {
   background-color: var(--blue);
   color: var(--very-light-gray);
-  padding: 8px 12px;
-  border: none;
+  padding: 6px 12px;
+  border: 0.667px solid transparent;
   border-radius: 5px;
   text-decoration: none;
   outline: none;
@@ -99,7 +99,6 @@ body {
   }
 }
 
-/* From Uiverse.io by adamgiebl */
 .btn-send-mail {
   font-family: inherit;
   font-size: 20px;
@@ -701,7 +700,6 @@ body {
 /* TOOLS SECTION */
 .glass-card {
   position: relative;
-  /* width: 200px; */
   height: 250px;
   border-radius: 14px;
   overflow: hidden;

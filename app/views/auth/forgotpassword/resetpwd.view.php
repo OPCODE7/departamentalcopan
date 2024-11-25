@@ -85,7 +85,8 @@ if ($results["user_id"] == null || $results["token"] == null) {
 
                             <div class="mb-3 position-relative">
                                 <input type="password" class="form-control p-2" name="password-confirm" placeholder="Repite tu contraseña" value="<?php echo $passwordConfirm ?>" maxlength="12">
-                                <i class="fa-solid fa-eye-slash position-absolute end-0 top-50 translate-middle cursor-pointer" id="see-pwd"></i>
+                                <i class="fa-solid fa-eye-slash position-absolute end-0 top-50 
+                                translate-middle cursor-pointer" id="see-pwd"></i>
                             </div>
                             <div id="alert-error" class="mt-3"></div>
                         </div>
@@ -120,69 +121,10 @@ if ($results["user_id"] == null || $results["token"] == null) {
     </div>
 </div>
 <script src="<?php echo $APP_URL . "public/js/bootstrap.min.js" ?>"></script>
+<script src="<?php echo $APP_URL . "app/helpers/js/show_hide_pwd.js" ?>"></script>
+<script src="<?php echo $APP_URL . "public/js/views_js/reset_pwd.js" ?>" type="module"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script>
-    const d = document,
-        $eyePwd = d.querySelectorAll("#see-pwd"),
-        $pwd = d.querySelector("input[name='password']"),
-        $pwdConfirm = d.querySelector("input[name='password-confirm']");
 
-    const regExp = {
-        pwd: /^(?!.*\s)(.{4,12})$/,
-    }
-
-
-    function validateInput(inputs, condition, errMessage) {
-        const $alertError = `<div class="row my-2">
-                                <div class="col-12">
-                                    <span class="fs-8 text-danger">${errMessage}</span>
-                                </div>
-                             </div>
-                            `;
-        if (!(condition)) {
-            inputs.forEach(input => {
-                input.classList.add("no-valid-input");
-                input.parentElement.nextElementSibling.innerHTML = $alertError;
-            });
-        } else {
-            inputs.forEach(input => {
-                input.classList.remove("no-valid-input");
-                input.parentElement.nextElementSibling.innerHTML = "";
-            });
-        }
-    }
-    d.addEventListener("click", e => {
-
-        $eyePwd.forEach(eye => {
-            if (e.target === eye) {
-                if (e.target.classList.contains("fa-eye")) {
-                    e.target.classList.remove("fa-eye");
-                    e.target.classList.add("fa-eye-slash");
-                    e.target.previousElementSibling.type = "password";
-
-                } else if (e.target.classList.contains("fa-eye-slash")) {
-                    e.target.classList.remove("fa-eye-slash");
-                    e.target.classList.add("fa-eye");
-                    e.target.previousElementSibling.type = "text";
-                }
-            }
-        });
-    });
-
-    d.addEventListener("keyup", e => {
-
-        if (e.target.matches("input[name='password']")) {
-            validateInput([e.target], (regExp.pwd.test(e.target.value)), "La contraseña debe contener de 4 a 12 caracteres y sin espacios");
-            if ($pwdConfirm.value !== "") validateInput([$pwd, $pwdConfirm], (e.target.value === $pwdConfirm.value), "Las contraseñas no coinciden");
-        }
-
-        if (e.target.matches("input[name='password-confirm']")) {
-            validateInput([e.target], (regExp.pwd.test(e.target.value)), "La contraseña debe contener de 4 a 12 caracteres y sin espacios");
-            if ($pwd.value !== "") validateInput([$pwd, $pwdConfirm], (e.target.value === $pwd.value), "Las contraseñas no coinciden");
-        }
-
-    });
-</script>
 </body>
 
 

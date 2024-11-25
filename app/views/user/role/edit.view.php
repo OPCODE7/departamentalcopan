@@ -78,39 +78,6 @@ if (isset($_POST["register"])) {
 </div>
 
 <script src="<?php echo $APP_URL . "public/js/bootstrap.min.js" ?>"></script>
-<script>
-    const d = document;
-
-    const regExp = {
-        role: /^(?!.\s)(.{4,100})$/
-    }
-
-    function validateInput(inputs, condition, errMessage) {
-        const $alertError = `<div class="row my-2">
-                                <div class="col-12">
-                                    <span class="fs-8 text-danger">${errMessage}</span>
-                                </div>
-                             </div>
-                            `;
-        if (!(condition)) {
-            inputs.forEach(input => {
-                input.classList.add("no-valid-input");
-                input.parentElement.nextElementSibling.innerHTML = $alertError;
-            });
-        } else {
-            inputs.forEach(input => {
-                input.classList.remove("no-valid-input");
-                input.parentElement.nextElementSibling.innerHTML = "";
-            });
-        }
-    }
-    d.querySelectorAll("input").forEach(el => el.setAttribute("autocomplete", "off"));
-
-    d.addEventListener("keyup", e => {
-        if (e.target.matches('input[name="roleName"]')) {
-            validateInput([e.target], (regExp.role.test(e.target.value)), "El campo descripción de rol no es válido.");
-        }
-    });
-</script>
+<script src="<?php echo $APP_URL ?>public/js/views_js/role_edit.js" type="module"></script>
 
 </html>

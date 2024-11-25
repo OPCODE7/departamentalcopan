@@ -2,6 +2,9 @@
 require_once("app/config/Routes.php");
 require_once("app/config/Env.php");
 require_once("app/controllers/AuthController.php");
+$env = new Env();
+
+$APP_URL = $env->APP_URL;
 
 $usercontroller = new AuthController();
 $route = new Routes();
@@ -84,25 +87,10 @@ if (isset($_POST["login"])) {
         </form>
     </div>
 
-    <script src="<?php echo $env->APP_URL  . "public/js/bootstrap.bundle.min.js" ?>"></script>
+    <script src="<?php echo $env->APP_URL  . "public/js/bootstrap.bundle.min.js" ?>">
 
-    <script>
-        const d = document,
-            $eyePwd = d.getElementById("see-pwd");
-        d.addEventListener("click", e => {
-            if (e.target.classList.contains("fa-eye")) {
-                e.target.classList.remove("fa-eye");
-                e.target.classList.add("fa-eye-slash");
-                e.target.previousElementSibling.type = "password";
-
-            } else if (e.target.classList.contains("fa-eye-slash")) {
-                e.target.classList.remove("fa-eye-slash");
-                e.target.classList.add("fa-eye");
-                e.target.previousElementSibling.type = "text";
-            }
-        });
     </script>
-
+    <script src="<?php echo $APP_URL ?>app/helpers/js/show_hide_pwd.js"></script>
 </body>
 
 </html>
