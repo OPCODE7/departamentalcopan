@@ -290,8 +290,24 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 </div>
             </div>
         </footer>
+        <div class="terms-conditions position-fixed start-0 top-0 w-100 h-100 bg-dark d-flex justify-content-center align-items-center opacity-75" id="opacity-terms" style="z-index: 5;">
+        </div>
+        <div class="bg-light rounded w-50 overflow-y-scroll p-4 position-fixed start-50 top-50 translate-middle" id="modal-terms" style="height: 60vh;z-index:999;">
+            <h2>Términos y Condiciones</h2>
+            <p>Bienvenido al sitio web oficial de la Dirección Departamental de Educación de Copán. Al acceder y utilizar este sitio, usted acepta cumplir con los siguientes términos y condiciones. Por favor, léalos detenidamente antes de continuar navegando.</p>
+            <ol>
+                <li>El uso del sitio web es exclusivamente permitido para los estudiantes y docentes de la Dirección Departamental de Educación de Copán.</li>
+                <li>No se permiten la reproducción, distribución, o comercialización de este sitio web en ningún formato, ni en ninguna forma, sin la autorización previa y expresa de la Dirección Departamental de Educación de Copán.</li>
+                <li>Los términos y condiciones de este sitio web se aplican a todos los usuarios que acceden al mismo.</li>
+                <li>El sitio web se encuentra protegido por las leyes de protección de datos personales y la Ley Federal de Protección de Datos Personales en vigencia.</li>
+            </ol>
+            <div class="w-100 text-center">
+                <button class="btn btn-primary" id="btn-accept-terms">Aceptar</button>
+                <button class="btn btn-secondary" onclick="window.location.href=''">Cancelar</button>
+            </div>
+        </div>
     </div>
-    <script src="<?php echo $env->APP_URL  . "public/js/bootstrap.bundle.min.js" ?>"></script>
+    <script src=" <?php echo $env->APP_URL  . "public/js/bootstrap.bundle.min.js" ?>"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src=" https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>

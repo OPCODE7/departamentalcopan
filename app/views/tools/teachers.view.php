@@ -284,7 +284,7 @@
             <a href="https://workspace.google.com/intl/es-419_us/" class="glass-card mt-3 text-light text-decoration-none p-0" target="_blank">
                 <div class="z-3 px-3 text-center text-dark">
                     <h5 class="fw-bold z-3">Google Workspace for Education</h5>
-                    <p class="z-3">UUna plataforma que incluye herramientas como Gmail, Google Drive y Google Docs, diseñada para centros educativos, profesores y estudiantes que les permite unificar todos los recursos en una sola plataforma.</p>
+                    <p class="z-3">Una plataforma que incluye herramientas como Gmail, Google Drive y Google Docs, diseñada para centros educativos, profesores y estudiantes que les permite unificar todos los recursos en una sola plataforma.</p>
                 </div>
                 <div class="glass-card-bg z-2"></div>
                 <div class="glass-card-blob z-1"></div>
