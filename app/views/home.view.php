@@ -115,7 +115,7 @@ if (isset($_POST["sendMail"])) {
                     <h1> Sistema <br>UTI-Reingeniería</h1>
                     <div class="card-back">
                         <span>Sistema de Administración, Gerencia y Gestión de Datos Estadísticos</span>
-                        <a href="<?php echo $APP_URL ?>login" class="ov-btn-slide-left text-decoration-none">Ver</a>
+                        <a href="<?php echo $APP_URL ?>statistics/dashboard" class="ov-btn-slide-left text-decoration-none">Ver</a>
                     </div>
                 </div>
             </div>

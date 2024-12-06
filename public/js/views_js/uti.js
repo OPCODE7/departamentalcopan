@@ -70,6 +70,10 @@ $aside.addEventListener("click", (e) => {
   if (e.target.matches("#btn-seminario-pnted > *")) {
     getHtml(`${APP_URL}app/views/uti/seminariopnted.html`);
   }
+
+  if (e.target.matches("#btn-identity > *")) {
+    getHtml(`${APP_URL}app/views/uti/identidad.html`);
+  }
 });
 
 $btnMenuAside.addEventListener("click", (e) => {
