@@ -98,25 +98,3 @@ if (!$user) {
     </div>
 
 </div>
-
-
-<script>
-    new DataTable('#users', {
-        responsive: true,
-        autoWidth: false,
-
-        "language": {
-            "lengthMenu": "Mostrar _MENU_ registros por página",
-            "zeroRecords": "No se encontraron registros que coincidan con lo que buscas",
-            "info": "Mostrando la pagina _PAGE_ de _PAGES_",
-            "infoEmpty": "No records available",
-            "infoFiltered": "(filtrado de _MAX_ registros totales)",
-            "search": 'Buscar:',
-            'paginate': {
-                'next': 'Siguiente',
-                'previous': 'Anterior'
-            }
-
-        }
-    });
-</script>

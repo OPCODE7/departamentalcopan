@@ -39,7 +39,8 @@ $titleFormat = strtoupper($replaceSlashUrl);
     <link rel="shortcut icon" href="<?php echo $env->APP_URL . "public/assets/icons/logo-depa-copan.ico" ?>" type="image/x-icon">
     <link rel="stylesheet" href="<?php echo $env->APP_URL ?>public/plugins/animatecss/animate.compat.css" />
     <!-- Datatable -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css">
     <title><?php echo $titleFormat ?></title>
     <meta name="description" content="Sitio oficial direccion departamental de educación copán." />
 
@@ -61,7 +62,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
             <div class="col-12 col-md-7 d-flex justify-content-center justify-content-md-end align-items-center fs-6 pe-md-0">
                 <small>24/7 Support (123) 456 7890</small>
                 <span>/</span>
-                <a href="<?php $APP_URL ?>#contact-form" class="text-decoration-none text-secondary "><small class="color-blue-hover">E-mail Us</small></a>
+                <a href="<?php echo $APP_URL ?>#contact-form" class="text-decoration-none text-secondary "><small class="color-blue-hover">E-mail Us</small></a>
                 <?php
                 if (empty($userData)) {
                 ?>
@@ -150,8 +151,6 @@ $titleFormat = strtoupper($replaceSlashUrl);
                                     <li><a class="dropdown-item" href="#">Escuelas Normales</a></li>
                                     <li><a class="dropdown-item" href="https://educatrachos.hn/galeria-de-noticias/plan-365/" target="_blank">Plan 365</a></li>
                                     <li><a class="dropdown-item" href="<?php echo $APP_URL ?>about/rendiciondecuentas">Rendición de cuentas 2024</a></li>
-
-
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -239,8 +238,6 @@ $titleFormat = strtoupper($replaceSlashUrl);
                     include $route->Request("home");
                 }
                 ?>
-
-
             </section>
         </main>
         <span class="fa-solid fa-arrow-up text-white text-decoration-none rounded-circle bg-blue d-flex align-items-center justify-content-center position-fixed cursor-pointer z-3 visually-hidden shadow-lg" style="width: 3em;height: 3em;bottom: 10vh;right: 3vh;" id="go-top"></span>
@@ -272,7 +269,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                     <ul class="list-unstyled lh-lg">
                         <li><i class="fa fa-map-marker"></i> Q6C7+WCJ, 41101 Santa Rosa de Copan, Copán</li>
                         <li><i class="fa fa-phone"></i> +1 (012) 345 6789</li>
-                        <li><i class="fa fa-envelope"></i> info@yourdomain.com</li>
+                        <li><i class="fa fa-envelope"></i> ivis.flores@se.gob.hn</li>
                     </ul>
                 </div>
             </div>
@@ -289,41 +286,37 @@ $titleFormat = strtoupper($replaceSlashUrl);
                 </div>
             </div>
         </footer>
-
     </div>
     <script src=" <?php echo $env->APP_URL  . "public/js/bootstrap.bundle.min.js" ?>"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src=" https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
-
-
-
     <script src="<?php echo $APP_URL ?>public/js/views_js/layout.js" type="module"></script>
+    <!-- Datatable -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.7/js/responsive.bootstrap4.min.js"></script>
     <script>
-        new DataTable('#datatable', {
-            responsive: true,
-            autoWidth: false,
+        $(document).ready(function() {
+            $('#datatable').DataTable({
+                responsive: true,
+                autoWidth: false,
 
-            "language": {
-                "lengthMenu": "Mostrar _MENU_ registros por página",
-                "zeroRecords": "No se encontraron registros que coincidan con lo que buscas",
-                "info": "Mostrando la pagina _PAGE_ de _PAGES_",
-                "infoEmpty": "No records available",
-                "infoFiltered": "(filtrado de _MAX_ registros totales)",
-                "search": 'Buscar:',
-                'paginate': {
-                    'next': 'Siguiente',
-                    'previous': 'Anterior'
+                "language": {
+                    "lengthMenu": "Mostrar _MENU_ registros por página",
+                    "zeroRecords": "No se encontraron registros que coincidan con lo que buscas",
+                    "info": "Mostrando la pagina _PAGE_ de _PAGES_",
+                    "infoEmpty": "No records available",
+                    "infoFiltered": "(filtrado de _MAX_ registros totales)",
+                    "search": 'Buscar:',
+                    'paginate': {
+                        'next': 'Siguiente',
+                        'previous': 'Anterior'
+                    }
+
                 }
-
-            }
+            });
         });
     </script>
-
-
-
-
-
 </body>
 
 </html>
