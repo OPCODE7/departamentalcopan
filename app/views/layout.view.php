@@ -69,7 +69,7 @@ $titleFormat = strtoupper($replaceSlashUrl);
                     <span>/</span>
                     <a href="<?php echo $env->APP_URL ?>login" class="text-decoration-none text-secondary "><small class="color-blue-hover">Login</small></a>
                     <span>/</span>
-                    <a href="<?php echo $APP_URL ?>auth/signup" class="text-decoration-none text-secondary "><small class="color-blue-hover">Register</small></a>
+                    <a href="<?php echo $APP_URL ?>auth/signup" class="text-decoration-none text-secondary "><small class="color-blue-hover">Registro</small></a>
                 <?php
                 }
                 ?>

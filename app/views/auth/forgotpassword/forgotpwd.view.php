@@ -30,6 +30,39 @@ function codeGenerator($length)
     return $code;
 }
 
+
+function sendMail($code, $currentAttemps, $responseSearchAccount, $authController, $env)
+{
+    $data = [
+        "newCode" => $code,
+        "currentAttemps" => $currentAttemps + 1,
+        "userId" => $responseSearchAccount["USER_ID"]
+    ];
+
+    $destino = $env->Redirect("resetpwd") . "?user_id=" . $responseSearchAccount["USER_ID"] . "&token=" . $code;
+
+    $updateRecoveryPassCode = $authController->UpdateRecoveryPassCode($data);
+    $email = $responseSearchAccount["USER_EMAIL"];
+    $name = $responseSearchAccount["FIRSTNAME"] . " " . $responseSearchAccount["LASTNAME"];
+    $to = "{$email}";
+    $subject = "Formulario Recuperación de Cuenta Direccion Departamental Copán";
+    $message = <<<HTML
+    <h2>De Dirección Departamental de Educación Copán</h2>
+    <h4>Hola $name se ha solicitado un reinicio de contraseña.</h4>
+    <p>Para reestablecer tu contraseña, visita la siguiente dirección: <a href='$destino' target='_blank'>Cambiar contraseña</a></p>
+    HTML;
+
+    $headers = "Content-type: text/html; charset=utf-8 \r\n";
+    $headers .= "MIME-Version: 1.0 \r\n";
+    $headers .= "From: Formulario Recuperación de Cuenta<test@gmail.com>";
+
+    if (mail($to, $subject, $message, $headers)) {
+        $sent = true;
+    }
+
+    return $sent;
+}
+
 if (isset($_POST["checkAccount"])) {
     $filterSearchAccount = $_POST["searchParameter"];
 
@@ -41,39 +74,25 @@ if (isset($_POST["checkAccount"])) {
         $code = codeGenerator(6);
         $currentAttemps = $responseSearchAccount["LIMIT_REQUEST_PASSRECOVERY_CODE"];
         if ($currentAttemps > 5) {
-            $msgError = "Excedio el número de intentos";
-        } else {
-            $data = [
-                "newCode" => $code,
-                "currentAttemps" => $currentAttemps + 1,
-                "userId" => $responseSearchAccount["USER_ID"]
-            ];
-
-            $destino = $env->Redirect("resetpwd") . "?user_id=" . $responseSearchAccount["USER_ID"] . "&token=" . $code;
-
-            $updateRecoveryPassCode = $authController->UpdateRecoveryPassCode($data);
-            $email = $responseSearchAccount["USER_EMAIL"];
-            $name = $responseSearchAccount["FIRSTNAME"] . " " . $responseSearchAccount["LASTNAME"];
-            $to = "{$email}";
-            $subject = "Formulario Recuperación de Cuenta Direccion Departamental Copán";
-            $message = <<<HTML
-            <h2>De Dirección Departamental de Educación Copán</h2>
-            <h4>Hola $name se ha solicitado un reinicio de contraseña.</h4>
-            <p>Para reestablecer tu contraseña, visita la siguiente dirección: <a href='$destino' target='_blank'>Cambiar contraseña</a></p>
-            HTML;
-
-            $headers = "Content-type: text/html; charset=utf-8 \r\n";
-            $headers .= "MIME-Version: 1.0 \r\n";
-            $headers .= "From: Formulario Recuperación de Cuenta<test@gmail.com>";
-
-            if (mail($to, $subject, $message, $headers)) {
-                $sent = true;
+            $lastTime = $authController->checkLastTimeRecoveryPwd($responseSearchAccount["USER_ID"]);
+            if ($lastTime["MINUTES_ELAPSED"] == NULL) {
+                $updateTime = $authController->updateTimerRecoveryPwd($responseSearchAccount["USER_ID"], "");
             }
+            if ($lastTime["MINUTES_ELAPSED"] < 30) {
+                $msgError = "Ha superado el número de intentos. Por favor espere " . 30 - intval($lastTime["MINUTES_ELAPSED"]) . " minutos.";
+            } else {
+                $currentAttemps = 0;
+                $authController->updateTimerRecoveryPwd($responseSearchAccount["USER_ID"], "NULL");
+                $sent = sendMail($code, $currentAttemps, $responseSearchAccount, $authController, $env);
+            }
+        } else {
+            $sent = sendMail($code, $currentAttemps, $responseSearchAccount, $authController, $env);
         }
     } else {
         $msgError = "Tu cuenta no existe.";
     }
 }
+
 
 
 ?>

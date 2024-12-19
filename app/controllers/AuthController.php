@@ -154,4 +154,15 @@ class AuthController
             return $response;
         }
     }
+
+
+    public function updateTimerRecoveryPwd($userId, $control)
+    {
+        return $this->userModel->updateTimerRecoveryPwd($userId, $control);
+    }
+
+    public function checkLastTimeRecoveryPwd($userId)
+    {
+        return $this->userModel->checkLastTimeRecoveryPwd($userId);
+    }
 }

@@ -15,7 +15,6 @@ if (!$user) {
     header("Location: $destine");
 }
 
-
 ?>
 
 <div class="container">

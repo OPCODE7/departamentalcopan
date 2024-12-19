@@ -90,4 +90,30 @@ class AuthModel
             echo $error->getmessage();
         }
     }
+
+    public function updateTimerRecoveryPwd($userId, $control)
+    {
+        try {
+            $query = "CALL SP_UPDATE_RECOVERY_PWD_TIMER('{$userId}', '{$control}');";
+            echo $control;
+            $stmt = $this->ConMySql->prepare($query);
+            $ra = $stmt->execute();
+            return $ra;
+        } catch (PDOException $error) {
+            echo $error->getMessage();
+        }
+    }
+
+    public function checkLastTimeRecoveryPwd($userId)
+    {
+        try {
+            $query = "CALL SP_CHECK_RECOVERY_PWD_TIMER('{$userId}')";
+            $stmt = $this->ConMySql->prepare($query);
+            $stmt->execute();
+            $recordset = $stmt->fetch();
+            return $recordset;
+        } catch (PDOException $error) {
+            echo $error->getMessage();
+        }
+    }
 }
