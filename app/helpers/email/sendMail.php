@@ -1,7 +1,12 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+
 require_once($_SERVER['DOCUMENT_ROOT'] . "/departamentalcopan/app/config/Env.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/departamentalcopan/vendor/autoload.php");
 
 $env = new Env();
+$mail = new PHPMailer();
 
 $APP_URL = $env->APP_URL;
 
@@ -79,12 +84,28 @@ if (isset($_POST["sendMail"])) {
     </html>
     HTML;
 
-    $sent = mail($to, $subject, $htmlMessage, $headers);
-    if ($sent) {
+    $mail->From = $email;
+    $mail->FromName = $name;
+    // $mail->isSMTP();
+    // $mail->Host = "smtp.gmail.com";
+    // $mail->SMTPAuth = true;
+    $mail->addAddress("opcode777@gmail.com");
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
+    $mail->Body = $htmlMessage;
+    if ($mail->send()) {
         $json = 200;
     } else {
         $json = 500;
     }
+
+
+    // $sent = mail($to, $subject, $htmlMessage, $headers);
+    // if ($sent) {
+    //     $json = 200;
+    // } else {
+    //     $json = 500;
+    // }
 
     echo json_encode($json);
 }

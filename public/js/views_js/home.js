@@ -101,6 +101,8 @@ $btnSendMail.addEventListener("click", () => {
         }),
         json = await response.json();
 
+      console.log(json);
+
       if (json == 200) {
         $containerAlertEmail.insertAdjacentHTML("beforeend", $alertEmail);
         document.getElementById(
